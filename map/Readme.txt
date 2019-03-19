@@ -1,0 +1,3 @@
+1. crosspoint_final.csv has almost all the crosspoints in the manhattan and its format is name,latitude, longtitude and its id_node in our sysetem.
+2. res_mapping_road_based.csv includes mapping locations for all restaurants. Format: (Name of restuarant, Latitude, logitude, mapping latitude, mapping longitude, rating, start node ID, end node ID of the road segment including the mapping location) 
+3. road_segment.csv includes the information of each road segment. Format:(start node ID, end node ID, start node Latitude, start node longitude, end node Latitude, end node longitude, length of the road segment)
