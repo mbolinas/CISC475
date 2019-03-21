@@ -12,15 +12,26 @@
 #of all POIs (./map/res_mapping_road_based.csv)
 
 
+
 #this functions is going to have to take in a set of 'correct' POIs and 
 #the location that the algorithm was run on
 def export_poi_set(road_name, poi_set):
-	result = open("./map/road_segment_" + road_name + ".csv", "w");
+	result = open("./map/road_" + road_name + ".csv", "w")
 	res_f = open("./map/res_mapping_road_based.csv", "r")
+	count = 0
 	for s in res_f:
 		items = s.rstrip().split(',')
 		#there's gotta be a way to perform an intersection that isn't O(n^2)
 		for name in poi_set:	
 			if (items[0] == name):
+				if(count != 0):
+					result.write("\n")
 				result.write(s)
-				result.write("\n")
+				count = count + 1
+
+
+
+
+
+
+export_poi_set("exampleroad", ["108 Greenwich St"])
