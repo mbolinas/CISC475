@@ -16,6 +16,9 @@ def sky1d(road, poi_set, road_pos, road_pos_proj = None):
 	right_set = [];
 	error_set = [];
 
+	#add verification POIs
+	#distance infinity, price 0
+
 	for p in poi_set:
 		if p.distance - road_pos < 0:
 			left_set.add(p)
@@ -49,4 +52,8 @@ def sky1d(road, poi_set, road_pos, road_pos_proj = None):
 	#todo: query result verification
 
 	return result_set
+
+#do we even need this idk
+def result_set_to_neighbors(result_set, road_pos):
+
 
