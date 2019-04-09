@@ -28,10 +28,3 @@ def export_poi_set(road_name, poi_set):
 					result.write("\n")
 				result.write(s)
 				count = count + 1
-
-
-
-
-
-
-export_poi_set("exampleroad", ["108 Greenwich St"])
