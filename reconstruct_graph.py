@@ -22,4 +22,3 @@ def file_to_graph(filein):
 		count = count + 1
 	return 1
 
-graph = reconstruct_graph()
