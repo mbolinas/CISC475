@@ -6,6 +6,8 @@ data = open("road_segment.csv", "r")
 
 
 G = nx.read_edgelist(data, delimiter=',', nodetype=str, data=[('start_latitude',float),('start_longitude',float),('end_latitude',float),('end_longitude',float),('weight',float)])
+
+'''
 for e in G.edges():
     print e
 
@@ -19,3 +21,10 @@ nx.draw_networkx_edge_labels(G, pos, labels = edge_labels)
 nx.draw(G,pos, with_labels=True)
 plt.savefig('this.png')
 plt.show()
+'''
+
+'''
+Serializes graph to graph_pickle
+Can be read using read_gpickle(path)
+'''
+nx.write_gpickle(G, 'graph_pickle')
