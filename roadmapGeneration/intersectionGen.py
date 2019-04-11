@@ -27,14 +27,14 @@ specifying a box while most cities are obviously not shaped that way):
     ...
     (need to add more)
 '''
-boundBox = '(39.614244,-75.837469,39.712655,-75.742246)'
-queryTags = "'highway'~'primary|secondary|residential|tertiary'"
+boundBox = "(39.614244,-75.837469,39.712655,-75.742246)"
+queryTags = "'primary|secondary|residential|tertiary'"
 
 '''
 API Call
 Fetch all ways and nodes within a bounding box and store in 'result'.
 '''
-result = api.query("way{} [{}];(._;>;);out body;".format(boundBox, queryTags))
+result = api.query("way{} ['highway'~{}];(._;>;);out body;".format(boundBox, queryTags))
 
 '''
 Array of all nodeIDs in bounding box
