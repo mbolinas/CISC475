@@ -16,40 +16,44 @@ import collections
 import csv
 
 api = overpy.Overpass()
-ouputFile = 'intersectionsTest.csv'
+ouputFile = 'intersectionsPhilly.csv'
 
 '''
-Some bounding boxes (these are not exact since we are limited to
-specifying a box while most cities are obviously not shaped that way):
-    Newark, DE: '(39.614244,-75.837469,39.712655,-75.742246)'
-    Los Angeles, CA: '(33.702967, -118.669821, 34.338940, -118.152887)'
-    Tuscon, AZ: '(31.988275, -110.732295, 32.320246, -111.060301)'
-    ...
-    (need to add more)
+boundBoxAll:
+    Some example bounding boxes (these are not exact since we are limited to
+    specifying a box while most cities are obviously not shaped that way):
+        City, State: (min lat, min long, max lat, max long)
+boundBox:
+    bounding box used for computation.
+queryTags:
+    which tags will be part of our result.
+n_interesect:
+    n_interesect is the minumum amount of roads to be considered
+    an intersection.
+    ie 2 will return intersections of 2 or more roads.
 '''
-boundBox = "(39.614244,-75.837469,39.712655,-75.742246)"
+boundBoxAll = {\
+    'Newark, DE' : "'(39.614244,-75.837469,32.319778,-75.742246)'",\
+    'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
+    'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
+    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'\
+    }
+boundBox = boundBoxAll['Philadelphia, PA']
 queryTags = "'primary|secondary|residential|tertiary'"
+n_interesect = 2
 
-'''
-API Call
-Fetch all ways and nodes within a bounding box and store in 'result'.
-'''
+#API Call
+#Fetch all ways and nodes within a bounding box and store in 'result'.
 result = api.query("way{} ['highway'~{}];(._;>;);out body;".format(boundBox, queryTags))
 
 '''
-Array of all nodeIDs in bounding box
-'''
-nodeIDs = []
-
-'''
-Dictionary of form nodeID:nodeInfo
+Getting information from result
+NodeIDs: Array of all nodeIDs in bounding box
+nodeInfo: Dictionary of form nodeID:nodeInfo
     nodeInfo is array of [name, tags(highway, walkway, etc.), latitude, longitude]
 '''
+nodeIDs = []
 nodeInfo = {}
-
-'''
-Getting information from result
-'''
 for way in result.ways:
     name = way.tags.get("name", "n/a")
     tags = way.tags.get("highway", "n/a")
@@ -62,15 +66,17 @@ for way in result.ways:
 To find intersections we look for ID's that appear more than once,
 indicating multiple roads instersect at that location. Thus we can filter out
 any ID's that only appear once.
+n_interesect can be used to specify the minumum amount of roads to be considered
+an intersection.
 '''
 duplicateIDs =\
-    [item for item, count in collections.Counter(nodeIDs).items() if count > 1]
+    [item for item, count in collections.Counter(nodeIDs).items() if count >= n_interesect]
 
 #print(len(nodeIDs))
 #print(len(duplicateIDs))
 
 '''
-Write to CSV in form
+Write to CSV in form:
     nodeID, tag, latitude, longitude
 '''
 with open(ouputFile,'wb') as file:
