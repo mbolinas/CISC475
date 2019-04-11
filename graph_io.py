@@ -1,11 +1,11 @@
-
+import networkx as nx
 
 #purpose of file:
 #after the algorithm has been run, we have a set of POIs that are 'valid'
 #the script that displays the map takes in a file containing all the POIs
 #so this file will write to file the POIs that were relevant for a specific location
 
-
+print("This file handles reading in a piece of land as a graph and writing files pertaining to the graph")
 
 #takes in a set of POIs, usually given from the algorithms, 
 #and intersects that set with the set
@@ -29,7 +29,7 @@ def export_poi_set(road_name, poi_set):
 				result.write(s)
 				count = count + 1
 
-def reconstruct_graph():
+def reconstruct_graph(filein):
 	src = "./map/graph.csv"
 	#src = "./map/res_mapping_road_based.csv"
 	try:
@@ -42,10 +42,11 @@ def reconstruct_graph():
 		return None
 
 def file_to_graph(filein):
-	count = 0
-	for line in filein:
-		parsedline = line.rstrip().split(",")
-		print("line " + str(count) + ": " + parsedline[0])
-		count = count + 1
-	return 1
+	try:
+		G = nx.read_gpickle(filein)
+		return G
+	except IOError as error:
+		print("ERROR:\nCould not open" + src + "\nMake sure file exists and can be accessed")
+		return None
+
 
