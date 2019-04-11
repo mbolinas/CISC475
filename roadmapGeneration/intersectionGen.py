@@ -62,11 +62,13 @@ duplicateIDs =\
 Write to CSV in form
     nodeID, tag, latitude, longitude
 '''
+filter = ['service', 'footway', 'motorway']
 with open('intersections.csv','wb') as file:
     # each id left in duplicateIDs will be an intersection
     for id in duplicateIDs:
-        file.write(str(nodeInfo[id][0]) + ',')
-        file.write(str(nodeInfo[id][1]) + ',')
-        file.write(str(nodeInfo[id][2]) + ',')
-        file.write(str(nodeInfo[id][3]))
-        file.write('\n')
+        if nodeInfo[id][1] not in filter:
+            file.write(str(nodeInfo[id][0]) + ',')
+            file.write(str(nodeInfo[id][1]) + ',')
+            file.write(str(nodeInfo[id][2]) + ',')
+            file.write(str(nodeInfo[id][3]))
+            file.write('\n')
