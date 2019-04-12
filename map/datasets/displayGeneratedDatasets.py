@@ -1,5 +1,5 @@
 '''
-Same code as Yihan's, just adapted in some small ways
+Same code as Yidan's, just adapted in some small ways
 '''
 import matplotlib.pyplot as plt
 import numpy as np
