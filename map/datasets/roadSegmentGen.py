@@ -1,14 +1,18 @@
 """
-This file attempts to find all intersections within a given
-bounding box (min lat, min long, max lat, max long) and write them
-to a CSV
+This file attempts to get the start/end lat/long coordinates of all roads
+within a given bounding box (min lat, min long, max lat, max long) and write them
+to a CSV.
 
-Some known issues:
-    - Points written to the CSV with certain tags (like 'service' or 'footway')
-    seem to be noise and don't represent an intersection. These should probably
-    be filtered out.
+Known issues:
+    Code works decently for block areas, with most road segments accurately
+    represent by the generated coordinates. Much more innacurate outside of
+    city blocks.
 
-    - Probably more.
+    Some coordinates are only slighly innacurate, sometimes stopping
+    short of a road's real-world end. Other coordinates are much worse,
+    giving points completely off the road
+
+    Probably more.
 """
 
 import overpy
@@ -16,7 +20,7 @@ import csv
 import geopy.distance
 
 api = overpy.Overpass()
-ouputFile = 'test.csv'
+ouputFile = 'roadSegmentsRoughNewark.csv'
 
 '''
 boundBoxAll:
@@ -29,12 +33,12 @@ queryTags:
     which tags will be part of our result.
 '''
 boundBoxAll = {\
-    'Newark, DE' : '(39.614244,-75.837469,32.319778,-75.742246)',\
+    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',\
     'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
     'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
     'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'\
     }
-boundBox = boundBoxAll['Philadelphia, PA']
+boundBox = boundBoxAll['Newark, DE']
 queryTags = "'primary|secondary|residential|tertiary'"
 
 #API Call
@@ -43,24 +47,13 @@ result = api.query("way{} ['highway'~{}];(._;>;);out body;".format(boundBox, que
 
 '''
 Getting information from result
-wayNames: Array of all way names in bounding box
-nodeInfo: Dictionary of form way:wayNodes
-    wayNodes is array of [wayNode_1, wayNode_2, ... , wayNode_n]
+wayNodes: array of arrays
+    [[wayNode_1, ... , wayNode_n], [wayNode_1, ... , wayNode_n], ... , n]
 '''
 wayNodes = []
-#allNodesCSV = open('allNodesCSV.csv', 'wb')
 for way in result.ways:
     name = way.tags.get("name", "n/a")
-    #tags = way.tags.get("highway", "n/a")
     wayNodes.append(way.nodes)
-    '''
-    allNodesCSV.write(name.encode('utf-8') + ',')
-    allNodesCSV.write(tags.encode('utf-8') + ',')
-    allNodesCSV.write(str(node.lat) + ',')
-    allNodesCSV.write(str(node.lon))
-    allNodesCSV.write('\n')
-    '''
-#allNodesCSV.close()
 
 '''
 Get distance between 2 lat/long coordinates
@@ -68,6 +61,11 @@ Get distance between 2 lat/long coordinates
 def latLongDistance(lat1, lon1, lat2, lon2):
     return geopy.distance.distance((lat1, lon1), (lat2, lon2)).km
 
+'''
+Input: an array of way nodes
+Returns a tuple of the two nodes who have the maximum distance
+between each other.
+'''
 def maxBetweenNodes(wayNodeArray):
     max = 0
     nodeX = None
@@ -85,28 +83,18 @@ def maxBetweenNodes(wayNodeArray):
                 nodeY = wayNodeArray[j]
     return (nodeX, nodeY)
 
-testDistanceCSV = open('testDistance.csv', 'wb')
-for nodeArray in wayNodes:
-    tup = maxBetweenNodes(nodeArray)
-    testDistanceCSV.write(str(tup[0].lat)+ ',')
-    testDistanceCSV.write(str(tup[0].lon) + ',')
-    testDistanceCSV.write(str(tup[1].lat) + ',')
-    testDistanceCSV.write(str(tup[1].lon) + '\n')
-testDistanceCSV.close()
-
-#print(maxBetweenNodes(arr))
-
 '''
 Write to CSV in form:
-    nodeID, tag, latitude, longitude
+    start lat, start long, end lat, end long
 '''
-def writeCSV():
-    with open(ouputFile,'wb') as file:
-        # each id left in duplicateIDs will be an intersection
-        for id in duplicateIDs:
-            file.write(nodeInfo[id][0].encode('utf-8') + ',')
-            file.write(nodeInfo[id][1].encode('utf-8') + ',')
-            file.write(str(nodeInfo[id][2]) + ',')
-            file.write(str(nodeInfo[id][3]))
-            file.write('\n')
-#writeCSV()
+with open(ouputFile,'wb') as file:
+    for nodeArray in wayNodes:
+        # the 2 nodes of maximum distance
+        # should accurately represent most road's
+        # start and end points.
+        # I think.
+        tup = maxBetweenNodes(nodeArray)
+        file.write(str(tup[0].lat)+ ',') # start lat
+        file.write(str(tup[0].lon) + ',') # start long
+        file.write(str(tup[1].lat) + ',') # end lat
+        file.write(str(tup[1].lon) + '\n') #  end long
