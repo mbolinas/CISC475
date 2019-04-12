@@ -6,12 +6,14 @@ import numpy as np
 
 intersectionInput = "intersectionsManhattan.csv"
 roadSegmentInput = "roadSegmentsRoughManhattan.csv"
-imageOutputName = "Paris.png"
 '''
 N values for generated intersectionsX.csv is equal to number of rows.
-For some reason N=sum(1 for row in file) doesn't work so heres the values:
+For some reason using a function to calculate the rows doesn't
+work (even though it returns the correct number), so here's some values:
 Manhattan = 11105
 Paris = 17331
+...
+The rest you'd just have to get the number from excel or something
 '''
 N=11105
 
@@ -21,7 +23,7 @@ k=0
 print(N)
 lat=np.tile(0.0,N)
 lng=np.tile(0.0,N)
-id=[]
+#id=[]
 for s in file:
     items=s.rstrip().split(',')
     lat[k]=float(items[2])
@@ -52,5 +54,4 @@ for s in res_f:
 
 plt.plot(lng, lat,'bo',linewidth=0.1,markersize=0.2)
 #plt.plot(lng_res, lat_res,'r.',linewidth=1,markersize=2)
-plt.savefig(imageOutputName, dpi=100)
 plt.show()
