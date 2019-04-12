@@ -21,6 +21,7 @@ import geopy.distance
 
 api = overpy.Overpass()
 ouputFile = 'roadSegmentsRoughNewark.csv'
+city = 'Manhattan, New York, NY'
 
 '''
 boundBoxAll:
@@ -36,9 +37,10 @@ boundBoxAll = {\
     'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',\
     'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
     'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
-    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'\
+    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)',\
+    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)'\
     }
-boundBox = boundBoxAll['Newark, DE']
+boundBox = boundBoxAll[city]
 queryTags = "'primary|secondary|residential|tertiary'"
 
 #API Call
