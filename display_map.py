@@ -40,5 +40,5 @@ plt.plot(lng_res, lat_res,'r.',linewidth=1,markersize=2)
 plt.show()
 
 def show_map(crosspoint_final, road_segment, res_mapping_road_based):
-    
+    print("this doesn't do anything yet")
 
