@@ -6,8 +6,8 @@ import overpy
 import csv
 
 api = overpy.Overpass()
-ouputFile = 'poiManhattan.csv'
-city = 'Manhattan, New York, NY'
+ouputFile = './generated/poiParis.csv'
+city = 'Paris, France'
 
 '''
 boundBoxAll:

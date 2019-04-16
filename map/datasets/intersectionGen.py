@@ -16,7 +16,7 @@ import collections
 import csv
 
 api = overpy.Overpass()
-ouputFile = 'intersectionsParis.csv'
+ouputFile = './generated/intersectionsParis.csv'
 city = 'Paris, France'
 
 '''

@@ -4,9 +4,9 @@ Same code as Yidan's, just adapted in some small ways
 import matplotlib.pyplot as plt
 import numpy as np
 
-intersectionInput = "intersectionsManhattan.csv"
-roadSegmentInput = "roadSegmentsRoughManhattan.csv"
-poiInput = "poiManhattan.csv"
+intersectionInput = "./generated/intersectionsParis.csv"
+roadSegmentInput = "./generated/roadSegmentsRoughParis.csv"
+poiInput = "./generated/poiParis.csv"
 
 ###-----location of crosspoint----###
 '''

@@ -20,7 +20,7 @@ import csv
 import geopy.distance
 
 api = overpy.Overpass()
-ouputFile = 'roadSegmentsRoughParis.csv'
+ouputFile = './generated/roadSegmentsRoughParis.csv'
 city = 'Paris, France'
 
 '''
