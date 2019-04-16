@@ -5,7 +5,6 @@ import networkx as nx
 #the script that displays the map takes in a file containing all the POIs
 #so this file will write to file the POIs that were relevant for a specific location
 
-print("This file handles reading in a piece of land as a graph and writing files pertaining to the graph")
 
 #takes in a set of POIs, usually given from the algorithms, 
 #and intersects that set with the set
