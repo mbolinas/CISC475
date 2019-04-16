@@ -16,7 +16,8 @@ import collections
 import csv
 
 api = overpy.Overpass()
-ouputFile = 'intersectionsPhilly.csv'
+ouputFile = 'intersectionsParis.csv'
+city = 'Paris, France'
 
 '''
 boundBoxAll:
@@ -33,12 +34,14 @@ n_interesect:
     ie 2 will return intersections of 2 or more roads.
 '''
 boundBoxAll = {\
-    'Newark, DE' : "'(39.614244,-75.837469,32.319778,-75.742246)'",\
+    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',\
     'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
     'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
-    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'\
+    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)',\
+    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)',\
+    'Paris, France' : '(48.816066, 2.227627, 48.903228, 2.467784)'\
     }
-boundBox = boundBoxAll['Philadelphia, PA']
+boundBox = boundBoxAll[city]
 queryTags = "'primary|secondary|residential|tertiary'"
 n_interesect = 2
 
