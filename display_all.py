@@ -38,7 +38,3 @@ for s in res_f:
 plt.plot(lng, lat,'bo',linewidth=1,markersize=1.5)
 plt.plot(lng_res, lat_res,'r.',linewidth=1,markersize=2)
 plt.show()
-
-def show_map(crosspoint_final, road_segment, res_mapping_road_based):
-    
-
