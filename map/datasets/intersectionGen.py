@@ -32,13 +32,13 @@ n_interesect:
 boundBox = '(40.700943, -74.008633, 40.879111, -73.910761)'
 # List if all map features:
 #   https://wiki.openstreetmap.org/wiki/Map_Features
-queryKeys = 'highway'
+queryKey = 'highway'
 queryValues = "primary|secondary|residential|tertiary"
 n_interesect = 2
 
 #API Call
 #Fetch all ways and nodes within a bounding box and store in 'result'.
-result = api.query("way{} ['{}'~'{}'];(._;>;);out body;".format(boundBox, queryKeys, queryValues))
+result = api.query("way{} ['{}'~'{}'];(._;>;);out body;".format(boundBox, queryKey, queryValues))
 
 '''
 Getting information from result
