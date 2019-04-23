@@ -4,9 +4,9 @@ Same code as Yidan's, just adapted in some small ways
 import matplotlib.pyplot as plt
 import numpy as np
 
-intersectionInput = "./generated/intersectionsParis.csv"
-roadSegmentInput = "./generated/roadSegmentsRoughParis.csv"
-poiInput = "./generated/poiParis.csv"
+intersectionInput = "./generated/intersectionsNewark.csv"
+roadSegmentInput = "./generated/roadSegmentsNewark.csv"
+poiInput = "./generated/poiNewark.csv"
 
 ###-----location of crosspoint----###
 '''
@@ -15,10 +15,12 @@ For some reason using a function to calculate the rows doesn't
 work (even though it returns the correct number), so here's some values:
 Manhattan = 11105
 Paris = 17331
+LA = 126994
+Newark = 979
 ...
 The rest you'd just have to get the number from excel or something
 '''
-N=11105
+N=979
 file = open(intersectionInput, "r")
 k=0
 print(N)
@@ -27,8 +29,8 @@ lng=np.tile(0.0,N)
 #id=[]
 for s in file:
     items=s.rstrip().split(',')
-    lat[k]=float(items[2])
-    lng[k] = float(items[3])
+    lat[k]=float(items[1])
+    lng[k] = float(items[2])
     #id.append(items[4])
     k=k+1
 
@@ -36,15 +38,17 @@ for s in file:
 f_rs = open(roadSegmentInput, "r")
 for line in f_rs:
     items=line.rstrip().split(',')
-    plt.plot([float(items[1]), float(items[3])],[float(items[0]), float(items[2])],'-b',linewidth=0.1)
+    plt.plot([float(items[3]), float(items[5])],[float(items[2]), float(items[4])],'-b',linewidth=0.1)
 
 
 ###-----plot location of restaurants after mapping----###
 '''
 Same as above N.
 Manhattan = 4754
+LA = 3230
+Newark = 64
 '''
-N=4754
+N=64
 res_f=open(poiInput, "r")
 k=0
 lat_res=np.tile(0.0,N)

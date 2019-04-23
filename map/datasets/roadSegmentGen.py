@@ -11,8 +11,6 @@ Known issues:
     Some coordinates are only slighly innacurate, sometimes stopping
     short of a road's real-world end. Other coordinates are much worse,
     giving points completely off the road
-
-    Probably more.
 """
 
 import overpy
@@ -20,33 +18,31 @@ import csv
 import geopy.distance
 
 api = overpy.Overpass()
-ouputFile = './generated/roadSegmentsRoughParis.csv'
-city = 'Paris, France'
+ouputFile = './generated/roadSegmentsManhattan.csv'
 
 '''
-boundBoxAll:
-    Some example bounding boxes (these are not exact since we are limited to
-    specifying a box while most cities are obviously not shaped that way):
-        City, State: (min lat, min long, max lat, max long)
+Some example bounding boxes (these are not exact since we are limited to
+specifying a box while most cities are obviously not shaped that way):
+    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)'
+    'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)'
+    'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',
+    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'
+    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)'
+    'Paris, France' : '(48.816066, 2.227627, 48.903228, 2.467784)'
 boundBox:
     bounding box used for computation.
 queryTags:
     which tags will be part of our result.
 '''
-boundBoxAll = {\
-    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',\
-    'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
-    'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
-    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)',\
-    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)',\
-    'Paris, France' : '(48.816066, 2.227627, 48.903228, 2.467784)'\
-    }
-boundBox = boundBoxAll[city]
-queryTags = "'primary|secondary|residential|tertiary'"
+boundBox = '(40.700943, -74.008633, 40.879111, -73.910761)'
+# List if all map features:
+#   https://wiki.openstreetmap.org/wiki/Map_Features
+queryKeys = 'highway'
+queryValues = "primary|secondary|residential|tertiary"
 
 #API Call
 #Fetch all ways and nodes within a bounding box and store in 'result'.
-result = api.query("way{} ['highway'~{}];(._;>;);out body;".format(boundBox, queryTags))
+result = api.query("way{} ['{}'~'{}'];(._;>;);out body;".format(boundBox, queryKeys, queryValues))
 
 '''
 Getting information from result
@@ -67,7 +63,7 @@ def latLongDistance(lat1, lon1, lat2, lon2):
 '''
 Input: an array of way nodes
 Returns a tuple of the two nodes who have the maximum distance
-between each other.
+between each other and the distance.
 '''
 def maxBetweenNodes(wayNodeArray):
     max = 0
@@ -84,20 +80,22 @@ def maxBetweenNodes(wayNodeArray):
                 max = distance
                 nodeX = wayNodeArray[i]
                 nodeY = wayNodeArray[j]
-    return (nodeX, nodeY)
+    return (nodeX, nodeY, max)
 
 '''
 Write to CSV in form:
-    start lat, start long, end lat, end long
+    startid, endid, start lat, start long, end lat, end long, distance
 '''
 with open(ouputFile,'wb') as file:
     for nodeArray in wayNodes:
         # the 2 nodes of maximum distance
         # should accurately represent most road's
         # start and end points.
-        # I think.
         tup = maxBetweenNodes(nodeArray)
+        file.write(str(tup[0].id)+ ',') # start id
+        file.write(str(tup[1].id)+ ',') # end id
         file.write(str(tup[0].lat)+ ',') # start lat
         file.write(str(tup[0].lon) + ',') # start long
         file.write(str(tup[1].lat) + ',') # end lat
-        file.write(str(tup[1].lon) + '\n') #  end long
+        file.write(str(tup[1].lon) + ',') #  end long
+        file.write(str(tup[2]) + '\n') # distance

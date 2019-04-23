@@ -2,13 +2,6 @@
 This file attempts to find all intersections within a given
 bounding box (min lat, min long, max lat, max long) and write them
 to a CSV
-
-Some known issues:
-    - Points written to the CSV with certain tags (like 'service' or 'footway')
-    seem to be noise and don't represent an intersection. These should probably
-    be filtered out.
-
-    - Probably more.
 """
 
 import overpy
@@ -16,14 +9,17 @@ import collections
 import csv
 
 api = overpy.Overpass()
-ouputFile = './generated/intersectionsParis.csv'
-city = 'Paris, France'
+ouputFile = './generated/intersectionsManhattan.csv'
 
 '''
-boundBoxAll:
-    Some example bounding boxes (these are not exact since we are limited to
-    specifying a box while most cities are obviously not shaped that way):
-        City, State: (min lat, min long, max lat, max long)
+Some example bounding boxes (these are not exact since we are limited to
+specifying a box while most cities are obviously not shaped that way):
+    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',
+    'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)'
+    'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)'
+    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)'
+    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)'
+    'Paris, France' : '(48.816066, 2.227627, 48.903228, 2.467784)'
 boundBox:
     bounding box used for computation.
 queryTags:
@@ -33,21 +29,16 @@ n_interesect:
     an intersection.
     ie 2 will return intersections of 2 or more roads.
 '''
-boundBoxAll = {\
-    'Newark, DE' : '(39.651363,-75.785638,39.700776,-75.723828)',\
-    'Los Angeles, CA' : '(33.702967, -118.669821, 34.338940, -118.152887)',\
-    'Tuscon, AZ' : '(32.003473, -111.059614, 32.320246,-110.736815)',\
-    'Philadelphia, PA' : '(39.872422, -75.263458, 40.137522, -74.955755)',\
-    'Manhattan, New York, NY' : '(40.700943, -74.008633, 40.879111, -73.910761)',\
-    'Paris, France' : '(48.816066, 2.227627, 48.903228, 2.467784)'\
-    }
-boundBox = boundBoxAll[city]
-queryTags = "'primary|secondary|residential|tertiary'"
+boundBox = '(40.700943, -74.008633, 40.879111, -73.910761)'
+# List if all map features:
+#   https://wiki.openstreetmap.org/wiki/Map_Features
+queryKeys = 'highway'
+queryValues = "primary|secondary|residential|tertiary"
 n_interesect = 2
 
 #API Call
 #Fetch all ways and nodes within a bounding box and store in 'result'.
-result = api.query("way{} ['highway'~{}];(._;>;);out body;".format(boundBox, queryTags))
+result = api.query("way{} ['{}'~'{}'];(._;>;);out body;".format(boundBox, queryKeys, queryValues))
 
 '''
 Getting information from result
@@ -80,13 +71,14 @@ duplicateIDs =\
 
 '''
 Write to CSV in form:
-    nodeID, tag, latitude, longitude
+    name, latitude, longitude, type, id
 '''
 with open(ouputFile,'wb') as file:
     # each id left in duplicateIDs will be an intersection
     for id in duplicateIDs:
         file.write(nodeInfo[id][0].encode('utf-8') + ',')
-        file.write(nodeInfo[id][1].encode('utf-8') + ',')
         file.write(str(nodeInfo[id][2]) + ',')
-        file.write(str(nodeInfo[id][3]))
+        file.write(str(nodeInfo[id][3]) + ',')
+        file.write(nodeInfo[id][1].encode('utf-8') + ',')
+        file.write(str(id) + ',')
         file.write('\n')
