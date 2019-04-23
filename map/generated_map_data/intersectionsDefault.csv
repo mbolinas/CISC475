@@ -1,0 +1,2678 @@
+name,latitude,longitude,type,node_id
+100th St & 1st Ave,40.7858117,-73.9428526,intersection,1
+100th St & 2nd Ave,40.7868424,-73.9452772,intersection,2
+100th St & 3rd Ave,40.7877698,-73.9474512,intersection,3
+100th St & Lexington Ave,40.7884355,-73.9490578,intersection,4
+100th St & Park Ave,40.78906,-73.9505229,intersection,5
+100th St & Central Park W,40.7942047,-73.962847,intersection,6
+100th St & Manhattan Ave,40.7948073,-73.9643048,intersection,7
+100th St & Columbus Ave,40.7954774,-73.965616,intersection,8
+100th St & Amsterdam Ave,40.7966173,-73.9684943,intersection,9
+100th St & Broadway,40.7971787,-73.9698353,intersection,10
+100th St & W End Ave,40.7978231,-73.9713496,intersection,11
+100th St & Riverside Dr,40.7985788,-73.9731805,intersection,12
+101st St & Riverside Dr,40.7991571,-73.9725437,intersection,13
+101st St & W End Ave,40.7984533,-73.9709053,intersection,14
+101st St & Broadway,40.7978037,-73.9693734,intersection,15
+101st St & Amsterdam Ave,40.79725,-73.968038,intersection,16
+101st St & Manhattan Ave,40.795463,-73.963805,intersection,17
+101st St & Central Park W,40.7948582,-73.9623756,intersection,18
+101st St & 5th Ave,40.7911007,-73.953428,intersection,19
+101st St & Madison Ave,40.7904206,-73.951817,intersection,20
+101st St & Park Ave,40.7896935,-73.9500702,intersection,21
+101st St & Lexington Ave,40.789062,-73.9486058,intersection,22
+101st St & 3rd Ave,40.788383,-73.947002,intersection,23
+101st St & 2nd Ave,40.7874861,-73.9447971,intersection,24
+101st St & 1st Ave,40.7864371,-73.9423906,intersection,25
+102nd St & Riverside Dr,40.7997263,-73.9719248,intersection,26
+102nd St & W End Ave,40.7990839,-73.97044,intersection,27
+102nd St & Broadway,40.7985097,-73.969085,intersection,28
+102nd St & Amsterdam Ave,40.79787,-73.967575,intersection,29
+102nd St & Manhattan Ave,40.79609,-73.96335,intersection,30
+102nd St & Central Park W,40.7954826,-73.9619149,intersection,31
+102nd St & 5th Ave,40.7917268,-73.9529824,intersection,32
+102nd St & Madison Ave,40.7910489,-73.9513629,intersection,33
+102nd St & Park Ave,40.7904253,-73.9498803,intersection,34
+102nd St & Lexington Ave,40.7896851,-73.9481469,intersection,35
+102nd St & 3rd Ave,40.7890143,-73.9465351,intersection,36
+102nd St & 2nd Ave,40.7880822,-73.9443263,intersection,37
+102nd St & 1st Ave,40.7870698,-73.9419167,intersection,38
+103rd St & Riverside Dr,40.80035,-73.971464,intersection,39
+103rd St & W End Ave,40.7997184,-73.9699692,intersection,40
+103rd St & Broadway,40.7991492,-73.9686393,intersection,41
+103rd St & Amsterdam Ave,40.798503,-73.96712,intersection,42
+103rd St & Manhattan Ave,40.7967134,-73.962896,intersection,43
+103rd St & Central Park W,40.7961234,-73.9614497,intersection,44
+103rd St & 5th Ave,40.7923537,-73.9525276,intersection,45
+103rd St & Madison Ave,40.7916796,-73.950913,intersection,46
+103rd St & Park Ave,40.7910497,-73.9494321,intersection,47
+103rd St & Lexington Ave,40.790325,-73.9476999,intersection,48
+103rd St & 3rd Ave,40.7896389,-73.9460753,intersection,49
+103rd St & 2nd Ave,40.7887087,-73.943873,intersection,50
+103rd St & 1st Ave,40.787697,-73.9414658,intersection,51
+104th St & 1st Ave,40.7883313,-73.9410125,intersection,52
+104th St & 2nd Ave,40.7893321,-73.943401,intersection,53
+104th St & 3rd Ave,40.7902606,-73.9456201,intersection,54
+104th St & Lexington Ave,40.7909485,-73.9472379,intersection,55
+104th St & Park Ave,40.7915628,-73.9486997,intersection,56
+104th St & Madison Ave,40.7923012,-73.9504537,intersection,57
+104th St & 5th Ave,40.792984,-73.9520549,intersection,58
+104th St & Central Park W,40.7967545,-73.9609914,intersection,59
+104th St & Manhattan Ave,40.7973493,-73.9624345,intersection,60
+104th St & Columbus Ave,40.797918,-73.9638424,intersection,61
+104th St & Amsterdam Ave,40.799139,-73.9666512,intersection,62
+104th St & Broadway,40.7998259,-73.9682961,intersection,63
+104th St & W End Ave,40.80033,-73.969505,intersection,64
+104th St & Riverside Dr,40.8009732,-73.9710197,intersection,65
+105th St & Riverside Dr,40.8016022,-73.9705556,intersection,66
+105th St & W End Ave,40.800957,-73.969046,intersection,67
+105th St & Broadway,40.8005745,-73.9680948,intersection,68
+105th St & Amsterdam Ave,40.7997833,-73.9661952,intersection,69
+105th St & Columbus Ave,40.798564,-73.963361,intersection,70
+105th St & Manhattan Ave,40.797988,-73.961981,intersection,71
+105th St & Central Park W,40.7973741,-73.960536,intersection,72
+105th St & 5th Ave,40.7936129,-73.9515972,intersection,73
+105th St & Madison Ave,40.792932,-73.9500043,intersection,74
+105th St & Park Ave,40.7921927,-73.9482575,intersection,75
+105th St & Lexington Ave,40.7915761,-73.9467842,intersection,76
+105th St & 3rd Ave,40.790896,-73.9451536,intersection,77
+105th St & 2nd Ave,40.7899606,-73.9429477,intersection,78
+105th St & 1st Ave,40.788955,-73.9405603,intersection,79
+106th St & 1st Ave,40.7896311,-73.94006,intersection,80
+106th St & 2nd Ave,40.7906348,-73.9424475,intersection,81
+106th St & 3rd Ave,40.7915751,-73.9446725,intersection,82
+106th St & Lexington Ave,40.7922522,-73.9462817,intersection,83
+106th St & Park Ave,40.7929857,-73.9480087,intersection,84
+106th St & Madison Ave,40.7936179,-73.9494987,intersection,85
+106th St & 5th Ave,40.7942847,-73.951114,intersection,86
+106th St & Central Park W,40.7980416,-73.9600487,intersection,87
+106th St & Manhattan Ave,40.798654,-73.961478,intersection,88
+106th St & Columbus Ave,40.7992792,-73.9628399,intersection,89
+106th St & Amsterdam Ave,40.800418,-73.9657329,intersection,90
+106th St & Broadway,40.8014215,-73.9680053,intersection,91
+106th St & W End Ave,40.8016539,-73.9685727,intersection,92
+106th St & Riverside Dr,40.8022762,-73.9700606,intersection,93
+107th St & Riverside Dr,40.8029671,-73.9695609,intersection,94
+107th St & W End Ave,40.8023473,-73.9681119,intersection,95
+107th St & Broadway,40.8022479,-73.9679109,intersection,96
+107th St & Amsterdam Ave,40.8011146,-73.9652554,intersection,97
+107th St & Columbus Ave,40.799915,-73.962377,intersection,98
+107th St & Manhattan Ave,40.799329,-73.960983,intersection,99
+107th St & Central Park W,40.7987267,-73.9595458,intersection,100
+107th St & 5th Ave,40.7949648,-73.9506188,intersection,101
+107th St & Madison Ave,40.7942941,-73.9490104,intersection,102
+107th St & Park Ave,40.7935453,-73.9472701,intersection,103
+107th St & Lexington Ave,40.7929264,-73.9457949,intersection,104
+107th St & 3rd Ave,40.7922478,-73.9441767,intersection,105
+107th St & 2nd Ave,40.7912264,-73.9419969,intersection,106
+107th St & 1st Ave,40.7902458,-73.9396193,intersection,107
+108th St & Riverside Dr,40.8036639,-73.9692865,intersection,108
+108th St & Broadway,40.8029062,-73.9675033,intersection,109
+108th St & Amsterdam Ave,40.8017602,-73.9647958,intersection,110
+108th St & Columbus Ave,40.800543,-73.961917,intersection,111
+108th St & Manhattan Ave,40.799958,-73.960527,intersection,112
+108th St & Central Park W,40.7993626,-73.9590845,intersection,113
+108th St & 5th Ave,40.7955926,-73.9501655,intersection,114
+108th St & Madison Ave,40.7949131,-73.9485484,intersection,115
+108th St & Park Ave,40.7942885,-73.947083,intersection,116
+108th St & Lexington Ave,40.793561,-73.9453308,intersection,117
+108th St & 3rd Ave,40.7928802,-73.9437163,intersection,118
+108th St & 2nd Ave,40.791908,-73.941503,intersection,119
+108th St & 1st Ave,40.7909156,-73.9391332,intersection,120
+109th St & 1st Ave,40.7915693,-73.9386598,intersection,121
+109th St & 2nd Ave,40.7925611,-73.9410399,intersection,122
+109th St & 3rd Ave,40.7935029,-73.9432556,intersection,123
+109th St & Lexington Ave,40.7941884,-73.9448749,intersection,124
+109th St & Park Ave,40.7948078,-73.9463594,intersection,125
+109th St & Madison Ave,40.795543,-73.9480854,intersection,126
+109th St & 5th Ave,40.7962261,-73.9497122,intersection,127
+109th St & Central Park W,40.7999625,-73.9585771,intersection,128
+109th St & Manhattan Ave,40.800586,-73.9600704,intersection,129
+109th St & Columbus Ave,40.801172,-73.961458,intersection,130
+109th St & Amsterdam Ave,40.8023751,-73.9643089,intersection,131
+109th St & Broadway,40.8035387,-73.9670752,intersection,132
+109th St & Riverside Dr,40.8042197,-73.9686798,intersection,133
+10th Ave & Gansevoort St,40.7393384,-74.0096744,intersection,134
+10th Ave & Little W 12th St,40.7407124,-74.0089519,intersection,135
+10th Ave & 13th St,40.7414418,-74.0087084,intersection,136
+10th Ave & 14th St,40.7423236,-74.008434,intersection,137
+10th Ave & 15th St,40.7428202,-74.0077185,intersection,138
+10th Ave & 16th St,40.7434745,-74.0072347,intersection,139
+10th Ave & 17th St,40.744061,-74.006811,intersection,140
+10th Ave & 18th St,40.7446557,-74.0063795,intersection,141
+10th Ave & 19th St,40.7452343,-74.0059515,intersection,142
+10th Ave & 20th St,40.7458183,-74.0055317,intersection,143
+10th Ave & 21st St,40.7464045,-74.0051253,intersection,144
+10th Ave & 22nd St,40.7470178,-74.0046633,intersection,145
+10th Ave & 23rd St,40.7476959,-74.0041718,intersection,146
+10th Ave & 24th St,40.7483593,-74.0036876,intersection,147
+10th Ave & 25th St,40.7489821,-74.0032397,intersection,148
+10th Ave & 26th St,40.7496009,-74.0027918,intersection,149
+10th Ave & 27th St,40.7502166,-74.0023398,intersection,150
+10th Ave & 28th St,40.7508373,-74.0018852,intersection,151
+10th Ave & 29th St,40.7514581,-74.0014386,intersection,152
+10th Ave & 30th St,40.7520595,-74.0010296,intersection,153
+10th Ave & 31st St,40.7527126,-74.0005291,intersection,154
+10th Ave & 33rd St,40.7539128,-73.999628,intersection,155
+10th Ave & 34th St,40.7545893,-73.9991464,intersection,156
+10th Ave & 35th St,40.7552526,-73.9986612,intersection,157
+10th Ave & 36th St,40.7558708,-73.99821,intersection,158
+10th Ave & 37th St,40.7564992,-73.9977536,intersection,159
+10th Ave & 38th St,40.7571057,-73.9973121,intersection,160
+10th Ave & 39th St,40.7577372,-73.996854,intersection,161
+10th Ave & 40th St,40.7583191,-73.9964072,intersection,162
+10th Ave & 41st St,40.758968,-73.9959404,intersection,163
+10th Ave & 42nd St,40.7596529,-73.9954615,intersection,164
+10th Ave & 43rd St,40.7603075,-73.9949797,intersection,165
+10th Ave & 44th St,40.7609256,-73.9945242,intersection,166
+10th Ave & 45th St,40.7615582,-73.9940582,intersection,167
+10th Ave & 46th St,40.7621935,-73.9936126,intersection,168
+10th Ave & 47th St,40.7628049,-73.9931644,intersection,169
+10th Ave & 48th St,40.7634329,-73.9927025,intersection,170
+10th Ave & 49th St,40.7640484,-73.9922389,intersection,171
+10th Ave & 50th St,40.764684,-73.9917896,intersection,172
+10th Ave & 51st St,40.7653017,-73.9913397,intersection,173
+10th Ave & 52nd St,40.765938,-73.9908832,intersection,174
+10th Ave & 53rd St,40.7665562,-73.9904231,intersection,175
+10th Ave & 54th St,40.7671971,-73.9899745,intersection,176
+10th Ave & 55th St,40.7678147,-73.9895063,intersection,177
+10th Ave & 56th St,40.7684554,-73.9890628,intersection,178
+10th Ave & 57th St,40.7691193,-73.9885587,intersection,179
+10th Ave & 58th St,40.7697954,-73.9880605,intersection,180
+10th Ave & 59th St,40.7704169,-73.9876057,intersection,181
+10th St & Ave D,40.7248876,-73.975165,intersection,182
+10th St & Ave C,40.7258816,-73.9775455,intersection,183
+10th St & Ave B,40.7268695,-73.9799113,intersection,184
+10th St & Ave A,40.7278523,-73.9822353,intersection,185
+10th St & 1st Ave,40.7287833,-73.9844341,intersection,186
+10th St & 2nd Ave,40.7297745,-73.9868067,intersection,187
+10th St & 3rd Ave,40.7307173,-73.989061,intersection,188
+10th St & 4th Ave,40.7312538,-73.9903946,intersection,189
+10th St & Broadway,40.7317192,-73.9914682,intersection,190
+10th St & University Pl,40.7327268,-73.993823,intersection,191
+10th St & 5th Ave,40.733438,-73.9955166,intersection,192
+10th St & 6th Ave,40.7347913,-73.9987169,intersection,193
+10th St & Greenwich Ave,40.7346785,-73.9999956,intersection,194
+10th St & Waverly Pl,40.7344697,-74.0014134,intersection,195
+10th St & 7th Ave,40.7343413,-74.0024018,intersection,196
+10th St & West 4th St,40.7342565,-74.0029503,intersection,197
+10th St & Bleecker St,40.7340088,-74.0045602,intersection,198
+10th St & Hudson St,40.7337446,-74.0063173,intersection,199
+10th St & Greenwich St,40.7335945,-74.0073494,intersection,200
+10th St & Washington St,40.7334106,-74.0085607,intersection,201
+10th St & West St,40.7331693,-74.0101531,intersection,202
+110th St & Duke Ellington Circle,40.7970751,-73.9496944,intersection,203
+110th St & Malcolm X Blvd,40.7982708,-73.9525251,intersection,204
+110th St & Adam Clayton Powell Jr Blvd,40.7994048,-73.9552148,intersection,205
+110th St & Manhattan Ave,40.801218,-73.9596149,intersection,206
+110th St & Morningside Dr,40.8018403,-73.9610673,intersection,207
+110th St & Columbus Ave,40.8017352,-73.9610869,intersection,208
+110th St & Amsterdam Ave,40.8029928,-73.9638507,intersection,209
+110th St & Broadway,40.8041424,-73.9666121,intersection,210
+110th St & Riverside Dr,40.8057506,-73.9681626,intersection,211
+111th St & Riverside Dr,40.8054722,-73.9677045,intersection,212
+111th St & Broadway,40.8047906,-73.9661347,intersection,213
+111th St & Amsterdam Ave,40.803628,-73.963384,intersection,214
+111th St & Manhattan Ave,40.801851,-73.9591363,intersection,215
+111th St & Frederick Douglass Blvd,40.801232,-73.957696,intersection,216
+111th St & Adam Clayton Powell Jr Blvd,40.8000756,-73.9549362,intersection,217
+111th St & St Nicholas Ave,40.799012,-73.9524199,intersection,218
+111th St & Malcolm X Blvd,40.7988688,-73.9520833,intersection,219
+111th St & 5th Ave,40.7974879,-73.9488126,intersection,220
+111th St & Madison Ave,40.7967978,-73.9471705,intersection,221
+111th St & Park Ave,40.796176,-73.9456917,intersection,222
+111th St & Lexington Ave,40.7954444,-73.9439562,intersection,223
+111th St & 3rd Ave,40.7947683,-73.9423486,intersection,224
+111th St & 2nd Ave,40.7938108,-73.9401095,intersection,225
+111th St & 1st Ave,40.7928208,-73.9377337,intersection,226
+112th St & 1st Ave,40.7934543,-73.9372674,intersection,227
+112th St & 2nd Ave,40.7944559,-73.939631,intersection,228
+112th St & 3rd Ave,40.7954061,-73.9418826,intersection,229
+112th St & Lexington Ave,40.7960819,-73.9434908,intersection,230
+112th St & Park Ave,40.7966998,-73.9449638,intersection,231
+112th St & Madison Ave,40.7974551,-73.9467053,intersection,232
+112th St & 5th Ave,40.798124,-73.9483355,intersection,233
+112th St & Malcolm X Blvd,40.7995081,-73.9516261,intersection,234
+112th St & St Nicholas Ave,40.7998576,-73.9524682,intersection,235
+112th St & Adam Clayton Powell Jr Blvd,40.8006989,-73.9544742,intersection,236
+112th St & Frederick Douglass Blvd,40.8018685,-73.9572374,intersection,237
+112th St & Manhattan Ave,40.802479,-73.9586849,intersection,238
+112th St & Amsterdam Ave,40.8042561,-73.962934,intersection,239
+112th St & Broadway,40.8054952,-73.9658743,intersection,240
+112th St & Riverside Dr,40.806149,-73.9674132,intersection,241
+113th St & Riverside Dr,40.8068651,-73.9671548,intersection,242
+113th St & Broadway,40.8060553,-73.9652163,intersection,243
+113th St & Amsterdam Ave,40.8049062,-73.962493,intersection,244
+113th St & Morningside Dr,40.8039883,-73.9603231,intersection,245
+113th St & Morningside Ave,40.8031131,-73.9582361,intersection,246
+113th St & Manhattan Ave,40.8031131,-73.9582361,intersection,246
+113th St & Frederick Douglass Blvd,40.8025023,-73.9567704,intersection,247
+113th St & Adam Clayton Powell Jr Blvd,40.8012773,-73.9538542,intersection,248
+113th St & St Nicholas Ave,40.8006942,-73.9525165,intersection,249
+113th St & Malcolm X Blvd,40.8000798,-73.9510414,intersection,250
+113th St & 3rd Ave,40.796093,-73.9413779,intersection,251
+113th St & 2nd Ave,40.7950815,-73.939189,intersection,252
+114th St & Pleasant Ave,40.7939332,-73.9339556,intersection,253
+114th St & 1st Ave,40.7947066,-73.9363463,intersection,254
+114th St & 5th Ave,40.79935,-73.9474324,intersection,255
+114th St & Malcolm X Blvd,40.8007472,-73.9506981,intersection,256
+114th St & St Nicholas Ave,40.8015337,-73.9525661,intersection,257
+114th St & Adam Clayton Powell Jr Blvd,40.801891,-73.9534084,intersection,258
+114th St & Frederick Douglass Blvd,40.803132,-73.9563204,intersection,259
+114th St & Manhattan Ave,40.8037381,-73.9577813,intersection,260
+114th St & Morningside Ave,40.8039156,-73.9582095,intersection,261
+114th St & Morningside Dr,40.8046955,-73.9600811,intersection,262
+114th St & Amsterdam Ave,40.8055136,-73.9620091,intersection,263
+114th St & Broadway,40.8067454,-73.9649594,intersection,264
+114th St & Riverside Dr,40.8075929,-73.966976,intersection,265
+115th St & Pleasant Ave,40.7943726,-73.9336269,intersection,266
+115th St & 1st Ave,40.795314,-73.935921,intersection,267
+115th St & 2nd Ave,40.796313,-73.9382718,intersection,268
+115th St & 3rd Ave,40.7972632,-73.940519,intersection,269
+115th St & Lexington Ave,40.7979515,-73.9421271,intersection,270
+115th St & Park Ave,40.7986782,-73.943884,intersection,271
+115th St & Madison Ave,40.7992933,-73.945362,intersection,272
+115th St & 5th Ave,40.7999675,-73.9469788,intersection,273
+115th St & Malcolm X Blvd,40.801325,-73.9501256,intersection,274
+115th St & St Nicholas Ave,40.8023804,-73.9525956,intersection,275
+115th St & Adam Clayton Powell Jr Blvd,40.8025818,-73.9530862,intersection,276
+115th St & Frederick Douglass Blvd,40.8037554,-73.9558554,intersection,277
+115th St & Manhattan Ave,40.8043677,-73.957315,intersection,278
+115th St & Morningside Ave,40.8047488,-73.9582359,intersection,279
+115th St & Morningside Dr,40.8054244,-73.9598482,intersection,280
+115th St & Amsterdam Ave,40.8061386,-73.9615543,intersection,281
+115th St & Broadway,40.8073107,-73.9643036,intersection,282
+115th St & Riverside Dr,40.8082272,-73.9664942,intersection,283
+116th St & Riverside Dr,40.8088229,-73.9659189,intersection,284
+116th St & Broadway,40.8080586,-73.9640084,intersection,285
+116th St & Amsterdam Ave,40.8068229,-73.9610532,intersection,286
+116th St & Morningside Ave,40.805621,-73.9582092,intersection,287
+116th St & Morningside Dr,40.806108,-73.959364,intersection,288
+116th St & Manhattan Ave,40.8050482,-73.956822,intersection,289
+116th St & Frederick Douglass Blvd,40.8044344,-73.9553616,intersection,290
+116th St & St Nicholas Ave,40.8033509,-73.9528155,intersection,291
+116th St & Adam Clayton Powell Jr Blvd,40.8032626,-73.9525981,intersection,292
+116th St & Malcolm X Blvd,40.8020097,-73.949623,intersection,293
+116th St & 5th Ave,40.8006668,-73.946464,intersection,294
+116th St & Madison Ave,40.7999961,-73.9448528,intersection,295
+116th St & Park Ave,40.7993621,-73.9433762,intersection,296
+116th St & Lexington Ave,40.7986353,-73.941628,intersection,297
+116th St & 3rd Ave,40.7979563,-73.9400123,intersection,298
+116th St & 2nd Ave,40.7970097,-73.9377731,intersection,299
+116th St & 1st Ave,40.796004,-73.935408,intersection,300
+116th St & Pleasant Ave,40.7950596,-73.9331657,intersection,301
+117th St & Pleasant Ave,40.7957325,-73.9326694,intersection,302
+117th St & 1st Ave,40.796682,-73.934925,intersection,303
+117th St & 2nd Ave,40.7976802,-73.9372895,intersection,304
+117th St & 3rd Ave,40.798629,-73.939522,intersection,305
+117th St & Lexington Ave,40.7993064,-73.9411345,intersection,306
+117th St & Park Ave,40.8000373,-73.9428807,intersection,307
+117th St & Madison Ave,40.8006545,-73.9443561,intersection,308
+117th St & 5th Ave,40.8013442,-73.9459687,intersection,309
+117th St & Malcolm X Blvd,40.8026773,-73.9491162,intersection,310
+117th St & Adam Clayton Powell Jr Blvd,40.8038725,-73.9519366,intersection,311
+117th St & St Nicholas Ave,40.8042026,-73.9527445,intersection,312
+117th St & Frederick Douglass Blvd,40.8051052,-73.954868,intersection,313
+117th St & Manhattan Ave,40.8057168,-73.956318,intersection,314
+117th St & Morningside Ave,40.8063054,-73.9577164,intersection,315
+118th St & Amsterdam Ave,40.80812,-73.960106,intersection,316
+118th St & Morningside Ave,40.806928,-73.9572581,intersection,317
+118th St & Morningside Dr,40.8074136,-73.9584147,intersection,318
+118th St & Manhattan Ave,40.8063489,-73.955864,intersection,319
+118th St & Frederick Douglass Blvd,40.8057394,-73.9544112,intersection,320
+118th St & St Nicholas Ave,40.805037,-73.9527766,intersection,321
+118th St & Adam Clayton Powell Jr Blvd,40.804585,-73.9516748,intersection,322
+118th St & Malcolm X Blvd,40.8033696,-73.9488052,intersection,323
+118th St & 5th Ave,40.8019767,-73.9455153,intersection,324
+118th St & Madison Ave,40.8012913,-73.9438948,intersection,325
+118th St & Park Ave,40.8005629,-73.942149,intersection,326
+118th St & Lexington Ave,40.7999429,-73.9406718,intersection,327
+118th St & 3rd Ave,40.799253,-73.939062,intersection,328
+118th St & 2nd Ave,40.798309,-73.9368207,intersection,329
+118th St & 1st Ave,40.79731,-73.934456,intersection,330
+118th St & Pleasant Ave,40.7963672,-73.9322081,intersection,331
+119th St & Pleasant Ave,40.7969908,-73.9317587,intersection,332
+119th St & 1st Ave,40.7979325,-73.9339971,intersection,333
+119th St & 2nd Ave,40.7989456,-73.9363718,intersection,334
+119th St & 3rd Ave,40.7998881,-73.9386081,intersection,335
+119th St & Lexington Ave,40.800565,-73.9402142,intersection,336
+119th St & Park Ave,40.8011835,-73.9416883,intersection,337
+119th St & Madison Ave,40.801923,-73.9434338,intersection,338
+119th St & 5th Ave,40.8026046,-73.9450496,intersection,339
+119th St & Malcolm X Blvd,40.8039288,-73.9481986,intersection,340
+119th St & Adam Clayton Powell Jr Blvd,40.80521,-73.9512034,intersection,341
+119th St & St Nicholas Ave,40.8058796,-73.9528142,intersection,342
+119th St & Frederick Douglass Blvd,40.806353,-73.953957,intersection,343
+119th St & Manhattan Ave,40.806966,-73.955411,intersection,344
+119th St & Morningside Ave,40.807546,-73.956806,intersection,345
+119th St & Morningside Dr,40.8080364,-73.9579511,intersection,346
+119th St & Amsterdam Ave,40.8087566,-73.9596542,intersection,347
+11th Ave & 16th St,40.7440351,-74.0085773,intersection,348
+11th Ave & 17th St,40.7447302,-74.0084554,intersection,349
+11th Ave & 18th St,40.745538,-74.0083003,intersection,350
+11th Ave & 19th St,40.7460955,-74.0079944,intersection,351
+11th Ave & 20th St,40.7468022,-74.0078626,intersection,352
+11th Ave & 21st St,40.7475035,-74.0077332,intersection,353
+11th Ave & 12th Ave,40.7478483,-74.0078746,intersection,354
+11th Ave & 22nd St,40.7481803,-74.0074286,intersection,355
+11th Ave & 23rd St,40.7489167,-74.0070798,intersection,356
+11th Ave & 24th St,40.749546,-74.0066086,intersection,357
+11th Ave & 25th St,40.750183,-74.0060963,intersection,358
+11th Ave & 26th St,40.7507957,-74.0056282,intersection,359
+11th Ave & 27th St,40.7514154,-74.0051723,intersection,360
+11th Ave & 28th St,40.7520323,-74.0047257,intersection,361
+11th Ave & 29th St,40.7526522,-74.004272,intersection,362
+11th Ave & 30th St,40.7532776,-74.0038583,intersection,363
+11th Ave & 33rd St,40.7551224,-74.0024595,intersection,364
+11th Ave & 34th St,40.7557842,-74.00197,intersection,365
+11th Ave & 35th St,40.7564474,-74.0015035,intersection,366
+11th Ave & 36th St,40.7570613,-74.0010527,intersection,367
+11th Ave & 37th St,40.7576845,-74.0005977,intersection,368
+11th Ave & 38th St,40.7583115,-74.0001428,intersection,369
+11th Ave & 39th St,40.7589141,-73.9996907,intersection,370
+11th Ave & 40th St,40.7595325,-73.999242,intersection,371
+11th Ave & 41st St,40.7601566,-73.9987993,intersection,372
+11th Ave & 42nd St,40.7608399,-73.99832,intersection,373
+11th Ave & 43rd St,40.7615124,-73.9978323,intersection,374
+11th Ave & 44th St,40.7621338,-73.9973885,intersection,375
+11th Ave & 45th St,40.7627566,-73.9969327,intersection,376
+11th Ave & 46th St,40.7633792,-73.9964636,intersection,377
+11th Ave & 47th St,40.7640121,-73.9960221,intersection,378
+11th Ave & 48th St,40.7646292,-73.9955502,intersection,379
+11th Ave & 49th St,40.7652578,-73.9950906,intersection,380
+11th Ave & 50th St,40.7658743,-73.9946438,intersection,381
+11th Ave & 51st St,40.7665029,-73.9941644,intersection,382
+11th Ave & 52nd St,40.7671242,-73.9937185,intersection,383
+11th Ave & 53rd St,40.7677526,-73.9932741,intersection,384
+11th Ave & 54th St,40.7683877,-73.9928199,intersection,385
+11th Ave & 55th St,40.7690347,-73.9923529,intersection,386
+11th Ave & 56th St,40.7696336,-73.9919008,intersection,387
+11th Ave & 57th St,40.770312,-73.9913902,intersection,388
+11th Ave & 58th St,40.770987,-73.9909029,intersection,389
+11th Ave & 59th St,40.7716232,-73.9904523,intersection,390
+11th St & Ave D,40.7254842,-73.9747372,intersection,391
+11th St & Ave C,40.7264742,-73.9770989,intersection,392
+11th St & Ave B,40.7274569,-73.9794553,intersection,393
+11th St & Ave A,40.7284375,-73.9817863,intersection,394
+11th St & 1st Ave,40.7293824,-73.9840037,intersection,395
+11th St & 2nd Ave,40.730379,-73.9863665,intersection,396
+11th St & 3rd Ave,40.7313232,-73.9886177,intersection,397
+11th St & 4th Ave,40.7319651,-73.9902178,intersection,398
+11th St & Broadway,40.7324459,-73.991281,intersection,399
+11th St & University Pl,40.7333051,-73.9933255,intersection,400
+11th St & 5th Ave,40.7340256,-73.9950724,intersection,401
+11th St & 6th Ave,40.735378,-73.9982757,intersection,402
+11th St & 7th Ave,40.7365205,-74.0011675,intersection,403
+11th St & Waverly Pl,40.7364072,-74.0019554,intersection,404
+11th St & West 4th St,40.736204,-74.0035456,intersection,405
+11th St & Bleecker St,40.7359572,-74.0051449,intersection,406
+11th St & Hudson St,40.7358455,-74.0059666,intersection,407
+11th St & Greenwich St,40.7357242,-74.0068164,intersection,408
+11th St & Washington St,40.7355176,-74.0083528,intersection,409
+11th St & West St,40.7353057,-74.0099765,intersection,410
+120th St & Riverside Dr,40.81133,-73.9639724,intersection,411
+120th St & Broadway,40.8105017,-73.9619668,intersection,412
+120th St & Amsterdam Ave,40.8093447,-73.9592323,intersection,413
+120th St & Morningside Dr,40.8086719,-73.9576189,intersection,414
+120th St & Morningside Ave,40.8081908,-73.9563369,intersection,415
+120th St & Manhattan Ave,40.8076104,-73.954949,intersection,416
+120th St & Frederick Douglass Blvd,40.8069984,-73.9535,intersection,417
+120th St & St Nicholas Ave,40.806713,-73.9528692,intersection,418
+120th St & Adam Clayton Powell Jr Blvd,40.8057514,-73.9505811,intersection,419
+120th St & Malcolm X Blvd,40.8046136,-73.9478841,intersection,420
+120th St & Mt Morris Park W,40.803896,-73.9461977,intersection,421
+120th St & 5th Ave,40.8032362,-73.9446283,intersection,422
+120th St & Madison Ave,40.802546,-73.9430016,intersection,423
+120th St & Park Ave,40.8019214,-73.9414992,intersection,424
+120th St & Lexington Ave,40.8011855,-73.9397639,intersection,425
+120th St & 3rd Ave,40.8005138,-73.9381432,intersection,426
+120th St & 2nd Ave,40.7994889,-73.9357142,intersection,427
+120th St & 1st Ave,40.7985784,-73.9335398,intersection,428
+120th St & Pleasant Ave,40.797615,-73.9312465,intersection,429
+E 121st St & 2nd Ave,40.8002058,-73.9354563,intersection,430
+E 121st St & 3rd Ave,40.8011407,-73.9376837,intersection,431
+E 121st St & Lexington Ave,40.801816,-73.9393086,intersection,432
+E 121st St & Park Ave,40.8024409,-73.9407654,intersection,433
+E 121st St & Madison Ave,40.8031817,-73.9425401,intersection,434
+W 121st St & Mt Morris Park W,40.8045333,-73.945738,intersection,435
+W 121st St & Malcolm X Blvd,40.8051905,-73.9472791,intersection,436
+W 121st St & Adam Clayton Powell Jr Blvd,40.8064615,-73.9502992,intersection,437
+W 121st St & St Nicholas Ave,40.8075616,-73.9529161,intersection,438
+W 121st St & Frederick Douglass Blvd,40.8076175,-73.9530435,intersection,439
+W 121st St & Manhattan Ave,40.8082343,-73.954481,intersection,440
+W 121st St & Morningside Dr,40.8093962,-73.9572561,intersection,441
+W 121st St & Morningside Ave,40.8088271,-73.9558811,intersection,442
+W 121st St & Amsterdam Ave,40.8099825,-73.9587484,intersection,443
+W 121st St & Broadway,40.8111677,-73.9614732,intersection,444
+E 122nd St & 2nd Ave,40.800749,-73.9348072,intersection,445
+E 122nd St & 3rd Ave,40.8017693,-73.9372203,intersection,446
+E 122nd St & Lexington Ave,40.8024451,-73.938844,intersection,447
+E 122nd St & Park Ave,40.8030699,-73.9403078,intersection,448
+E 122nd St & Madison Ave,40.8038221,-73.9420729,intersection,449
+W 122nd St & Mt Morris Park W,40.8051647,-73.9452757,intersection,450
+W 122nd St & Malcolm X Blvd,40.8058146,-73.9468231,intersection,451
+W 122nd St & Adam Clayton Powell Jr Blvd,40.8070199,-73.9496581,intersection,452
+W 122nd St & Frederick Douglass Blvd,40.8082553,-73.9525667,intersection,453
+W 122nd St & St Nicholas Ave,40.8084209,-73.9529653,intersection,454
+W 122nd St & Manhattan Ave,40.808865,-73.954048,intersection,455
+W 122nd St & Morningside Ave,40.8094491,-73.9554212,intersection,456
+W 122nd St & Morningside Dr,40.8106307,-73.958276,intersection,457
+W 122nd St & Amsterdam Ave,40.8106307,-73.958276,intersection,457
+W 122nd St & Broadway,40.8118885,-73.9612369,intersection,458
+W 122nd St & Riverside Dr,40.8126328,-73.9630173,intersection,459
+E 123rd St & 2nd Ave,40.8013743,-73.9343418,intersection,460
+E 123rd St & 3rd Ave,40.8023937,-73.936767,intersection,461
+E 123rd St & Lexington Ave,40.8030768,-73.9383839,intersection,462
+E 123rd St & Park Ave,40.8038247,-73.9401292,intersection,463
+E 123rd St & Madison Ave,40.8044447,-73.9416173,intersection,464
+W 123rd St & Mt Morris Park W,40.8057848,-73.9448162,intersection,465
+W 123rd St & Malcolm X Blvd,40.8065093,-73.94651,intersection,466
+W 123rd St & Adam Clayton Powell Jr Blvd,40.8077161,-73.9493653,intersection,467
+W 123rd St & Frederick Douglass Blvd,40.8088725,-73.9521231,intersection,468
+W 123rd St & St Nicholas Ave,40.8092517,-73.95301,intersection,469
+W 123rd St & Manhattan Ave,40.8094893,-73.9535759,intersection,470
+W 123rd St & Morningside Ave,40.8100823,-73.9549741,intersection,471
+W 123rd St & Amsterdam Ave,40.8112618,-73.9578144,intersection,472
+W 123rd St & Broadway,40.812399,-73.9605048,intersection,473
+124th St & Morningside Ave,40.8107002,-73.954512,intersection,474
+124th St & Manhattan Ave,40.8100861,-73.9530422,intersection,475
+124th St & St Nicholas Ave,40.8100861,-73.9530422,intersection,475
+124th St & Frederick Douglass Blvd,40.80949,-73.951664,intersection,476
+124th St & Adam Clayton Powell Jr Blvd,40.8082644,-73.9487541,intersection,477
+124th St & Malcolm X Blvd,40.8070656,-73.9458978,intersection,478
+124th St & Mt Morris Park W,40.8064116,-73.9443786,intersection,479
+124th St & 5th Ave,40.8057364,-73.9427579,intersection,480
+124th St & Madison Ave,40.8050699,-73.9411584,intersection,481
+124th St & Park Ave,40.8044542,-73.9396747,intersection,482
+124th St & Lexington Ave,40.8037062,-73.9379199,intersection,483
+124th St & 3rd Ave,40.8030321,-73.936328,intersection,484
+124th St & 2nd Ave,40.8018911,-73.9339703,intersection,485
+124th St & 1st Ave,40.8009838,-73.9317793,intersection,486
+125th St & 1st Ave,40.80175,-73.93118,intersection,487
+125th St & 2nd Ave,40.8027602,-73.9335801,intersection,488
+125th St & 3rd Ave,40.8037082,-73.9358345,intersection,489
+125th St & Lexington Ave,40.8043833,-73.9374304,intersection,490
+125th St & Park Ave,40.8051304,-73.9391832,intersection,491
+125th St & Madison Ave,40.8057388,-73.9406512,intersection,492
+125th St & 5th Ave,40.8064194,-73.9422689,intersection,493
+125th St & Malcolm X Blvd,40.8077586,-73.945422,intersection,494
+125th St & Adam Clayton Powell Jr Blvd,40.8089388,-73.9482501,intersection,495
+125th St & Frederick Douglass Blvd,40.810172,-73.9511747,intersection,496
+125th St & St Nicholas Ave,40.8107804,-73.9525943,intersection,497
+125th St & Morningside Ave,40.8113813,-73.9540118,intersection,498
+125th St & Amsterdam Ave,40.8133758,-73.9562662,intersection,499
+125th St & Broadway,40.815829,-73.9583986,intersection,500
+125th St & 129th St,40.8169418,-73.9594247,intersection,501
+125th St & 12th Ave,40.8179876,-73.9604057,intersection,502
+125th St & Marginal St,40.8186987,-73.9611186,intersection,503
+126th St & Broadway,40.816301,-73.9577065,intersection,504
+126th St & Amsterdam Ave,40.8141385,-73.955712,intersection,505
+126th St & Morningside Ave,40.8120594,-73.9535438,intersection,506
+126th St & St Nicholas Ave,40.8114442,-73.9520913,intersection,507
+126th St & Frederick Douglass Blvd,40.810843,-73.95068,intersection,508
+126th St & Adam Clayton Powell Jr Blvd,40.8096094,-73.9477613,intersection,509
+126th St & Malcolm X Blvd,40.8084235,-73.9449442,intersection,510
+126th St & Madison Ave,40.8064128,-73.9401492,intersection,511
+126th St & Park Ave,40.8056716,-73.938393,intersection,512
+126th St & Lexington Ave,40.8050584,-73.9369382,intersection,513
+126th St & 5th Ave,40.8070858,-73.9417752,intersection,514
+126th St & 3rd Ave,40.8043683,-73.9353288,intersection,515
+126th St & 2nd Ave,40.8034343,-73.9331331,intersection,516
+126th St & 1st Ave,40.8025164,-73.9308804,intersection,517
+127th St & 126th St,40.8134064,-73.9550809,intersection,518
+127th St & Convent Ave,40.8126975,-73.953164,intersection,519
+127th St & Morningside Ave,40.8126975,-73.953164,intersection,519
+127th St & St Nicholas Ter,40.8123052,-73.9522314,intersection,520
+127th St & St Nicholas Ave,40.8120187,-73.9515039,intersection,521
+127th St & Frederick Douglass Blvd,40.8114547,-73.9502279,intersection,522
+127th St & Adam Clayton Powell Jr Blvd,40.8102386,-73.9472625,intersection,523
+127th St & Malcolm X Blvd,40.8090372,-73.9444606,intersection,524
+127th St & 5th Ave,40.807706,-73.9413182,intersection,525
+127th St & Madison Ave,40.8070425,-73.9396854,intersection,526
+127th St & Park Ave,40.8063244,-73.9379201,intersection,527
+127th St & Lexington Ave,40.8056778,-73.9364824,intersection,528
+127th St & 3rd Ave,40.8049951,-73.9348748,intersection,529
+127th St & 2nd Ave,40.8039453,-73.9323392,intersection,530
+127th St & 1st Ave,40.8025164,-73.9308804,intersection,517
+128th St & Amsterdam Ave,40.8145029,-73.9554427,intersection,531
+128th St & Convent Ave,40.8135098,-73.9531106,intersection,532
+128th St & St Nicholas Ter,40.81294,-73.95177,intersection,533
+128th St & St Nicholas Ave,40.8125483,-73.9509751,intersection,534
+128th St & Frederick Douglass Blvd,40.812103,-73.949757,intersection,535
+128th St & Adam Clayton Powell Jr Blvd,40.8108658,-73.9468097,intersection,536
+128th St & Malcolm X Blvd,40.8096716,-73.9440038,intersection,537
+128th St & 5th Ave,40.8083433,-73.9408718,intersection,538
+128th St & Madison Ave,40.8076583,-73.9392423,intersection,539
+128th St & Park Ave,40.8069169,-73.9374971,intersection,540
+128th St & Lexington Ave,40.8063049,-73.9360262,intersection,541
+128th St & 3rd Ave,40.8056563,-73.9343874,intersection,542
+128th St & 2nd Ave,40.8045833,-73.932294,intersection,543
+129th St & Lexington Ave,40.8069262,-73.9355649,intersection,544
+129th St & Park Ave,40.8075497,-73.9370414,intersection,545
+129th St & Madison Ave,40.808274,-73.9387913,intersection,546
+129th St & Malcolm X Blvd,40.8103581,-73.9436824,intersection,547
+129th St & Adam Clayton Powell Jr Blvd,40.8114858,-73.9463647,intersection,548
+129th St & Frederick Douglass Blvd,40.8127079,-73.94931,intersection,549
+129th St & St Nicholas Ave,40.8131698,-73.9503452,intersection,550
+129th St & St Nicholas Ter,40.813549,-73.951322,intersection,551
+129th St & Convent Ave,40.8143114,-73.9530948,intersection,552
+129th St & Amsterdam Ave,40.8151225,-73.9549904,intersection,553
+129th St & Broadway,40.816301,-73.9577065,intersection,504
+12th Ave & 24th St,40.7502317,-74.0084893,intersection,554
+12th Ave & 26th St,40.7518903,-74.0079981,intersection,555
+12th Ave & 27th St,40.7523991,-74.0075807,intersection,556
+12th Ave & 28th St,40.7531026,-74.0073083,intersection,557
+12th Ave & 29th St,40.7537916,-74.0070484,intersection,558
+12th Ave & 30th St,40.7544624,-74.0066157,intersection,559
+12th Ave & 33rd St,40.7563006,-74.0052879,intersection,560
+12th Ave & 34th St,40.7569736,-74.0048004,intersection,561
+12th Ave & 40th St,40.7607296,-74.002058,intersection,562
+12th Ave & 41st St,40.7613312,-74.0016375,intersection,563
+12th Ave & 42nd St,40.7619645,-74.0010678,intersection,564
+12th Ave & 43rd St,40.7626422,-74.0005189,intersection,565
+12th Ave & 44th St,40.7631745,-73.9997631,intersection,566
+12th Ave & 45th St,40.7636321,-73.9989763,intersection,567
+12th Ave & 46th St,40.7643218,-73.9987122,intersection,568
+12th Ave & 47th St,40.7648602,-73.9980458,intersection,569
+12th Ave & 48th St,40.7655866,-73.9977934,intersection,570
+12th Ave & 49th St,40.7661999,-73.9973376,intersection,571
+12th Ave & 50th St,40.7667431,-73.9966765,intersection,572
+12th Ave & 51st St,40.7673675,-73.9962157,intersection,573
+12th Ave & 52nd St,40.7680862,-73.9959619,intersection,574
+12th Ave & 54th St,40.7694431,-73.9950048,intersection,575
+12th Ave & 55th St,40.7698635,-73.9943402,intersection,576
+12th Ave & 56th St,40.7706365,-73.9942302,intersection,577
+12th Ave & 57th St,40.7715333,-73.9942127,intersection,578
+12th Ave & 58th St,40.7721579,-73.9936575,intersection,579
+12th Ave & 59th St,40.7727825,-73.9932029,intersection,580
+12th Ave & 130th St,40.8181728,-73.9602795,intersection,581
+12th Ave & 132nd St,40.8193827,-73.9593502,intersection,582
+12th Ave & 133rd St,40.8199959,-73.9588871,intersection,583
+12th Ave & 138th St,40.8230757,-73.9564143,intersection,584
+12th St & Ave D,40.7261221,-73.9742715,intersection,585
+12th St & Ave C,40.7271073,-73.9766362,intersection,586
+12th St & Ave B,40.7281081,-73.979007,intersection,587
+12th St & Ave A,40.7291001,-73.9813149,intersection,588
+12th St & 1st Ave,40.7300043,-73.9835255,intersection,589
+12th St & 2nd Ave,40.7310297,-73.9859172,intersection,590
+12th St & 3rd Ave,40.7319753,-73.9881577,intersection,591
+12th St & 4th Ave,40.7327696,-73.9900294,intersection,592
+12th St & Broadway,40.7332244,-73.9911138,intersection,593
+12th St & University Pl,40.7339225,-73.9927931,intersection,594
+12th St & 5th Ave,40.7346736,-73.9945869,intersection,595
+12th St & 6th Ave,40.7360172,-73.997813,intersection,596
+12th St & 7th Ave,40.7372245,-74.0006804,intersection,597
+12th St & Greenwich Ave,40.7376802,-74.0017589,intersection,598
+12th St & West 4th St,40.7375376,-74.0038985,intersection,599
+12th St & 8th Ave,40.7375462,-74.0048128,intersection,600
+12th St & Hudson St,40.7375415,-74.0056963,intersection,601
+12th St & Greenwich St,40.7375479,-74.0064771,intersection,602
+12th St & Washington St,40.737548,-74.0082167,intersection,603
+12th St & West St,40.7375736,-74.0098149,intersection,604
+130th St & Lexington Ave,40.8075525,-73.9351089,intersection,605
+130th St & Park Ave,40.8082818,-73.9368482,intersection,606
+130th St & Madison Ave,40.8089013,-73.9383355,intersection,607
+130th St & 5th Ave,40.809582,-73.939949,intersection,608
+130th St & Malcolm X Blvd,40.8109145,-73.9430973,intersection,609
+130th St & Adam Clayton Powell Jr Blvd,40.8121051,-73.9459184,intersection,610
+130th St & St Nicholas Ter,40.814187,-73.95086,intersection,611
+130th St & Convent Ave,40.81507,-73.952974,intersection,612
+130th St & Amsterdam Ave,40.815737,-73.954547,intersection,613
+130th St & Broadway,40.816883,-73.9572781,intersection,614
+130th St & 12th Ave,40.8181728,-73.9602795,intersection,581
+131st St & Lexington Ave,40.8081686,-73.9346986,intersection,615
+131st St & Park Ave,40.8088132,-73.9361376,intersection,616
+131st St & Madison Ave,40.8095244,-73.9378787,intersection,617
+131st St & 5th Ave,40.8102071,-73.9394987,intersection,618
+131st St & Malcolm X Blvd,40.8115341,-73.9426533,intersection,619
+131st St & Adam Clayton Powell Jr Blvd,40.812717,-73.9454803,intersection,620
+131st St & Frederick Douglass Blvd,40.8139431,-73.948414,intersection,621
+131st St & Convent Ave,40.815846,-73.952868,intersection,622
+131st St & Amsterdam Ave,40.816361,-73.954089,intersection,623
+132nd St & Marginal St,40.8196832,-73.9602094,intersection,624
+132nd St & 12th Ave,40.8193827,-73.9593502,intersection,582
+132nd St & Broadway,40.8182464,-73.956606,intersection,625
+132nd St & Frederick Douglass Blvd,40.8145831,-73.9479443,intersection,626
+132nd St & Adam Clayton Powell Jr Blvd,40.8133626,-73.9450166,intersection,627
+132nd St & Malcolm X Blvd,40.8122298,-73.942312,intersection,628
+132nd St & 5th Ave,40.8108636,-73.9390236,intersection,629
+132nd St & Madison Ave,40.8101741,-73.9374076,intersection,630
+132nd St & Park Ave,40.8095481,-73.9359391,intersection,631
+133rd St & Malcolm X Blvd,40.8127846,-73.9417286,intersection,632
+133rd St & Adam Clayton Powell Jr Blvd,40.8139909,-73.94456,intersection,633
+133rd St & Frederick Douglass Blvd,40.8152162,-73.9474768,intersection,634
+133rd St & St Nicholas Ave,40.8157083,-73.9486715,intersection,635
+133rd St & Convent Ave,40.8172297,-73.9522841,intersection,636
+133rd St & Amsterdam Ave,40.8176064,-73.9531935,intersection,637
+133rd St & Broadway,40.8187681,-73.9559062,intersection,638
+133rd St & Marginal St,40.8202775,-73.9596979,intersection,639
+134th St & Malcolm X Blvd,40.8134006,-73.9412761,intersection,640
+134th St & Adam Clayton Powell Jr Blvd,40.8146042,-73.9441181,intersection,641
+134th St & Frederick Douglass Blvd,40.815835,-73.9470384,intersection,642
+134th St & St Nicholas Ave,40.8163934,-73.9483483,intersection,643
+134th St & Amsterdam Ave,40.8182429,-73.9527374,intersection,644
+134th St & Broadway,40.819377,-73.955451,intersection,645
+135th St & Riverside Dr,40.8211321,-73.9575028,intersection,646
+135th St & Broadway,40.8201651,-73.9551928,intersection,647
+135th St & Amsterdam Ave,40.8189432,-73.9522229,intersection,648
+135th St & Convent Ave,40.8184009,-73.9508602,intersection,649
+135th St & St Nicholas Ter,40.817922,-73.949734,intersection,650
+135th St & St Nicholas Ave,40.8170845,-73.9479165,intersection,651
+135th St & Edgecombe Ave,40.8170845,-73.9479165,intersection,651
+135th St & Frederick Douglass Blvd,40.8165192,-73.9465432,intersection,652
+135th St & Adam Clayton Powell Jr Blvd,40.8153561,-73.9437832,intersection,653
+135th St & Malcolm X Blvd,40.8141383,-73.9409241,intersection,654
+135th St & 5th Ave,40.8127628,-73.9376463,intersection,655
+135th St & Madison Ave,40.8120949,-73.9360927,intersection,656
+135th St & Park Ave,40.81166,-73.93489,intersection,657
+136th St & Malcolm X Blvd,40.8147567,-73.9402972,intersection,658
+136th St & Adam Clayton Powell Jr Blvd,40.8160137,-73.9433138,intersection,659
+136th St & Frederick Douglass Blvd,40.8171799,-73.946054,intersection,660
+136th St & Edgecombe Ave,40.8177646,-73.947435,intersection,661
+136th St & St Nicholas Ave,40.8178589,-73.947667,intersection,662
+136th St & Amsterdam Ave,40.8195852,-73.9517529,intersection,663
+136th St & Broadway,40.8208182,-73.9547025,intersection,664
+136th St & Riverside Dr,40.8217444,-73.9568487,intersection,665
+137th St & 5th Ave,40.8140579,-73.9366955,intersection,666
+137th St & Malcolm X Blvd,40.8154428,-73.9399722,intersection,667
+137th St & Adam Clayton Powell Jr Blvd,40.8165791,-73.9426518,intersection,668
+137th St & Frederick Douglass Blvd,40.8178024,-73.9456073,intersection,669
+137th St & Edgecombe Ave,40.8183877,-73.9469777,intersection,670
+137th St & St Nicholas Ave,40.8185247,-73.9473613,intersection,671
+137th St & Broadway,40.821355,-73.9540395,intersection,672
+137th St & Riverside Dr,40.8222941,-73.9561943,intersection,673
+138th St & Broadway,40.8219887,-73.9535775,intersection,674
+138th St & Hamilton Pl,40.8216967,-73.9529169,intersection,675
+138th St & Amsterdam Ave,40.8208252,-73.9508298,intersection,676
+138th St & Convent Ave,40.8203292,-73.9493953,intersection,677
+138th St & St Nicholas Ter,40.8198,-73.94706,intersection,678
+138th St & St Nicholas Ave,40.819219,-73.9470394,intersection,679
+138th St & Edgecombe Ave,40.8190139,-73.9465271,intersection,680
+138th St & Frederick Douglass Blvd,40.8184301,-73.9451467,intersection,681
+138th St & Adam Clayton Powell Jr Blvd,40.8171964,-73.9422078,intersection,682
+138th St & Malcolm X Blvd,40.816055,-73.9395329,intersection,683
+138th St & 5th Ave,40.8147968,-73.9361469,intersection,684
+138th St & Madison Ave,40.8140538,-73.9348394,intersection,685
+139th St & 5th Ave,40.8153398,-73.935758,intersection,686
+139th St & Malcolm X Blvd,40.8166775,-73.9390772,intersection,687
+139th St & Adam Clayton Powell Jr Blvd,40.8178108,-73.9417547,intersection,688
+139th St & Frederick Douglass Blvd,40.8190406,-73.9447028,intersection,689
+139th St & Edgecombe Ave,40.8196371,-73.9460725,intersection,690
+139th St & St Nicholas Ave,40.819906,-73.9467216,intersection,691
+139th St & Convent Ave,40.8208767,-73.9490064,intersection,692
+139th St & Amsterdam Ave,40.8214475,-73.9503832,intersection,693
+139th St & Riverside Dr,40.8235564,-73.9553503,intersection,694
+139th St & Hamilton Pl,40.8221704,-73.9521101,intersection,695
+13th St & Ave D,40.7267372,-73.973801,intersection,696
+13th St & Ave C,40.7277598,-73.9761816,intersection,697
+13th St & Ave B,40.7287453,-73.9785306,intersection,698
+13th St & Ave A,40.7297255,-73.9808481,intersection,699
+13th St & 1st Ave,40.7306517,-73.9830602,intersection,700
+13th St & 2nd Ave,40.7316589,-73.9854323,intersection,701
+13th St & 3rd Ave,40.7326097,-73.9876848,intersection,702
+13th St & 4th Ave,40.7335363,-73.9898716,intersection,703
+13th St & Broadway,40.7339857,-73.9909365,intersection,704
+13th St & University Pl,40.7345386,-73.9922658,intersection,705
+13th St & 5th Ave,40.735321,-73.9941315,intersection,706
+13th St & 6th Ave,40.7366813,-73.9973348,intersection,707
+13th St & 7th Ave,40.7378694,-74.0002019,intersection,708
+13th St & Greenwich Ave,40.7387685,-74.0024425,intersection,709
+13th St & 8th Ave,40.7390497,-74.0030956,intersection,710
+13th St & West 4th St,40.7394007,-74.0038808,,711
+13th St & Hudson St,40.7400262,-74.0053146,intersection,712
+13th St & 9th Ave,40.7402642,-74.0058661,intersection,713
+13th St & Washington St,40.7409462,-74.0075111,intersection,714
+140th St & Malcolm X Blvd,40.8172522,-73.9384674,intersection,715
+140th St & Adam Clayton Powell Jr Blvd,40.8184319,-73.9413048,intersection,716
+140th St & Frederick Douglass Blvd,40.8196725,-73.9442344,intersection,717
+140th St & Edgecombe Ave,40.8202602,-73.9456205,intersection,718
+140th St & St Nicholas Ave,40.8205822,-73.9464064,intersection,719
+140th St & Convent Ave,40.8214863,-73.948544,intersection,720
+140th St & Amsterdam Ave,40.8220667,-73.9499303,intersection,721
+140th St & Hamilton Pl,40.8226627,-73.9513093,intersection,722
+140th St & Broadway,40.8232235,-73.9526568,intersection,723
+140th St & Riverside Dr,40.8241375,-73.9548476,intersection,724
+141st St & Malcolm X Blvd,40.8179282,-73.9381524,intersection,725
+141st St & Adam Clayton Powell Jr Blvd,40.8191288,-73.9410298,intersection,726
+141st St & Frederick Douglass Blvd,40.8203041,-73.943776,intersection,727
+141st St & Edgecombe Ave,40.8208788,-73.9451634,intersection,728
+141st St & St Nicholas Ave,40.8212751,-73.9460832,intersection,729
+141st St & Hamilton Terrace,40.8217558,-73.9472376,intersection,730
+141st St & Convent Ave,40.822123,-73.948081,intersection,731
+141st St & Amsterdam Ave,40.8226919,-73.9494692,intersection,732
+141st St & Hamilton Pl,40.8231295,-73.9505135,intersection,733
+141st St & Broadway,40.8238534,-73.9522032,intersection,734
+141st St & Riverside Dr,40.824762,-73.9543679,intersection,735
+142nd St & Madision Ave,40.8171779,-73.9344679,intersection,736
+142nd St & 5th Ave,40.8171779,-73.9344679,intersection,736
+142nd St & Malcolm X Blvd,40.8184871,-73.9375744,intersection,737
+142nd St & Adam Clayton Powell Jr Blvd,40.8197585,-73.9405674,intersection,738
+142nd St & Frederick Douglass Blvd,40.8209141,-73.9433325,intersection,739
+142nd St & Bradhurst Ave,40.8214679,-73.944604,intersection,740
+142nd St & Edgecombe Ave,40.8215628,-73.944832,intersection,741
+142nd St & Convent Ave,40.8227347,-73.9476362,intersection,742
+142nd St & Amsterdam Ave,40.823332,-73.9490057,intersection,743
+142nd St & Hamilton Pl,40.8236132,-73.9496948,intersection,744
+142nd St & Broadway,40.8245638,-73.9519649,intersection,745
+142nd St & Riverside Dr,40.8253465,-73.9537147,intersection,746
+143rd St & 5th Ave,40.8178803,-73.9342493,intersection,747
+143rd St & Malcolm X Blvd,40.8191885,-73.937246,intersection,748
+143rd St & Adam Clayton Powell Jr Blvd,40.8203177,-73.9399316,intersection,749
+143rd St & Frederick Douglass Blvd,40.82154,-73.9428733,intersection,750
+143rd St & Bradhurst Ave,40.8220562,-73.9440522,intersection,751
+143rd St & Convent Ave,40.8233471,-73.9471989,intersection,752
+143rd St & Amsterdam Ave,40.8239464,-73.9485587,intersection,753
+143rd St & Hamilton Pl,40.8240824,-73.9488929,intersection,754
+143rd St & Broadway,40.8251074,-73.9512792,intersection,755
+143rd St & Riverside Dr,40.8258159,-73.9529811,intersection,756
+144th St & Malcolm X Blvd,40.8197453,-73.9366594,intersection,757
+144th St & Adam Clayton Powell Jr Blvd,40.8210129,-73.939656,intersection,758
+144th St & Frederick Douglass Blvd,40.8221676,-73.9424036,intersection,759
+144th St & Bradhurst Ave,40.8226338,-73.94351,intersection,760
+144th St & Hamilton Terrace,40.8236333,-73.9459027,intersection,761
+144th St & Convent Ave,40.8239665,-73.9467189,intersection,762
+144th St & Amsterdam Ave,40.8245652,-73.9480977,intersection,763
+144th St & Broadway,40.8258151,-73.951036,intersection,764
+144th St & Riverside Dr,40.8264693,-73.9525668,intersection,765
+145th St & Malcolm X Blvd,40.8204825,-73.9362933,intersection,766
+145th St & Adam Clayton Powell Jr Blvd,40.8216804,-73.9391747,intersection,767
+145th St & Frederick Douglass Blvd,40.8228318,-73.9419184,intersection,768
+145th St & Bradhurst Ave,40.8232662,-73.9428964,intersection,769
+145th St & Edgecombe Ave,40.8236602,-73.9438387,intersection,770
+145th St & St Nicholas Ave,40.8240437,-73.9447676,intersection,771
+145th St & Convent Ave,40.8246634,-73.9462129,intersection,772
+145th St & Amsterdam Ave,40.8252492,-73.94761,intersection,773
+145th St & Broadway,40.8264107,-73.9503568,intersection,774
+145th St & Riverside Dr,40.8270792,-73.9519487,intersection,775
+14th St & Ave C,40.7284519,-73.9756881,intersection,776
+14th St & Ave B,40.7294348,-73.9780219,intersection,777
+14th St & Ave A,40.7304265,-73.980365,intersection,778
+14th St & 1st Ave,40.7313474,-73.9825664,intersection,779
+14th St & 2nd Ave,40.732349,-73.9849373,intersection,780
+14th St & 3rd Ave,40.7332926,-73.9871815,intersection,781
+14th St & Irving Pl,40.7339505,-73.9887867,intersection,782
+14th St & Union Square E,40.7344478,-73.9899078,intersection,783
+14th St & 4th Ave,40.7344478,-73.9899078,intersection,783
+14th St & Broadway,40.7348005,-73.9907326,intersection,784
+14th St & Union Square W,40.7352105,-73.9917102,intersection,785
+14th St & University Pl,40.7352105,-73.9917102,intersection,785
+14th St & 5th Ave,40.7360158,-73.9936331,intersection,786
+14th St & 6th Ave,40.737368,-73.9968432,intersection,787
+14th St & 7th Ave,40.7385652,-73.9996865,intersection,788
+14th St & 8th Ave,40.7397433,-74.0025294,intersection,789
+14th St & Hudson St,40.7408398,-74.0051382,intersection,790
+14th St & 9th Ave,40.7409377,-74.0053699,intersection,791
+14th St & Washington St,40.7416435,-74.0070066,intersection,792
+15th St & Ave C,40.7291386,-73.9751883,intersection,793
+15th St & 1st Ave,40.7320349,-73.9820766,intersection,794
+15th St & 2nd Ave,40.7330369,-73.9844118,intersection,795
+15th St & 3rd Ave,40.7339878,-73.9866846,intersection,796
+15th St & Irving Pl,40.7346509,-73.9882781,intersection,797
+15th St & Union Square E,40.7353795,-73.9899507,intersection,798
+15th St & Union Square W,40.7358984,-73.9912281,intersection,799
+15th St & 5th Ave,40.7366894,-73.9931526,intersection,800
+15th St & 6th Ave,40.7380268,-73.9963437,intersection,801
+15th St & 7th Ave,40.739243,-73.999185,intersection,802
+15th St & 8th Ave,40.740444,-74.002019,intersection,803
+15th St & 9th Ave,40.7416627,-74.0049708,intersection,804
+16th St & 1st Ave,40.7326656,-73.9815974,intersection,805
+16th St & 3rd Ave,40.7346182,-73.986211,intersection,806
+16th St & Irving Pl,40.7352956,-73.987819,intersection,807
+16th St & Union Square E,40.7359491,-73.9894041,intersection,808
+16th St & Union Square W,40.7365396,-73.9907664,intersection,809
+16th St & 5th Ave,40.7373355,-73.9926643,intersection,810
+16th St & 6th Ave,40.7386869,-73.9958737,intersection,811
+16th St & 7th Ave,40.7398871,-73.9987303,intersection,812
+16th St & 8th Ave,40.7410712,-74.0015593,intersection,813
+16th St & 9th Ave,40.7422925,-74.004457,intersection,814
+17th St & 1st Ave,40.7331316,-73.9810175,intersection,815
+17th St & 2nd Ave,40.734242,-73.9835512,intersection,816
+17th St & 3rd Ave,40.7352013,-73.9858099,intersection,817
+17th St & Irving Pl,40.7358757,-73.9874033,intersection,818
+17th St & Union Square E,40.7365796,-73.9890679,intersection,819
+17th St & Union Square W,40.7371154,-73.9903589,intersection,820
+17th St & 5th Ave,40.7379164,-73.9922246,intersection,821
+17th St & 6th Ave,40.7392873,-73.9954468,intersection,822
+17th St & 7th Ave,40.7404763,-73.9982943,intersection,823
+17th St & 8th Ave,40.7416646,-74.0011315,intersection,824
+17th St & 9th Ave,40.7428845,-74.0040091,intersection,825
+18th St & 1st Ave,40.7338333,-73.9807573,intersection,826
+18th St & 2nd Ave,40.734834,-73.9831142,intersection,827
+18th St & 3rd Ave,40.7357932,-73.9853797,intersection,828
+18th St & Irving Pl,40.7364708,-73.9869681,intersection,829
+18th St & Park Ave S,40.7371767,-73.9886409,intersection,830
+18th St & Broadway,40.7378063,-73.9901465,intersection,831
+18th St & 5th Ave,40.7384903,-73.9918083,intersection,832
+18th St & 6th Ave,40.7398526,-73.9950216,intersection,833
+18th St & 7th Ave,40.7410673,-73.9978679,intersection,834
+18th St & 8th Ave,40.742254,-74.000703,intersection,835
+18th St & 9th Ave,40.7434718,-74.0035793,intersection,836
+19th St & 1st Ave,40.7344286,-73.9803149,intersection,837
+19th St & 2nd Ave,40.7354347,-73.9826915,intersection,838
+19th St & 3rd Ave,40.7363809,-73.9849327,intersection,839
+19th St & Irving Pl,40.7370595,-73.9865336,intersection,840
+19th St & Park Ave S,40.7377092,-73.9881077,intersection,841
+19th St & Broadway,40.7384834,-73.9899394,intersection,842
+19th St & 5th Ave,40.7390911,-73.9913844,intersection,843
+19th St & 6th Ave,40.7404467,-73.9945886,intersection,844
+19th St & 7th Ave,40.7416504,-73.9974349,intersection,845
+19th St & 8th Ave,40.742839,-74.000275,intersection,846
+19th St & 9th Ave,40.7440493,-74.003174,intersection,847
+1st Ave & 1st St,40.7232678,-73.9883676,intersection,848
+1st Ave & 2nd St,40.7239323,-73.9879578,intersection,849
+1st Ave & 3rd St,40.7245817,-73.9874952,intersection,850
+1st Ave & 4th St,40.7251936,-73.9870472,intersection,851
+1st Ave & 5th St,40.7257688,-73.9866307,intersection,852
+1st Ave & 6th St,40.726396,-73.9861588,intersection,853
+1st Ave & 7th St,40.726961,-73.9857531,intersection,854
+1st Ave & St Marks Pl,40.7275967,-73.9852947,intersection,855
+1st Ave & 9th St,40.7281724,-73.9848693,intersection,856
+1st Ave & 20th St,40.7350013,-73.9798909,intersection,857
+1st Ave & 21st St,40.7355931,-73.9794713,intersection,858
+1st Ave & 22nd St,40.7362253,-73.9790084,intersection,859
+1st Ave & 23rd St,40.7368841,-73.9785259,intersection,860
+1st Ave & 24th Ave,40.7375442,-73.9780538,intersection,861
+1st Ave & 24th St,40.7375442,-73.9780538,intersection,861
+1st Ave & 25th St,40.7381657,-73.9775889,intersection,862
+1st Ave & 26th St,40.7387856,-73.9771481,intersection,863
+1st Ave & 27th St,40.7393956,-73.9766952,intersection,864
+1st Ave & 28th St,40.7400154,-73.976246,intersection,865
+1st Ave & 29th St,40.7406533,-73.9757878,intersection,866
+1st Ave & 30th St,40.7412687,-73.9753402,intersection,867
+1st Ave & 33rd St,40.743095,-73.974015,intersection,868
+1st Ave & 34th St,40.7437892,-73.9735182,intersection,869
+1st Ave & 35th St,40.7444588,-73.973034,intersection,870
+1st Ave & 36th St,40.7450837,-73.972574,intersection,871
+1st Ave & 37th St,40.7457058,-73.9721294,intersection,872
+1st Ave & 38th St,40.746309,-73.9716822,intersection,873
+1st Ave & 39th St,40.7469318,-73.9712276,intersection,874
+1st Ave & 40th St,40.7475526,-73.9707756,intersection,875
+1st Ave & 41st St,40.7481188,-73.9701649,intersection,876
+1st Ave & 42nd St,40.748723,-73.9697359,intersection,877
+1st Ave & 44th St,40.7501079,-73.9688927,intersection,878
+1st Ave & 45th St,40.7507482,-73.9684245,intersection,879
+1st Ave & 46th St,40.7513611,-73.9679761,intersection,880
+1st Ave & 47th St,40.7519975,-73.967679,intersection,881
+1st Ave & 48th St,40.7527056,-73.9671922,intersection,882
+1st Ave & 49th St,40.7532358,-73.9665538,intersection,883
+1st Ave & 50th St,40.7538793,-73.9661559,intersection,884
+1st Ave & 51st St,40.754499,-73.9656921,intersection,885
+1st Ave & 52nd St,40.7551426,-73.9652308,intersection,886
+1st Ave & 53rd St,40.7557545,-73.9647894,intersection,887
+1st Ave & 54th St,40.7563957,-73.9643439,intersection,888
+1st Ave & 55th St,40.7570131,-73.963871,intersection,889
+1st Ave & 56th St,40.7576475,-73.963415,intersection,890
+1st Ave & 57th St,40.758314,-73.9629331,intersection,891
+1st Ave & 58th St,40.758978,-73.9624468,intersection,892
+1st Ave & 59th St,40.7596197,-73.9619668,intersection,893
+1st Ave & 60th St,40.7602427,-73.9615112,intersection,894
+1st Ave & 61st St,40.7608662,-73.9610606,intersection,895
+1st Ave & 62nd St,40.7614857,-73.9606064,intersection,896
+1st Ave & 63rd St,40.7621199,-73.960128,intersection,897
+1st Ave & 64th St,40.76274,-73.9596843,intersection,898
+1st Ave & 65th St,40.763368,-73.95924,intersection,899
+1st Ave & 66th St,40.7639932,-73.9587835,intersection,900
+1st Ave & 67th St,40.764625,-73.9583262,intersection,901
+1st Ave & 68th St,40.7652381,-73.9578692,intersection,902
+1st Ave & 69th St,40.765874,-73.9573957,intersection,903
+1st Ave & 70th St,40.7664912,-73.9569688,intersection,904
+1st Ave & 71st St,40.767119,-73.9564907,intersection,905
+1st Ave & 72nd St,40.7678011,-73.9559983,intersection,906
+1st Ave & 73rd St,40.768483,-73.9555119,intersection,907
+1st Ave & 74th St,40.7691234,-73.9550456,intersection,908
+1st Ave & 75th St,40.7697512,-73.9545874,intersection,909
+1st Ave & 76th St,40.7703907,-73.9541148,intersection,910
+1st Ave & 77th St,40.771021,-73.953641,intersection,911
+1st Ave & 78th St,40.771659,-73.9531798,intersection,912
+1st Ave & 79th St,40.7723733,-73.95266,intersection,913
+1st Ave & 80th St,40.7730173,-73.9521792,intersection,914
+1st Ave & 81st St,40.77366,-73.9517243,intersection,915
+1st Ave & 82nd St,40.7742982,-73.9512624,intersection,916
+1st Ave & 83rd St,40.774927,-73.9507894,intersection,917
+1st Ave & 84th St,40.7755575,-73.9503358,intersection,918
+1st Ave & 85th St,40.7761874,-73.949852,intersection,919
+1st Ave & 86th St,40.776876,-73.9493739,intersection,920
+1st Ave & 87th St,40.7775561,-73.9488846,intersection,921
+1st Ave & 88th St,40.7781848,-73.9484201,intersection,922
+1st Ave & 89th St,40.7788147,-73.9479724,intersection,923
+1st Ave & 90th St,40.7794356,-73.9475019,intersection,924
+1st Ave & 91st St,40.7800695,-73.9470265,intersection,925
+1st Ave & 92nd St,40.7807062,-73.9465848,intersection,926
+1st Ave & 93rd St,40.7813284,-73.9461261,intersection,927
+1st Ave & 94th St,40.7819324,-73.9456739,intersection,928
+1st Ave & 95th St,40.7825734,-73.9452128,intersection,929
+1st Ave & 96th St,40.7832132,-73.9447555,intersection,930
+1st Ave & 97th St,40.7839524,-73.9442217,intersection,931
+1st Ave & 99th St,40.7851691,-73.9433181,intersection,932
+1st St & E Houston St,40.7229826,-73.9885359,intersection,933
+1st St & 2nd Ave,40.7242997,-73.9908286,intersection,934
+1st St & Bowery,40.724887,-73.99227,intersection,935
+20th St & Ave C,40.7328049,-73.9745174,intersection,936
+20th St & 2nd Ave,40.7360128,-73.9822792,intersection,937
+20th St & 3rd Ave,40.736971,-73.9845136,intersection,938
+20th St & Park Ave S,40.7382982,-73.9876735,intersection,939
+20th St & Irving Pl,40.7376421,-73.9861125,intersection,940
+20th St & Park Ave S,40.7382982,-73.9876735,intersection,939
+20th St & Broadway,40.7391775,-73.9897564,intersection,941
+20th St & 5th Ave,40.7396799,-73.9909531,intersection,942
+20th St & 6th Ave,40.7410338,-73.9941718,intersection,943
+20th St & 7th Ave,40.7422317,-73.9970149,intersection,944
+20th St & 8th Ave,40.7434215,-73.9998422,intersection,945
+20th St & 9th Ave,40.7446392,-74.0027306,intersection,946
+21st St & 2nd Ave,40.7366022,-73.9818561,intersection,947
+21st St & 3rd Ave,40.7375471,-73.9840845,intersection,948
+21st St & Lexington Ave,40.7382169,-73.9856803,intersection,949
+21st St & Park Ave S,40.7388856,-73.987258,intersection,950
+21st St & Broadway,40.7398518,-73.9896092,intersection,951
+21st St & 5th Ave,40.7402522,-73.9905273,intersection,952
+21st St & 6th Ave,40.7416224,-73.99375,intersection,953
+21st St & 7th Ave,40.7428131,-73.9965997,intersection,954
+21st St & 8th Ave,40.744009,-73.999422,intersection,955
+21st St & 9th Ave,40.7452271,-74.0023036,intersection,956
+22nd St & 2nd Ave,40.7372309,-73.9814051,intersection,957
+22nd St & 3rd Ave,40.7381787,-73.9836482,intersection,958
+22nd St & Lexington Ave,40.7388514,-73.9852256,intersection,959
+22nd St & Park Ave S,40.7394999,-73.9868014,intersection,960
+22nd St & Broadway,40.7405912,-73.9893899,intersection,961
+22nd St & 5th Ave,40.7408915,-73.9900746,intersection,962
+22nd St & 6th Ave,40.7422326,-73.9932831,intersection,963
+22nd St & 7th Ave,40.7434433,-73.9961507,intersection,964
+22nd St & 8th Ave,40.7446311,-73.9989763,intersection,965
+22nd St & 9th Ave,40.7458471,-74.0018474,intersection,966
+23rd St & Ave C,40.7353068,-73.9751294,intersection,967
+23rd St & 2nd Ave,40.7378954,-73.9809182,intersection,968
+23rd St & 3rd Ave,40.7388336,-73.9831565,intersection,969
+23rd St & Lexington Ave,40.7395051,-73.9847401,intersection,970
+23rd St & Park Ave S,40.7402137,-73.9864169,intersection,971
+23rd St & Madison Ave,40.7408761,-73.9879814,intersection,972
+23rd St & Broadway,40.7413722,-73.9891333,intersection,973
+23rd St & 5th Ave,40.7415708,-73.9895773,intersection,974
+23rd St & 6th Ave,40.742903,-73.9927978,intersection,975
+23rd St & 7th Ave,40.7441027,-73.9956435,intersection,976
+23rd St & 8th Ave,40.7452994,-73.9984832,intersection,977
+23rd St & 9th Ave,40.7465137,-74.0013655,intersection,978
+24th St & 2nd Ave,40.7385641,-73.9804459,intersection,979
+24th St & 3rd Ave,40.7394962,-73.982669,intersection,980
+24th St & Lexington Ave,40.7401675,-73.9842581,intersection,981
+24th St & Park Ave S,40.740879,-73.9859297,intersection,982
+24th St & Madison Ave,40.7415346,-73.9874939,intersection,983
+24th St & 5th Ave,40.7422051,-73.9890986,intersection,984
+24th St & 6th Ave,40.7435581,-73.9923115,intersection,985
+24th St & 7th Ave,40.7447655,-73.9951703,intersection,986
+24th St & 8th Ave,40.745952,-73.998009,intersection,987
+24th St & 9th Ave,40.74717,-74.0008625,intersection,988
+25th St & 2nd Ave,40.7391865,-73.9799897,intersection,989
+25th St & 3rd Ave,40.7401168,-73.9822027,intersection,990
+25th St & Lexington Ave,40.7408012,-73.9838175,intersection,991
+25th St & Park Ave S,40.7414922,-73.9854799,intersection,992
+25th St & Madison Ave,40.7421612,-73.9870435,intersection,993
+25th St & 5th Ave,40.7428275,-73.9886426,intersection,994
+25th St & Broadway,40.7430478,-73.9891688,intersection,995
+25th St & 6th Ave,40.7441821,-73.9918575,intersection,996
+25th St & 7th Ave,40.7453898,-73.9947094,intersection,997
+25th St & 8th Ave,40.746581,-73.997552,intersection,998
+25th St & 9th Ave,40.7477802,-74.0004341,intersection,999
+25th St & 9th Ave,40.7477802,-74.0004341,intersection,999
+26th St & 2nd Ave,40.7397923,-73.9795422,intersection,1000
+26th St & 3rd Ave,40.7407369,-73.9817546,intersection,1001
+26th St & Lexington Ave,40.7414154,-73.9833667,intersection,1002
+26th St & Park Ave S,40.7421166,-73.9850392,intersection,1003
+26th St & Madison Ave,40.7427782,-73.9865915,intersection,1004
+26th St & 5th Ave,40.743458,-73.9881992,intersection,1005
+26th St & Broadway,40.7437921,-73.989018,intersection,1006
+26th St & 6th Ave,40.7447955,-73.9914219,intersection,1007
+26th St & 7th Ave,40.7459988,-73.9942772,intersection,1008
+26th St & 8th Ave,40.7472041,-73.9970975,intersection,1009
+26th St & 9th Ave,40.7484192,-73.9999939,intersection,1010
+27th St & 2nd Ave,40.7404238,-73.9790846,intersection,1011
+27th St & 3rd Ave,40.7413335,-73.9813051,intersection,1012
+27th St & Lexington Ave,40.7420182,-73.9829222,intersection,1013
+27th St & Park Ave S,40.7426685,-73.9844854,intersection,1014
+27th St & Madison Ave,40.7433809,-73.9861572,intersection,1015
+27th St & 5th Ave,40.7440656,-73.987754,intersection,1016
+27th St & Broadway,40.7445271,-73.9888729,intersection,1017
+27th St & 6th Ave,40.745418,-73.9909623,intersection,1018
+27th St & 7th Ave,40.7466232,-73.9938171,intersection,1019
+27th St & 8th Ave,40.7478166,-73.9966529,intersection,1020
+28th St & 2nd Ave,40.74104,-73.9786526,intersection,1021
+28th St & 3rd Ave,40.7419747,-73.9808689,intersection,1022
+28th St & Lexington Ave,40.7426414,-73.9824624,intersection,1023
+28th St & Park Ave S,40.7433035,-73.984029,intersection,1024
+28th St & Madison Ave,40.7440111,-73.9856917,intersection,1025
+28th St & 5th Ave,40.7446868,-73.9873046,intersection,1026
+28th St & Broadway,40.7452961,-73.9887403,intersection,1027
+28th St & 6th Ave,40.7460422,-73.9905126,intersection,1028
+28th St & 7th Ave,40.7472392,-73.9933645,intersection,1029
+28th St & 8th Ave,40.7484335,-73.9962003,intersection,1030
+28th St & 9th Ave,40.7496442,-73.9990832,intersection,1031
+29th St & 2nd Ave,40.7416519,-73.978197,intersection,1032
+29th St & 3rd Ave,40.7425974,-73.9803981,intersection,1033
+29th St & Lexington Ave,40.7432658,-73.9819942,intersection,1034
+29th St & Park Ave S,40.7439164,-73.9835765,intersection,1035
+29th St & Madison Ave,40.7446277,-73.9852465,intersection,1036
+29th St & 5th Ave,40.7452995,-73.9868411,intersection,1037
+29th St & Broadway,40.7460445,-73.9885838,intersection,1038
+29th St & 6th Ave,40.746657,-73.9900516,intersection,1039
+29th St & 7th Ave,40.7478614,-73.9929174,intersection,1040
+29th St & 8th Ave,40.7490539,-73.9957485,intersection,1041
+29th St & 9th Ave,40.7502703,-73.9986404,intersection,1042
+2nd Ave & E Houston St,40.7237415,-73.9910319,intersection,1043
+2nd Ave & 2nd St,40.7249271,-73.9903621,intersection,1044
+2nd Ave & 3rd St,40.7255879,-73.989893,intersection,1045
+2nd Ave & 4th St,40.7261987,-73.9894438,intersection,1046
+2nd Ave & 5th St,40.7267998,-73.9889813,intersection,1047
+2nd Ave & 6th St,40.7274134,-73.9885281,intersection,1048
+2nd Ave & 7th St,40.7279634,-73.9881305,intersection,1049
+2nd Ave & St Marks Pl,40.7285977,-73.9876718,intersection,1050
+2nd Ave & 9th St,40.7291949,-73.9872407,intersection,1051
+2nd Ave & 30th St,40.7422649,-73.977741,intersection,1052
+2nd Ave & 31st St,40.7428747,-73.97728,intersection,1053
+2nd Ave & 32nd St,40.7435081,-73.9768341,intersection,1054
+2nd Ave & 33rd St,40.7440218,-73.9761767,intersection,1055
+2nd Ave & 33th St,40.7440218,-73.9761767,intersection,1055
+2nd Ave & 34th St,40.74479,-73.9758798,intersection,1056
+2nd Ave & 35th St,40.7454606,-73.9753917,intersection,1057
+2nd Ave & 36th St,40.7460738,-73.9749362,intersection,1058
+2nd Ave & 37th St,40.746689,-73.9744931,intersection,1059
+2nd Ave & 38th St,40.7473189,-73.9740573,intersection,1060
+2nd Ave & 39th St,40.7479306,-73.9736107,intersection,1061
+2nd Ave & 40th St,40.7485585,-73.9731494,intersection,1062
+2nd Ave & 41st St,40.7491608,-73.9727004,intersection,1063
+2nd Ave & 42nd St,40.7498231,-73.9722048,intersection,1064
+2nd Ave & 43rd St,40.7504841,-73.9717243,intersection,1065
+2nd Ave & 44th St,40.7511134,-73.9712525,intersection,1066
+2nd Ave & 45th St,40.7517421,-73.9707907,intersection,1067
+2nd Ave & 46th St,40.752367,-73.9703354,intersection,1068
+2nd Ave & 47th St,40.7529921,-73.9698797,intersection,1069
+2nd Ave & 48th St,40.7536329,-73.9694279,intersection,1070
+2nd Ave & 49th St,40.7542506,-73.968974,intersection,1071
+2nd Ave & 50th St,40.7548795,-73.9685187,intersection,1072
+2nd Ave & 51st St,40.7555055,-73.968065,intersection,1073
+2nd Ave & 52nd St,40.7561491,-73.9676105,intersection,1074
+2nd Ave & 53rd St,40.7567606,-73.9671458,intersection,1075
+2nd Ave & 54th St,40.7573799,-73.9666835,intersection,1076
+2nd Ave & 55th St,40.7579981,-73.9662415,intersection,1077
+2nd Ave & 56th St,40.7586253,-73.9657882,intersection,1078
+2nd Ave & 57th St,40.759306,-73.9652891,intersection,1079
+2nd Ave & 58th St,40.7599732,-73.9648104,intersection,1080
+2nd Ave & 59th St,40.7606467,-73.9643128,intersection,1081
+2nd Ave & 60th St,40.761206,-73.9639113,intersection,1082
+2nd Ave & 61st St,40.7618654,-73.9634274,intersection,1083
+2nd Ave & 62nd St,40.7624844,-73.9629638,intersection,1084
+2nd Ave & 63rd St,40.7631038,-73.9625033,intersection,1085
+2nd Ave & 64th St,40.7637445,-73.9620558,intersection,1086
+2nd Ave & 65th St,40.7643734,-73.9616091,intersection,1087
+2nd Ave & 66th St,40.7649008,-73.9612347,intersection,1088
+2nd Ave & 67th St,40.7656116,-73.9606928,intersection,1089
+2nd Ave & 68th St,40.7662476,-73.9602479,intersection,1090
+2nd Ave & 69th St,40.7668654,-73.95979,intersection,1091
+2nd Ave & 70th St,40.7675092,-73.9593642,intersection,1092
+2nd Ave & 71st St,40.7681348,-73.9588894,intersection,1093
+2nd Ave & 72nd St,40.768818,-73.9584079,intersection,1094
+2nd Ave & 73rd St,40.7694816,-73.9578923,intersection,1095
+2nd Ave & 74th St,40.7701262,-73.9574063,intersection,1096
+2nd Ave & 75th St,40.7707549,-73.9569377,intersection,1097
+2nd Ave & 76th St,40.7713971,-73.9564892,intersection,1098
+2nd Ave & 77th St,40.7720279,-73.9560194,intersection,1099
+2nd Ave & 78th St,40.7726606,-73.9555581,intersection,1100
+2nd Ave & 79th St,40.7733128,-73.9550821,intersection,1101
+2nd Ave & 80th St,40.7740301,-73.9545642,intersection,1102
+2nd Ave & 81st St,40.7746583,-73.954099,intersection,1103
+2nd Ave & 82nd St,40.7752992,-73.9536403,intersection,1104
+2nd Ave & 83rd St,40.775933,-73.9532473,intersection,1105
+2nd Ave & 84th St,40.776592,-73.9527726,intersection,1106
+2nd Ave & 85th St,40.7772064,-73.9522643,intersection,1107
+2nd Ave & 86th St,40.7778826,-73.95178,intersection,1108
+2nd Ave & 87th St,40.7785628,-73.9512744,intersection,1109
+2nd Ave & 88th St,40.7791877,-73.9507958,intersection,1110
+2nd Ave & 89th St,40.7798082,-73.9503372,intersection,1111
+2nd Ave & 90th St,40.7804399,-73.9498866,intersection,1112
+2nd Ave & 91st St,40.7810697,-73.949429,intersection,1113
+2nd Ave & 92nd St,40.7817204,-73.9490041,intersection,1114
+2nd Ave & 93rd St,40.7823328,-73.9485508,intersection,1115
+2nd Ave & 94th St,40.7829847,-73.9480761,intersection,1116
+2nd Ave & 95th St,40.7836102,-73.9476188,intersection,1117
+2nd Ave & 96th St,40.784252,-73.9471534,intersection,1118
+2nd Ave & 97th St,40.784948,-73.9466471,intersection,1119
+2nd Ave & 99th St,40.7862118,-73.9457452,intersection,1120
+2nd St & E Houston St,40.7201767,-73.9792889,intersection,1121
+2nd St & Ave C,40.7210355,-73.9810914,intersection,1122
+2nd St & Ave B,40.7220306,-73.9834557,intersection,1123
+2nd St & Ave A,40.7230145,-73.9857665,intersection,1124
+2nd St & Bowery,40.725621,-73.992006,intersection,1125
+30th St & 3rd Ave,40.7431951,-73.9799523,intersection,1126
+30th St & Lexington Ave,40.7438725,-73.9815564,intersection,1127
+30th St & Park Ave S,40.7445727,-73.9832343,intersection,1128
+30th St & Madison Ave,40.7452406,-73.9847924,intersection,1129
+30th St & 5th Ave,40.7459153,-73.9864107,intersection,1130
+30th St & Broadway,40.7467947,-73.9884889,intersection,1131
+30th St & 6th Ave,40.7472675,-73.9896202,intersection,1132
+30th St & 7th Ave,40.7484708,-73.9924674,intersection,1133
+30th St & 8th Ave,40.7496747,-73.9952986,intersection,1134
+30th St & 9th Ave,40.7509146,-73.9981561,intersection,1135
+31st St & 3rd Ave,40.7438203,-73.9795001,intersection,1136
+31st St & Lexington Ave,40.744495,-73.9811168,intersection,1137
+31st St & Park Ave S,40.7451504,-73.9826835,intersection,1138
+31st St & Madison Ave,40.745861,-73.9843439,intersection,1139
+31st St & 5th Ave,40.7465393,-73.9859729,intersection,1140
+31st St & Broadway,40.7475435,-73.9883561,intersection,1141
+31st St & 6th Ave,40.747893,-73.9891689,intersection,1142
+31st St & 7th Ave,40.749101,-73.992006,intersection,1143
+31st St & 8th Ave,40.7502803,-73.9948322,intersection,1144
+31st St & 9th Ave,40.7514817,-73.9977506,intersection,1145
+32nd St & 3rd Ave,40.744452,-73.9790704,intersection,1146
+32nd St & Lexington Ave,40.7451268,-73.9806609,intersection,1147
+32nd St & Park Ave,40.74578,-73.9822186,intersection,1148
+32nd St & Park Ave S,40.74578,-73.9822186,intersection,1148
+32nd St & Madison Ave,40.7464794,-73.983881,intersection,1149
+32nd St & 5th Ave,40.7471648,-73.985504,intersection,1150
+32nd St & Broadway,40.7483049,-73.9881892,intersection,1151
+32nd St & 6th Ave,40.7485086,-73.9887186,intersection,1152
+32nd St & 7th Ave,40.7497096,-73.991556,intersection,1153
+33rd St & 3rd Ave,40.745063,-73.9786216,intersection,1154
+33rd St & Lexington Ave,40.7457322,-73.9802187,intersection,1155
+33rd St & Park Ave,40.7464513,-73.9819135,intersection,1156
+33rd St & Madison Ave,40.7470935,-73.9834451,intersection,1157
+33rd St & 5th Ave,40.7477694,-73.985072,intersection,1158
+33rd St & Broadway,40.7489953,-73.9880316,intersection,1159
+33rd St & 6th Ave,40.7491115,-73.988259,intersection,1160
+33rd St & 7th Ave,40.7503293,-73.9911014,intersection,1161
+33rd St & 8th Ave,40.7515298,-73.9939457,intersection,1162
+33rd St & 9th Ave,40.7527175,-73.996804,intersection,1163
+34th St & 3rd Ave,40.7457167,-73.9781195,intersection,1164
+34th St & Lexington Ave,40.7463886,-73.9797348,intersection,1165
+34th St & Park Ave,40.7471157,-73.9814401,intersection,1166
+34th St & Madison Ave,40.747765,-73.982957,intersection,1167
+34th St & 5th Ave,40.7484394,-73.9845729,intersection,1168
+34th St & 6th Ave,40.7497819,-73.9877534,intersection,1169
+34th St & Broadway,40.7498766,-73.9879872,intersection,1170
+34th St & 7th Ave,40.7510159,-73.9906235,intersection,1171
+34th St & 8th Ave,40.7521936,-73.993451,intersection,1172
+34th St & 9th Ave,40.7534056,-73.9963183,intersection,1173
+35th St & 3rd Ave,40.7463974,-73.9776361,intersection,1174
+35th St & Lexington Ave,40.7470753,-73.9792338,intersection,1175
+35th St & Park Ave,40.7477843,-73.9809492,intersection,1176
+35th St & Madison Ave,40.7484355,-73.982471,intersection,1177
+35th St & 5th Ave,40.7491122,-73.9840674,intersection,1178
+35th St & 6th Ave,40.7504619,-73.9872841,intersection,1179
+35th St & Broadway,40.7506991,-73.9878322,intersection,1180
+35th St & 7th Ave,40.751666,-73.9901511,intersection,1181
+35th St & 8th Ave,40.752857,-73.9929789,intersection,1182
+35th St & 9th Ave,40.7540632,-73.9958443,intersection,1183
+36th St & 3rd Ave,40.7470334,-73.9772049,intersection,1184
+36th St & Lexington Ave,40.7476796,-73.9787927,intersection,1185
+36th St & Park Ave,40.7483238,-73.9803109,intersection,1186
+36th St & Madison Ave,40.7490499,-73.982024,intersection,1187
+36th St & 5th Ave,40.7497295,-73.9836386,intersection,1188
+36th St & 6th Ave,40.7510857,-73.9868523,intersection,1189
+36th St & Broadway,40.7514469,-73.987707,intersection,1190
+36th St & 7th Ave,40.7522877,-73.9897059,intersection,1191
+36th St & 8th Ave,40.753474,-73.992528,intersection,1192
+36th St & 9th Ave,40.7546778,-73.9953554,intersection,1193
+37th St & 3rd Ave,40.747635,-73.9767664,intersection,1194
+37th St & Lexington Ave,40.7482943,-73.9783341,intersection,1195
+37th St & Park Ave,40.7490229,-73.9800469,intersection,1196
+37th St & Madison Ave,40.7496747,-73.9815892,intersection,1197
+37th St & 5th Ave,40.7503706,-73.9831523,intersection,1198
+37th St & 6th Ave,40.7517053,-73.9864008,intersection,1199
+37th St & Broadway,40.7521773,-73.9875367,intersection,1200
+37th St & 7th Ave,40.752907,-73.9892533,intersection,1201
+37th St & 8th Ave,40.754091,-73.992079,intersection,1202
+37th St & 9th Ave,40.7553261,-73.9949879,intersection,1203
+38th St & 3rd Ave,40.7482577,-73.9763103,intersection,1204
+38th St & Lexington Ave,40.7489148,-73.9778871,intersection,1205
+38th St & Park Ave,40.7495721,-73.9794272,intersection,1206
+38th St & Madison Ave,40.7502857,-73.9811432,intersection,1207
+38th St & 5th Ave,40.7509682,-73.9827201,intersection,1208
+38th St & 6th Ave,40.7523188,-73.9859461,intersection,1209
+38th St & Broadway,40.7529108,-73.9873517,intersection,1210
+38th St & 7th Ave,40.7535205,-73.9887892,intersection,1211
+38th St & 8th Ave,40.754707,-73.991633,intersection,1212
+38th St & 9th Ave,40.7559092,-73.9944915,intersection,1213
+39th St & 3rd Ave,40.7488713,-73.9758612,intersection,1214
+39th St & Lexington Ave,40.7495338,-73.9774384,intersection,1215
+39th St & Park Ave,40.7501862,-73.9789843,intersection,1216
+39th St & Madison Ave,40.7509008,-73.9806821,intersection,1217
+39th St & 5th Ave,40.7515863,-73.9822815,intersection,1218
+39th St & 6th Ave,40.7529301,-73.9854822,intersection,1219
+39th St & Broadway,40.753623,-73.9871304,intersection,1220
+39th St & 7th Ave,40.7541333,-73.9883389,intersection,1221
+39th St & 8th Ave,40.75533,-73.991177,intersection,1222
+39th St & 9th Ave,40.7565386,-73.9940357,intersection,1223
+3rd Ave & 6th St,40.7283225,-73.9907558,intersection,1224
+3rd Ave & 7th St,40.7289111,-73.9903783,intersection,1225
+3rd Ave & 8th St,40.7295535,-73.9899172,intersection,1226
+3rd Ave & St Marks Pl,40.7295535,-73.9899172,intersection,1226
+3rd Ave & 9th St,40.7301332,-73.9894705,intersection,1227
+3rd Ave & 40th St,40.7494983,-73.9753863,intersection,1228
+3rd Ave & 41st St,40.7501144,-73.9749326,intersection,1229
+3rd Ave & 42nd St,40.7507757,-73.9744533,intersection,1230
+3rd Ave & 43rd St,40.7514365,-73.9739681,intersection,1231
+3rd Ave & 44th St,40.7520651,-73.9735114,intersection,1232
+3rd Ave & 45th St,40.7526965,-73.9730489,intersection,1233
+3rd Ave & 46th St,40.7533249,-73.9725945,intersection,1234
+3rd Ave & 47th St,40.7539542,-73.9721475,intersection,1235
+3rd Ave & 48th St,40.7545714,-73.9716804,intersection,1236
+3rd Ave & 49th St,40.755217,-73.9712403,intersection,1237
+3rd Ave & 50th St,40.7558356,-73.970781,intersection,1238
+3rd Ave & 51st St,40.7564635,-73.9703223,intersection,1239
+3rd Ave & 52nd St,40.7570921,-73.9698679,intersection,1240
+3rd Ave & 53rd St,40.7577105,-73.9694269,intersection,1241
+3rd Ave & 54th St,40.7583567,-73.9689597,intersection,1242
+3rd Ave & 55th St,40.758975,-73.9684882,intersection,1243
+3rd Ave & 56th St,40.7595933,-73.9680344,intersection,1244
+3rd Ave & 57th St,40.7602719,-73.9675409,intersection,1245
+3rd Ave & 58th St,40.7609561,-73.967041,intersection,1246
+3rd Ave & 59th St,40.7615772,-73.9665841,intersection,1247
+3rd Ave & 59th St,40.7615772,-73.9665841,intersection,1247
+3rd Ave & 60th St,40.7621826,-73.9661193,intersection,1248
+3rd Ave & 61st St,40.762801,-73.965671,intersection,1249
+3rd Ave & 62nd St,40.7634409,-73.965211,intersection,1250
+3rd Ave & 63rd St,40.7640595,-73.9647682,intersection,1251
+3rd Ave & 64th St,40.7646896,-73.9643068,intersection,1252
+3rd Ave & 65th St,40.7653068,-73.9638425,intersection,1253
+3rd Ave & 66th St,40.7659428,-73.9633866,intersection,1254
+3rd Ave & 67th St,40.7665612,-73.9629317,intersection,1255
+3rd Ave & 68th St,40.7671906,-73.9624799,intersection,1256
+3rd Ave & 69th St,40.767812,-73.962014,intersection,1257
+3rd Ave & 70th St,40.7684404,-73.9615733,intersection,1258
+3rd Ave & 71st St,40.769058,-73.9611034,intersection,1259
+3rd Ave & 72nd St,40.7697512,-73.9605925,intersection,1260
+3rd Ave & 73rd St,40.7704307,-73.9601096,intersection,1261
+3rd Ave & 74th St,40.7710825,-73.9596523,intersection,1262
+3rd Ave & 75th St,40.771694,-73.9591839,intersection,1263
+3rd Ave & 76th St,40.7723392,-73.9587222,intersection,1264
+3rd Ave & 77th St,40.7729738,-73.9582662,intersection,1265
+3rd Ave & 78th St,40.7736093,-73.9578,intersection,1266
+3rd Ave & 79th St,40.7742592,-73.9573124,intersection,1267
+3rd Ave & 80th St,40.7749651,-73.9567884,intersection,1268
+3rd Ave & 81st St,40.775601,-73.9563372,intersection,1269
+3rd Ave & 82nd St,40.77624,-73.9558731,intersection,1270
+3rd Ave & 83rd St,40.776868,-73.955408,intersection,1271
+3rd Ave & 84th St,40.777504,-73.9549428,intersection,1272
+3rd Ave & 85th St,40.7781416,-73.9544957,intersection,1273
+3rd Ave & 86th St,40.7788226,-73.9539909,intersection,1274
+3rd Ave & 87th St,40.7795007,-73.9535074,intersection,1275
+3rd Ave & 88th St,40.7801305,-73.953046,intersection,1276
+3rd Ave & 89th St,40.7807606,-73.9525856,intersection,1277
+3rd Ave & 90th St,40.7813961,-73.9521281,intersection,1278
+3rd Ave & 91st St,40.7820205,-73.9516597,intersection,1279
+3rd Ave & 92nd St,40.7826286,-73.9512043,intersection,1280
+3rd Ave & 93rd St,40.783266,-73.9507404,intersection,1281
+3rd Ave & 94th St,40.7838966,-73.9502795,intersection,1282
+3rd Ave & 95th St,40.7845154,-73.9498287,intersection,1283
+3rd Ave & 96th St,40.7851928,-73.9493417,intersection,1284
+3rd Ave & 97th St,40.7858826,-73.9488283,intersection,1285
+3rd Ave & 99th St,40.7871366,-73.9479201,intersection,1286
+3rd St & Ave D,40.7206849,-73.9782389,intersection,1287
+3rd St & Ave C,40.721683,-73.9806139,intersection,1288
+3rd St & Ave B,40.7226831,-73.9829783,intersection,1289
+3rd St & Ave A,40.7236548,-73.9852944,intersection,1290
+3rd St & Bowery,40.726376,-73.991734,route,1291
+3rd St & Broadway,40.727835,-73.9947559,intersection,1292
+3rd St & Mercer St,40.7281978,-73.9956035,intersection,1293
+3rd St & LaGuardia Pl,40.7293259,-73.9979008,intersection,1294
+3rd St & Thompson St,40.7297009,-73.9986143,intersection,1295
+3rd St & Sullivan St,40.7300747,-73.9993802,intersection,1296
+3rd St & Macdougal St,40.7304449,-74.0001351,intersection,1297
+3rd St & 6th Ave,40.7310719,-74.0014265,intersection,1298
+40th St & Lexington Ave,40.7501612,-73.9769852,intersection,1299
+40th St & Park Ave,40.750881,-73.9787109,intersection,1300
+40th St & Madison Ave,40.7515325,-73.9802219,intersection,1301
+40th St & 5th Ave,40.7522003,-73.9818336,intersection,1302
+40th St & 6th Ave,40.7535625,-73.9850215,intersection,1303
+40th St & Broadway,40.7543488,-73.9868991,intersection,1304
+40th St & 7th Ave,40.75475,-73.987892,intersection,1305
+40th St & 8th Ave,40.7559504,-73.9907232,intersection,1306
+40th St & 9th Ave,40.7571534,-73.993583,intersection,1307
+41st St & Lexington Ave,40.7507826,-73.9765483,intersection,1308
+41st St & Park Ave,40.7515149,-73.9782662,intersection,1309
+41st St & Madison Ave,40.7521501,-73.9797728,intersection,1310
+41st St & 5th Ave,40.7528262,-73.9813763,intersection,1311
+41st St & 6th Ave,40.7541755,-73.9845844,intersection,1312
+41st St & Broadway,40.7550524,-73.9866811,intersection,1313
+41st St & 7th Ave,40.7553637,-73.9874368,intersection,1314
+41st St & 8th Ave,40.756567,-73.990276,intersection,1315
+41st St & 9th Ave,40.7578274,-73.9931045,intersection,1316
+42nd St & Lexington Ave,40.7514527,-73.9760689,intersection,1317
+42nd St & Park Ave,40.7521824,-73.9777896,intersection,1318
+42nd St & Madison Ave,40.7528119,-73.9792738,intersection,1319
+42nd St & 5th Ave,40.7534847,-73.9808766,intersection,1320
+42nd St & 6th Ave,40.7548422,-73.9841088,intersection,1321
+42nd St & Broadway,40.7558274,-73.9864369,intersection,1322
+42nd St & 7th Ave,40.7560341,-73.9869384,intersection,1323
+42nd St & 8th Ave,40.7572276,-73.989793,intersection,1324
+42nd St & 9th Ave,40.7584279,-73.9926448,intersection,1325
+43rd St & Lexington Ave,40.7521288,-73.9755691,intersection,1326
+43rd St & Madison Ave,40.7534871,-73.9787662,intersection,1327
+43rd St & 5th Ave,40.7541608,-73.9803992,intersection,1328
+43rd St & 6th Ave,40.7555096,-73.9836118,intersection,1329
+43rd St & Broadway,40.7565519,-73.9860561,intersection,1330
+43rd St & 7th Ave,40.7567173,-73.9864699,intersection,1331
+43rd St & 8th Ave,40.757907,-73.9893022,intersection,1332
+43rd St & 9th Ave,40.7591041,-73.9921548,intersection,1333
+44th St & Lexington Ave,40.7527625,-73.9751147,intersection,1334
+44th St & Madison Ave,40.7540996,-73.978334,intersection,1335
+44th St & 5th Ave,40.7547917,-73.9799338,intersection,1336
+44th St & 6th Ave,40.7561351,-73.9831642,intersection,1337
+44th St & Broadway,40.757243,-73.9857797,intersection,1338
+44th St & 7th Ave,40.7573398,-73.986011,intersection,1339
+44th St & 8th Ave,40.7585406,-73.9888398,intersection,1340
+44th St & 9th Ave,40.7597346,-73.9916968,intersection,1341
+45th St & Lexington Ave,40.7533758,-73.9746669,intersection,1342
+45th St & Madison Ave,40.7547401,-73.977892,intersection,1343
+45th St & 5th Ave,40.7554039,-73.9794756,intersection,1344
+45th St & 6th Ave,40.7567653,-73.9827023,intersection,1345
+45th St & 7th Ave,40.757961,-73.9855313,intersection,1346
+45th St & Broadway,40.7579984,-73.9856257,intersection,1347
+45th St & 8th Ave,40.7591619,-73.988384,intersection,1348
+45th St & 9th Ave,40.7603546,-73.9912334,intersection,1349
+46th St & Lexington Ave,40.7540198,-73.9741892,intersection,1350
+46th St & Park Ave,40.7547232,-73.975908,intersection,1351
+46th St & Madison Ave,40.7553775,-73.9774369,intersection,1352
+46th St & 5th Ave,40.7560369,-73.979021,intersection,1353
+46th St & 6th Ave,40.7573938,-73.9822503,intersection,1354
+46th St & 7th Ave,40.7585806,-73.9850687,intersection,1355
+46th St & Broadway,40.7587088,-73.9853666,intersection,1356
+46th St & 8th Ave,40.759791,-73.987927,intersection,1357
+46th St & 9th Ave,40.7609777,-73.9907711,intersection,1358
+47th St & Lexington Ave,40.7546201,-73.9737309,intersection,1359
+47th St & Park Ave,40.7552712,-73.9752505,intersection,1360
+47th St & Madison Ave,40.7559899,-73.9769697,intersection,1361
+47th St & 5th Ave,40.7566585,-73.9785536,intersection,1362
+47th St & 6th Ave,40.758019,-73.9817964,intersection,1363
+47th St & 7th Ave,40.7592009,-73.9846144,intersection,1364
+47th St & Broadway,40.7594242,-73.9851254,intersection,1365
+47th St & 8th Ave,40.760405,-73.9874535,intersection,1366
+47th St & 9th Ave,40.7616136,-73.9903218,intersection,1367
+48th St & Lexington Ave,40.7552676,-73.9732856,intersection,1368
+48th St & Park Ave,40.7559188,-73.9747972,intersection,1369
+48th St & Madison Ave,40.7566117,-73.9765007,intersection,1370
+48th St & 5th Ave,40.7573003,-73.9781055,intersection,1371
+48th St & Rockefeller Plz,40.7578115,-73.9793609,intersection,1372
+48th St & 6th Ave,40.7586336,-73.9813444,intersection,1373
+48th St & 7th Ave,40.7598383,-73.9841848,intersection,1374
+48th St & Broadway,40.7601347,-73.9848652,intersection,1375
+48th St & 8th Ave,40.7610363,-73.9870065,intersection,1376
+48th St & 9th Ave,40.7622503,-73.9898871,intersection,1377
+49th St & Lexington Ave,40.7558687,-73.9728397,intersection,1378
+49th St & Park Ave,40.7565244,-73.9743483,intersection,1379
+49th St & Madison Ave,40.7572296,-73.9760446,intersection,1380
+49th St & 5th Ave,40.757906,-73.9776394,intersection,1381
+49th St & Rockefeller Plz,40.7584422,-73.9789088,intersection,1382
+49th St & 6th Ave,40.7592723,-73.9808828,intersection,1383
+49th St & 7th Ave,40.7604566,-73.9837229,intersection,1384
+49th St & Broadway,40.7608021,-73.9845206,intersection,1385
+49th St & 8th Ave,40.7616556,-73.9865591,intersection,1386
+49th St & 9th Ave,40.7628658,-73.9894109,intersection,1387
+4th Ave & 8th St,40.7298479,-73.9906917,intersection,1388
+4th Ave & 9th St,40.730567,-73.9904889,intersection,1389
+4th Ave & Union Square E,40.7344478,-73.9899078,intersection,783
+4th St & Ave D,40.7212866,-73.9777963,intersection,1390
+4th St & Ave C,40.7222908,-73.9801754,intersection,1391
+4th St & Ave B,40.7232838,-73.9825451,intersection,1392
+4th St & Ave A,40.7242667,-73.9848465,intersection,1393
+4th St & Cooper Sq,40.7271256,-73.9916164,intersection,1394
+4th St & Bowery,40.7271256,-73.9916164,intersection,1394
+4th St & Lafayette St,40.7278625,-73.9931345,intersection,1395
+4th St & Broadway,40.7284285,-73.9942583,intersection,1396
+West 4th St & Broadway,40.7284285,-73.9942583,intersection,1396
+West 4th St & Mercer St,40.7288188,-73.9950684,intersection,1397
+West 4th St & Macdougal St,40.7310465,-73.9996201,intersection,1398
+West 4th St & 6th Ave,40.7317091,-74.0009719,intersection,1399
+West 4th St & Cornelia St,40.7318006,-74.0011731,intersection,1400
+West 4th St & Jones St,40.732326,-74.001672,intersection,1401
+West 4th St & Barrow St,40.7328463,-74.0021333,intersection,1402
+West 4th St & Washington Pl,40.7333015,-74.0025075,intersection,1403
+West 4th St & Grove St,40.7333645,-74.0025786,intersection,1404
+West 4th St & Christopher St,40.7336089,-74.0028203,intersection,1405
+West 4th St & 7th Ave,40.7336089,-74.0028203,intersection,1405
+West 4th St & Charles St,40.7348952,-74.0031631,intersection,1406
+West 4th St & Perry St,40.7355513,-74.0033563,intersection,1407
+West 4th St & Bank St,40.7368289,-74.0037421,intersection,1408
+West 4th St & Jane St,40.7381442,-74.0038864,intersection,1409
+West 4th St & 8th Ave,40.7382921,-74.0039746,intersection,1410
+50th St & Lexington Ave,40.756502,-73.9723706,intersection,1411
+50th St & Park Ave,40.7572325,-73.974081,intersection,1412
+50th St & Madison Ave,40.7578734,-73.9756023,intersection,1413
+50th St & 5th Ave,40.7585378,-73.9771928,intersection,1414
+50th St & Rockefeller Plz,40.7590703,-73.9784577,intersection,1415
+50th St & 6th Ave,40.7599003,-73.9804317,intersection,1416
+50th St & 7th Ave,40.7610944,-73.9832632,intersection,1417
+50th St & Broadway,40.7614471,-73.9840983,intersection,1418
+50th St & 8th Ave,40.7622871,-73.98611,intersection,1419
+50th St & 9th Ave,40.7634937,-73.9889648,intersection,1420
+51st St & Lexington Ave,40.7571206,-73.9719267,intersection,1421
+51st St & Park Ave,40.7578469,-73.9736211,intersection,1422
+51st St & Madison Ave,40.758493,-73.9751248,intersection,1423
+51st St & 5th Ave,40.759167,-73.9767368,intersection,1424
+51st St & Rockefeller Plz,40.7597024,-73.9780049,intersection,1425
+51st St & 6th Ave,40.7605231,-73.9799606,intersection,1426
+51st St & 7th Ave,40.761715,-73.98281,intersection,1427
+51st St & Broadway,40.7620705,-73.9836763,intersection,1428
+51st St & 8th Ave,40.762915,-73.985647,intersection,1429
+51st St & 9th Ave,40.7641329,-73.9884998,intersection,1430
+52nd St & Lexington Ave,40.7577491,-73.9714656,intersection,1431
+52nd St & Park Ave,40.7584782,-73.9731657,intersection,1432
+52nd St & Madison Ave,40.7591183,-73.9746925,intersection,1433
+52nd St & 5th Ave,40.7597914,-73.9762808,intersection,1434
+52nd St & 6th Ave,40.761147,-73.9795077,intersection,1435
+52nd St & 7th Ave,40.7623484,-73.9823574,intersection,1436
+52nd St & Broadway,40.7627246,-73.9832546,intersection,1437
+52nd St & 8th Ave,40.7635447,-73.9851925,intersection,1438
+52nd St & 9th Ave,40.7647357,-73.988042,intersection,1439
+53rd St & Sutton Pl S,40.7548815,-73.962705,intersection,1440
+53rd St & Lexington Ave,40.758376,-73.9710051,intersection,1441
+53rd St & Park Ave,40.7590031,-73.9725061,intersection,1442
+53rd St & Madison Ave,40.7597427,-73.9742195,intersection,1443
+53rd St & 5th Ave,40.7604171,-73.9758275,intersection,1444
+53rd St & 6th Ave,40.7617719,-73.9790609,intersection,1445
+53rd St & 7th Ave,40.7629684,-73.9818888,intersection,1446
+53rd St & Broadway,40.7633876,-73.9828809,intersection,1447
+53rd St & 8th Ave,40.7641748,-73.9847444,intersection,1448
+53rd St & 9th Ave,40.765359,-73.9875868,intersection,1449
+54th St & Sutton Pl S,40.7554347,-73.9620711,intersection,1450
+54th St & Lexington Ave,40.7590061,-73.9705374,intersection,1451
+54th St & Park Ave,40.7597239,-73.9722467,intersection,1452
+54th St & Madison Ave,40.7603684,-73.9737633,intersection,1453
+54th St & 5th Ave,40.761051,-73.9753635,intersection,1454
+54th St & 6th Ave,40.7623915,-73.9786075,intersection,1455
+54th St & 7th Ave,40.7635961,-73.9814344,intersection,1456
+54th St & Broadway,40.7640527,-73.9825207,intersection,1457
+54th St & 8th Ave,40.7647976,-73.9842943,intersection,1458
+54th St & 9th Ave,40.7659819,-73.987111,intersection,1459
+55th St & Sutton Pl S,40.7560558,-73.9616049,intersection,1460
+55th St & Lexington Ave,40.7596327,-73.9700878,intersection,1461
+55th St & Park Ave,40.7602691,-73.9716023,intersection,1462
+55th St & Madison Ave,40.7610125,-73.9733344,intersection,1463
+55th St & 5th Ave,40.761667,-73.9749136,intersection,1464
+55th St & 6th Ave,40.7630345,-73.9781444,intersection,1465
+55th St & 7th Ave,40.7642199,-73.9809794,intersection,1466
+55th St & Broadway,40.7647595,-73.9822513,intersection,1467
+55th St & 8th Ave,40.765418,-73.983822,intersection,1468
+55th St & 9th Ave,40.766614,-73.9866568,intersection,1469
+56th St & Sutton Pl S,40.7566854,-73.9611427,intersection,1470
+56th St & Lexington Ave,40.7602536,-73.9696318,intersection,1471
+56th St & Park Ave,40.7609779,-73.9713442,intersection,1472
+56th St & Madison Ave,40.7616086,-73.9728879,intersection,1473
+56th St & 5th Ave,40.7622964,-73.9744569,intersection,1474
+56th St & 6th Ave,40.7636527,-73.9776904,intersection,1475
+56th St & 7th Ave,40.764845,-73.9805277,intersection,1476
+56th St & Broadway,40.7654694,-73.9819836,intersection,1477
+56th St & 8th Ave,40.7660501,-73.9833663,intersection,1478
+56th St & 9th Ave,40.7672468,-73.9862209,intersection,1479
+57th St & Sutton Pl,40.7573559,-73.9606616,intersection,1480
+57th St & Sutton Pl S,40.7573559,-73.9606616,intersection,1480
+57th St & Lexington Ave,40.7609254,-73.9691296,intersection,1481
+57th St & Park Ave,40.7616555,-73.9708424,intersection,1482
+57th St & Madison Ave,40.7622955,-73.9723583,intersection,1483
+57th St & 5th Ave,40.7629678,-73.9739567,intersection,1484
+57th St & 6th Ave,40.7643285,-73.9771987,intersection,1485
+57th St & 7th Ave,40.7655213,-73.9800303,intersection,1486
+57th St & Broadway,40.7663205,-73.9818776,intersection,1487
+57th St & 8th Ave,40.766736,-73.9828696,intersection,1488
+57th St & 9th Ave,40.7679312,-73.9857243,intersection,1489
+58th St & Sutton Pl,40.7580204,-73.9601669,intersection,1490
+58th St & Lexington Ave,40.7615968,-73.9686328,intersection,1491
+58th St & Park Ave,40.7623133,-73.9703509,intersection,1492
+58th St & Madison Ave,40.7629679,-73.9718753,intersection,1493
+58th St & 5th Ave,40.7636484,-73.9734618,intersection,1494
+58th St & 6th Ave,40.7649999,-73.9767003,intersection,1495
+58th St & 7th Ave,40.766198,-73.9795421,intersection,1496
+58th St & Broadway,40.7671293,-73.9817445,intersection,1497
+58th St & 8th Ave,40.7674117,-73.9823896,intersection,1498
+58th St & 9th Ave,40.7685898,-73.985226,intersection,1499
+59th St & York Ave,40.7586615,-73.9597004,intersection,1500
+59th St & Sutton Pl,40.7586615,-73.9597004,intersection,1500
+59th St & Lexington Ave,40.7622245,-73.9681795,intersection,1501
+59th St & Park Ave,40.7628756,-73.9697063,intersection,1502
+59th St & Madison Ave,40.7635936,-73.9714287,intersection,1503
+59th St & 5th Ave,40.7643054,-73.9730051,intersection,1504
+59th St & 6th Ave,40.7656372,-73.976245,intersection,1505
+59th St & 7th Ave,40.7669204,-73.9790398,intersection,1506
+59th St & Columbus Cir,40.7677123,-73.9817016,intersection,1507
+59th St & 9th Ave,40.7692123,-73.9847724,intersection,1508
+59th St & Columbus Ave,40.7692123,-73.9847724,intersection,1508
+59th St & Amsterdam Ave,40.7704169,-73.9876057,intersection,181
+59th St & W End Ave,40.7716232,-73.9904523,intersection,390
+59th St & Freedom Pl,40.7721697,-73.9917642,intersection,1509
+5th Ave & Waverly Pl,40.7314123,-73.9969848,intersection,1510
+5th Ave & 8th St,40.7322623,-73.9963688,intersection,1511
+5th Ave & 9th St,40.7328437,-73.9959437,intersection,1512
+5th Ave & Broadway,40.7424339,-73.9889327,intersection,1513
+5th Ave & 60th St,40.7649241,-73.9725552,intersection,1514
+5th Ave & 61st St,40.7655163,-73.9721006,intersection,1515
+5th Ave & 62nd St,40.7661522,-73.97165,intersection,1516
+5th Ave & 63rd St,40.7667738,-73.9711954,intersection,1517
+5th Ave & 64th St,40.7674005,-73.9707367,intersection,1518
+5th Ave & 65th St,40.7680282,-73.9702767,intersection,1519
+5th Ave & 66th St,40.7686554,-73.9698225,intersection,1520
+5th Ave & 67th St,40.7692816,-73.9693594,intersection,1521
+5th Ave & 68th St,40.7699003,-73.9689154,intersection,1522
+5th Ave & 69th St,40.7705288,-73.9684448,intersection,1523
+5th Ave & 70th St,40.7711575,-73.9679901,intersection,1524
+5th Ave & 71st St,40.7717789,-73.9675474,intersection,1525
+5th Ave & 72nd St,40.7724615,-73.9670436,intersection,1526
+5th Ave & 73rd St,40.7731481,-73.9665404,intersection,1527
+5th Ave & 74th St,40.7737839,-73.966075,intersection,1528
+5th Ave & 75th St,40.7744146,-73.9656177,intersection,1529
+5th Ave & 76th St,40.7750545,-73.965151,intersection,1530
+5th Ave & 77th St,40.7756942,-73.9646937,intersection,1531
+5th Ave & 78th St,40.7763209,-73.9642256,intersection,1532
+5th Ave & 79th St,40.7770247,-73.963712,intersection,1533
+5th Ave & 80th St,40.7776797,-73.9632319,intersection,1534
+5th Ave & 81st St,40.7783215,-73.9627625,intersection,1535
+5th Ave & 82nd St,40.7789593,-73.9623038,intersection,1536
+5th Ave & 83rd St,40.7795899,-73.9618385,intersection,1537
+5th Ave & 84th St,40.7802241,-73.961376,intersection,1538
+5th Ave & 85th St,40.7808552,-73.9609158,intersection,1539
+5th Ave & 86th St,40.7815332,-73.9604135,intersection,1540
+5th Ave & 87th St,40.78222,-73.9599261,intersection,1541
+5th Ave & 88th St,40.7828435,-73.9594741,intersection,1542
+5th Ave & 89th St,40.7834666,-73.9590127,intersection,1543
+5th Ave & 90th St,40.7840829,-73.9585668,intersection,1544
+5th Ave & 91st St,40.7847264,-73.958089,intersection,1545
+5th Ave & 92nd St,40.785355,-73.9576403,intersection,1546
+5th Ave & 93rd St,40.7859635,-73.9571813,intersection,1547
+5th Ave & 94th St,40.7865935,-73.9567199,intersection,1548
+5th Ave & 95th St,40.7872363,-73.9562595,intersection,1549
+5th Ave & 96th St,40.7879094,-73.9557764,intersection,1550
+5th Ave & 97th St,40.7885858,-73.9552765,intersection,1551
+5th Ave & Duke Ellington Circle,40.7970983,-73.9490775,intersection,1552
+5th St & Ave D,40.7218964,-73.9773551,intersection,1553
+5th St & Ave C,40.7228996,-73.9797315,intersection,1554
+5th St & Ave B,40.7238917,-73.9820956,intersection,1555
+5th St & Ave A,40.7248612,-73.98442,intersection,1556
+5th St & Cooper Sq,40.7277675,-73.9913,intersection,1557
+60th St & York Ave,40.7592855,-73.9592622,intersection,1558
+60th St & Lexington Ave,40.7628561,-73.9677252,intersection,1559
+60th St & Park Ave,40.7634977,-73.9692303,intersection,1560
+60th St & Madison Ave,40.7642243,-73.9709714,intersection,1561
+60th St & Broadway,40.7689403,-73.9821965,intersection,1562
+60th St & Columbus Ave,40.7698759,-73.9843117,intersection,1563
+60th St & Amsterdam Ave,40.7710517,-73.9871426,intersection,1564
+60th St & W End Ave,40.7722343,-73.9899723,intersection,1565
+60th St & Freedom Pl,40.7726877,-73.9910603,intersection,1566
+61st St & York Ave,40.7599072,-73.9587955,intersection,1567
+61st St & Lexington Ave,40.763483,-73.9672732,intersection,1568
+61st St & Park Ave,40.7641999,-73.9689954,intersection,1569
+61st St & Madison Ave,40.7648397,-73.9704959,intersection,1570
+61st St & Central Park W,40.7692978,-73.9810471,intersection,1571
+61st St & Broadway,40.7697767,-73.9822136,intersection,1572
+61st St & Columbus Ave,40.77048,-73.983855,intersection,1573
+61st St & Amsterdam Ave,40.7716723,-73.9866895,intersection,1574
+61st St & W End Ave,40.7728698,-73.9895497,intersection,1575
+61st St & Freedom Pl,40.773268,-73.9905825,intersection,1576
+61st St & Riverside Blvd,40.7739317,-73.9920396,intersection,1577
+62nd St & York Ave,40.7605339,-73.9583462,intersection,1578
+62nd St & Lexington Ave,40.7641064,-73.9668129,intersection,1579
+62nd St & Park Ave,40.7648271,-73.9685315,intersection,1580
+62nd St & Madison Ave,40.7654675,-73.970045,intersection,1581
+62nd St & Central Park W,40.7699224,-73.9805605,intersection,1582
+62nd St & Broadway,40.7705265,-73.9820197,intersection,1583
+62nd St & Columbus Ave,40.7711161,-73.9834168,intersection,1584
+62nd St & Amsterdam Ave,40.7722877,-73.9862027,intersection,1585
+62nd St & Freedom Pl,40.7739877,-73.9902276,intersection,1586
+62nd St & Riverside Blvd,40.774506,-73.9914206,intersection,1587
+63rd St & York Ave,40.7611923,-73.957883,intersection,1588
+63rd St & Lexington Ave,40.764746,-73.9663651,intersection,1589
+63rd St & Park Ave,40.7654539,-73.9680764,intersection,1590
+63rd St & Madison Ave,40.766092,-73.9695811,intersection,1591
+63rd St & Central Park W,40.7705407,-73.980117,intersection,1592
+63rd St & Broadway,40.7713414,-73.9820384,intersection,1593
+63rd St & Columbus Ave,40.7717344,-73.9829555,intersection,1594
+63rd St & Amsterdam Ave,40.7729227,-73.9857785,intersection,1595
+63rd St & W End Ave,40.7741221,-73.9886311,intersection,1596
+63rd St & Freedom Pl,40.7745608,-73.9896463,intersection,1597
+63rd St & Riverside Blvd,40.7750432,-73.9907581,intersection,1598
+64th St & York Ave,40.7617947,-73.9574508,intersection,1599
+64th St & Lexington Ave,40.765357,-73.9659,intersection,1600
+64th St & Park Ave,40.7660791,-73.9676253,intersection,1601
+64th St & Madison Ave,40.7667153,-73.9691284,intersection,1602
+64th St & Central Park W,40.7711615,-73.9796631,intersection,1603
+64th St & Broadway,40.7721782,-73.9820748,intersection,1604
+64th St & Amsterdam Ave,40.7735391,-73.9853266,intersection,1605
+64th St & W End Ave,40.7747467,-73.9881778,intersection,1606
+64th St & Riverside Blvd,40.7755856,-73.9901438,intersection,1607
+65th St & York Ave,40.7624174,-73.9569915,intersection,1608
+65th St & Lexington Ave,40.7659808,-73.9654396,intersection,1609
+65th St & Park Ave,40.7666275,-73.9669578,intersection,1610
+65th St & Madison Ave,40.7673485,-73.9686709,intersection,1611
+65th St & Central Park W,40.7717916,-73.9792078,intersection,1612
+65th St & Columbus Ave,40.7729826,-73.9820422,intersection,1613
+65th St & Broadway,40.7730838,-73.9823192,intersection,1614
+65th St & Amsterdam Ave,40.7741554,-73.9848592,intersection,1615
+65th St & W End Ave,40.7753794,-73.9877191,intersection,1616
+65th St & Riverside Blvd,40.7761736,-73.9896195,intersection,1617
+66th St & York Ave,40.7630462,-73.956526,intersection,1618
+66th St & Lexington Ave,40.766614,-73.9649986,intersection,1619
+66th St & Park Ave,40.7672472,-73.9665082,intersection,1620
+66th St & Madison Ave,40.7679769,-73.968207,intersection,1621
+66th St & Central Park W,40.7724281,-73.9787386,intersection,1622
+66th St & Columbus Ave,40.7736069,-73.9815795,intersection,1623
+66th St & Broadway,40.7739234,-73.9823397,intersection,1624
+66th St & Amsterdam Ave,40.7748125,-73.984397,intersection,1625
+66th St & W End Ave,40.7760243,-73.9872417,intersection,1626
+66th St & Freedom Pl,40.776524,-73.9884058,intersection,1627
+66th St & Riverside Blvd,40.7768429,-73.9891662,intersection,1628
+67th St & York Ave,40.763667,-73.956083,intersection,1629
+67th St & Lexington Ave,40.7672292,-73.9645263,intersection,1630
+67th St & Park Ave,40.7679446,-73.9662489,intersection,1631
+67th St & Madison Ave,40.7685923,-73.9677588,intersection,1632
+67th St & Central Park W,40.7730403,-73.9782945,intersection,1633
+67th St & Columbus Ave,40.7742367,-73.9811285,intersection,1634
+67th St & Broadway,40.7746388,-73.9820929,intersection,1635
+67th St & Amsterdam Ave,40.775453,-73.9839566,intersection,1636
+67th St & Freedom Pl,40.7771699,-73.9880852,intersection,1637
+67th St & Riverside Blvd,40.7774857,-73.9888483,intersection,1638
+68th St & York Ave,40.7643047,-73.9555939,intersection,1639
+68th St & Lexington Ave,40.7678615,-73.9640761,intersection,1640
+68th St & Park Ave,40.7685035,-73.9655976,intersection,1641
+68th St & Madison Ave,40.7692161,-73.967306,intersection,1642
+68th St & Central Park W,40.7736786,-73.9778289,intersection,1643
+68th St & Columbus Ave,40.774852,-73.98066,intersection,1644
+68th St & Broadway,40.7754414,-73.982069,intersection,1645
+68th St & Amsterdam Ave,40.776058,-73.983505,intersection,1646
+68th St & Freedom Pl,40.7778564,-73.9877553,intersection,1647
+68th St & Riverside Blvd,40.7782037,-73.9885895,intersection,1648
+69th St & York Ave,40.7649123,-73.955159,intersection,1649
+69th St & Lexington Ave,40.7684853,-73.9636088,intersection,1650
+69th St & Park Ave,40.7692084,-73.9653466,intersection,1651
+69th St & Madison Ave,40.7698498,-73.9668452,intersection,1652
+69th St & Central Park W,40.7742987,-73.9773788,intersection,1653
+69th St & Columbus Ave,40.775487,-73.9802007,intersection,1654
+69th St & Broadway,40.7763439,-73.9822455,intersection,1655
+69th St & Amsterdam Ave,40.776683,-73.983047,intersection,1656
+69th St & Freedom Pl,40.7785266,-73.9874294,intersection,1657
+69th St & Riverside Blvd,40.7788912,-73.9883347,intersection,1658
+6th Ave & Franklin St,40.7182973,-74.005364,intersection,1659
+6th Ave & White St,40.7190054,-74.0051707,intersection,1660
+6th Ave & Walker St,40.7198392,-74.0051883,intersection,1661
+6th Ave & Lispenard St,40.7205729,-74.0052061,intersection,1662
+6th Ave & Canal St,40.721929,-74.0053587,intersection,1663
+6th Ave & Thompson St,40.7222297,-74.005382,intersection,1664
+6th Ave & Grand St,40.7230124,-74.0050623,intersection,1665
+6th Ave & Watts St,40.7236345,-74.0048128,intersection,1666
+6th Ave & Sullivan St,40.7237878,-74.0047406,intersection,1667
+6th Ave & Broome St,40.7241843,-74.0045942,intersection,1668
+6th Ave & Spring St,40.7255241,-74.0040542,intersection,1669
+6th Ave & Vandam St,40.7262643,-74.0037617,intersection,1670
+6th Ave & Prince St,40.7269556,-74.0034607,intersection,1671
+6th Ave & Charlton St,40.7269556,-74.0034607,intersection,1671
+6th Ave & King St,40.7276809,-74.0031651,intersection,1672
+6th Ave & W Houston St,40.7280099,-74.0030247,intersection,1673
+6th Ave & Downing St,40.7296754,-74.0022082,intersection,1674
+6th Ave & Bleecker St,40.729781,-74.0021502,intersection,1675
+6th Ave & Carmine St,40.7305359,-74.0017279,intersection,1676
+6th Ave & Washington Pl,40.7323249,-74.000528,intersection,1677
+6th Ave & Waverly Pl,40.7329337,-74.0000828,intersection,1678
+6th Ave & 8th St,40.7336446,-73.9995454,intersection,1679
+6th Ave & 9th St,40.7341486,-73.9991785,intersection,1680
+6th Ave & Christopher St,40.7341486,-73.9991785,intersection,1680
+6th St & Ave D,40.7225032,-73.9769125,intersection,1681
+6th St & Ave C,40.7235064,-73.9792916,intersection,1682
+6th St & Ave B,40.7244971,-73.9816337,intersection,1683
+6th St & Ave A,40.7254486,-73.983968,intersection,1684
+6th St & Cooper Sq,40.7283225,-73.9907558,intersection,1224
+70th St & York Ave,40.7655465,-73.9546909,intersection,1685
+70th St & Lexington Ave,40.769113,-73.963161,intersection,1686
+70th St & Park Ave,40.7697556,-73.9646861,intersection,1687
+70th St & Madison Ave,40.770474,-73.9663868,intersection,1688
+70th St & Central Park W,40.774909,-73.976912,intersection,1689
+70th St & Columbus Ave,40.7761118,-73.9797749,intersection,1690
+70th St & Broadway,40.7770594,-73.9819895,intersection,1691
+70th St & Amsterdam Ave,40.7773059,-73.9825827,intersection,1692
+70th St & W End Ave,40.7784813,-73.9854507,intersection,1693
+70th St & Freedom Pl,40.7791776,-73.9871009,intersection,1694
+70th St & Riverside Blvd,40.7795513,-73.9880048,intersection,1695
+71st St & York Ave,40.7661608,-73.954237,intersection,1696
+71st St & Lexington Ave,40.7697428,-73.9627071,intersection,1697
+71st St & Park Ave,40.7704595,-73.964431,intersection,1698
+71st St & Madison Ave,40.7711001,-73.9659301,intersection,1699
+71st St & Central Park W,40.775533,-73.976458,intersection,1700
+71st St & Columbus Ave,40.7767377,-73.9793226,intersection,1701
+71st St & Broadway,40.7778632,-73.9819623,intersection,1702
+71st St & Amsterdam Ave,40.7779168,-73.9821095,intersection,1703
+71st St & W End Ave,40.779136,-73.9849752,intersection,1704
+71st St & Riverside Blvd,40.7802256,-73.9875636,intersection,1705
+72nd St & York Ave,40.7668589,-73.9537526,intersection,1706
+72nd St & Lexington Ave,40.7704246,-73.9621972,intersection,1707
+72nd St & Park Ave,40.7711473,-73.9639279,intersection,1708
+72nd St & Madison Ave,40.7717866,-73.9654447,intersection,1709
+72nd St & Central Park W,40.7762238,-73.9759669,intersection,1710
+72nd St & Columbus Ave,40.7774141,-73.978797,intersection,1711
+72nd St & Amsterdam Ave,40.7786086,-73.9816391,intersection,1712
+72nd St & Broadway,40.778794,-73.9820683,intersection,1713
+72nd St & W End Ave,40.7798103,-73.984479,intersection,1714
+72nd St & Riverside Dr,40.7803211,-73.9857008,intersection,1715
+72nd St & Riverside Blvd,40.780712,-73.9870003,intersection,1716
+73rd St & York Ave,40.7675488,-73.9532541,intersection,1717
+73rd St & Lexington Ave,40.7711078,-73.9617145,intersection,1718
+73rd St & Park Ave,40.7717443,-73.9632455,intersection,1719
+73rd St & Madison Ave,40.7724758,-73.9649445,intersection,1720
+73rd St & Central Park W,40.7769085,-73.9754605,intersection,1721
+73rd St & Columbus Ave,40.7780997,-73.9782872,intersection,1722
+73rd St & Amsterdam Ave,40.7792913,-73.9811485,intersection,1723
+73rd St & Broadway,40.7794995,-73.9816211,intersection,1724
+73rd St & W End Ave,40.7804967,-73.9839774,intersection,1725
+73rd St & Riverside Dr,40.7810705,-73.9853735,intersection,1726
+74th St & York Ave,40.7681765,-73.9527941,intersection,1727
+74th St & Lexington Ave,40.771739,-73.961244,intersection,1728
+74th St & Park Ave,40.7723773,-73.9627854,intersection,1729
+74th St & Madison Ave,40.7731116,-73.9644885,intersection,1730
+74th St & Central Park W,40.7775331,-73.9750032,intersection,1731
+74th St & Columbus Ave,40.7787279,-73.9778207,intersection,1732
+74th St & Amsterdam Ave,40.7799362,-73.980698,intersection,1733
+74th St & Broadway,40.7803292,-73.9816117,intersection,1734
+74th St & W End Ave,40.7811314,-73.9835107,intersection,1735
+74th St & Riverside Dr,40.7817763,-73.9850785,intersection,1736
+75th St & York Ave,40.7688161,-73.9523247,intersection,1737
+75th St & Lexington Ave,40.772373,-73.9608005,intersection,1738
+75th St & Park Ave,40.7730089,-73.9623131,intersection,1739
+75th St & Madison Ave,40.7737484,-73.9640245,intersection,1740
+75th St & Central Park W,40.7781814,-73.9745414,intersection,1741
+75th St & Columbus Ave,40.7793756,-73.9773846,intersection,1742
+75th St & Amsterdam Ave,40.7805678,-73.9802103,intersection,1743
+75th St & Broadway,40.7809943,-73.9812282,intersection,1744
+75th St & W End Ave,40.7817682,-73.9830494,intersection,1745
+75th St & Riverside Dr,40.782481,-73.9847834,intersection,1746
+76th St & York Ave,40.7694491,-73.951862,intersection,1747
+76th St & Lexington Ave,40.773008,-73.96032,intersection,1748
+76th St & Park Ave,40.7737362,-73.9620396,intersection,1749
+76th St & Madison Ave,40.7743811,-73.9635578,intersection,1750
+76th St & Central Park W,40.778812,-73.9740828,intersection,1751
+76th St & Columbus Ave,40.7800154,-73.9769205,intersection,1752
+76th St & Amsterdam Ave,40.7812025,-73.9797543,intersection,1753
+76th St & Broadway,40.7817946,-73.981149,intersection,1754
+76th St & W End Ave,40.7824028,-73.9825934,intersection,1755
+76th St & Riverside Dr,40.7831908,-73.9844723,intersection,1756
+77th St & York Ave,40.7700819,-73.9514007,intersection,1757
+77th St & Lexington Ave,40.7736478,-73.959857,intersection,1758
+77th St & Park Ave,40.7743722,-73.9615739,intersection,1759
+77th St & Madison Ave,40.7750168,-73.9630991,intersection,1760
+77th St & Central Park W,40.7794829,-73.9735811,intersection,1761
+77th St & Columbus Ave,40.7806721,-73.9764173,intersection,1762
+77th St & Amsterdam Ave,40.7818433,-73.9792822,intersection,1763
+77th St & Broadway,40.78253,-73.9809177,intersection,1764
+77th St & W End Ave,40.7830395,-73.9821213,intersection,1765
+77th St & Riverside Dr,40.783794,-73.9838983,intersection,1766
+78th St & York Ave,40.7707197,-73.9509353,intersection,1767
+78th St & Lexington Ave,40.7742796,-73.9593972,intersection,1768
+78th St & Park Ave,40.7749325,-73.9609225,intersection,1769
+78th St & Madison Ave,40.7756496,-73.9626297,intersection,1770
+78th St & Columbus Ave,40.7812696,-73.9759798,intersection,1771
+78th St & Amsterdam Ave,40.7824668,-73.9788263,intersection,1772
+78th St & Broadway,40.7831309,-73.9804007,intersection,1773
+78th St & W End Ave,40.7836651,-73.9816734,intersection,1774
+78th St & Riverside Dr,40.7843637,-73.9833042,intersection,1775
+79th St & E End Ave,40.7704181,-73.9480761,intersection,1776
+79th St & York Ave,40.7713992,-73.9504391,intersection,1777
+79th St & Lexington Ave,40.7749333,-73.9589108,intersection,1778
+79th St & Park Ave,40.7756369,-73.9603857,intersection,1779
+79th St & Madison Ave,40.7763005,-73.962148,intersection,1780
+79th St & Columbus Ave,40.7819529,-73.9754869,intersection,1781
+79th St & Amsterdam Ave,40.7831516,-73.9783327,intersection,1782
+79th St & Broadway,40.7838194,-73.9799099,intersection,1783
+79th St & W End Ave,40.7843515,-73.9811718,intersection,1784
+79th St & Riverside Dr,40.784979,-73.9826618,intersection,1785
+7th Ave & Varick St,40.7294095,-74.0051838,intersection,1786
+7th Ave & Carmine St,40.7294095,-74.0051838,intersection,1786
+7th Ave & Leroy St,40.7303291,-74.004692,intersection,1787
+7th Ave & Bedford St,40.7307284,-74.0044668,intersection,1788
+7th Ave & Morton St,40.731142,-74.0042281,intersection,1789
+7th Ave & Commerce St,40.7319238,-74.0037996,intersection,1790
+7th Ave & Bleecker St,40.7322487,-74.0036048,intersection,1791
+7th Ave & Barrow St,40.7323601,-74.0035479,intersection,1792
+7th Ave & Grove St,40.7332253,-74.0030305,intersection,1793
+7th Ave & Christopher St,40.7336089,-74.0028203,intersection,1405
+7th Ave & Charles St,40.73507,-74.001972,intersection,1794
+7th Ave & Waverly Pl,40.7355599,-74.0016979,intersection,1795
+7th Ave & Perry St,40.735798,-74.0015551,intersection,1796
+7th Ave & Greenwich Ave,40.73658,-74.0011456,intersection,1797
+7th St & Ave D,40.7230856,-73.9764833,intersection,1798
+7th St & Ave C,40.7240898,-73.9788665,intersection,1799
+7th St & Ave B,40.7250728,-73.9812178,intersection,1800
+7th St & Ave A,40.7260554,-73.9835429,intersection,1801
+7th St & Cooper Sq,40.7289111,-73.9903783,intersection,1225
+80th St & E End Ave,40.7710783,-73.9475906,intersection,1802
+80th St & York Ave,40.7720817,-73.9499415,intersection,1803
+80th St & Lexington Ave,40.7756341,-73.9584041,intersection,1804
+80th St & Park Ave,40.7763676,-73.9601098,intersection,1805
+80th St & Madison Ave,40.7769974,-73.9616223,intersection,1806
+80th St & Columbus Ave,40.7826515,-73.9749971,intersection,1807
+80th St & Amsterdam Ave,40.7838387,-73.9778271,intersection,1808
+80th St & Broadway,40.7845008,-73.9793935,intersection,1809
+80th St & W End Ave,40.7850359,-73.9806797,intersection,1810
+80th St & Riverside Dr,40.7856046,-73.9820047,intersection,1811
+81st St & E End Ave,40.7717253,-73.9471255,intersection,1812
+81st St & York Ave,40.7727165,-73.9494815,intersection,1813
+81st St & Lexington Ave,40.776275,-73.957936,intersection,1814
+81st St & Park Ave,40.7769231,-73.9594701,intersection,1815
+81st St & Madison Ave,40.7776134,-73.9611789,intersection,1816
+81st St & Central Park W,40.7820454,-73.9717106,intersection,1817
+81st St & Columbus Ave,40.7832629,-73.9745522,intersection,1818
+81st St & Amsterdam Ave,40.7844744,-73.9773671,intersection,1819
+81st St & Broadway,40.7852035,-73.9790945,intersection,1820
+81st St & W End Ave,40.7856716,-73.9802143,intersection,1821
+81st St & Riverside Dr,40.7861945,-73.9814508,intersection,1822
+82nd St & E End Ave,40.77236,-73.9466612,intersection,1823
+82nd St & York Ave,40.7733482,-73.9490175,intersection,1824
+82nd St & Lexington Ave,40.776911,-73.957472,intersection,1825
+82nd St & Park Ave,40.7775649,-73.959002,intersection,1826
+82nd St & Madison Ave,40.7782799,-73.9606965,intersection,1827
+82nd St & Central Park W,40.782715,-73.9712301,intersection,1828
+82nd St & Columbus Ave,40.783907,-73.9740661,intersection,1829
+82nd St & Amsterdam Ave,40.7851039,-73.9769031,intersection,1830
+82nd St & Broadway,40.7857569,-73.9784601,intersection,1831
+82nd St & W End Ave,40.7863113,-73.9797489,intersection,1832
+82nd St & Riverside Dr,40.7868972,-73.9812362,intersection,1833
+83rd St & E End Ave,40.7729938,-73.9461972,intersection,1834
+83rd St & York Ave,40.773983,-73.9485548,intersection,1835
+83rd St & Lexington Ave,40.777546,-73.9570127,intersection,1836
+83rd St & Park Ave,40.7782667,-73.9587258,intersection,1837
+83rd St & Madison Ave,40.7788867,-73.9602326,intersection,1838
+83rd St & Central Park W,40.7833428,-73.9707619,intersection,1839
+83rd St & Columbus Ave,40.7845455,-73.9735999,intersection,1840
+83rd St & Amsterdam Ave,40.7857376,-73.9764445,intersection,1841
+83rd St & Broadway,40.7863976,-73.9779854,intersection,1842
+83rd St & W End Ave,40.7869408,-73.9792876,intersection,1843
+83rd St & Riverside Dr,40.7876029,-73.9811651,intersection,1844
+84th St & E End Ave,40.7736224,-73.9457372,intersection,1845
+84th St & York Ave,40.7746197,-73.9480881,intersection,1846
+84th St & Lexington Ave,40.77818,-73.956546,intersection,1847
+84th St & Park Ave,40.7789085,-73.9582618,intersection,1848
+84th St & Madison Ave,40.7795462,-73.9597866,intersection,1849
+84th St & Central Park W,40.7839749,-73.9703014,intersection,1850
+84th St & Columbus Ave,40.7851685,-73.9731314,intersection,1851
+84th St & Amsterdam Ave,40.7863639,-73.9760009,intersection,1852
+84th St & Broadway,40.7870054,-73.9774801,intersection,1853
+84th St & W End Ave,40.7875785,-73.9788249,intersection,1854
+84th St & Riverside Dr,40.7884924,-73.9810713,intersection,1855
+85th St & E End Ave,40.7742633,-73.9452718,intersection,1856
+85th St & York Ave,40.7752575,-73.9476255,intersection,1857
+85th St & Lexington Ave,40.7788167,-73.956077,intersection,1858
+85th St & Park Ave,40.7795442,-73.9577951,intersection,1859
+85th St & Madison Ave,40.7801766,-73.9593211,intersection,1860
+85th St & Central Park W,40.784612,-73.9698224,intersection,1861
+85th St & Columbus Ave,40.7858042,-73.9726874,intersection,1862
+85th St & Amsterdam Ave,40.7869996,-73.9755309,intersection,1863
+85th St & Broadway,40.787701,-73.9771646,intersection,1864
+85th St & W End Ave,40.7882111,-73.9783636,intersection,1865
+85th St & Riverside Dr,40.789262,-73.9808553,intersection,1866
+86th St & E End Ave,40.7749468,-73.9447823,intersection,1867
+86th St & York Ave,40.7759305,-73.947118,intersection,1868
+86th St & Lexington Ave,40.7794918,-73.9555733,intersection,1869
+86th St & Park Ave,40.7802256,-73.9573002,intersection,1870
+86th St & Madison Ave,40.7808623,-73.9588047,intersection,1871
+86th St & Central Park W,40.7852883,-73.96935,intersection,1872
+86th St & Columbus Ave,40.7864991,-73.9721864,intersection,1873
+86th St & Amsterdam Ave,40.7876872,-73.9750135,intersection,1874
+86th St & Broadway,40.7883502,-73.9765853,intersection,1875
+86th St & W End Ave,40.7888924,-73.9778633,intersection,1876
+86th St & Riverside Dr,40.7899444,-73.9803645,intersection,1877
+87th St & E End Ave,40.7756152,-73.9442962,intersection,1878
+87th St & York Ave,40.7766033,-73.9466364,intersection,1879
+87th St & Lexington Ave,40.78017,-73.9550816,intersection,1880
+87th St & Park Ave,40.7808948,-73.9568026,intersection,1881
+87th St & Madison Ave,40.7815475,-73.9583152,intersection,1882
+87th St & Central Park W,40.7859703,-73.9688452,intersection,1883
+87th St & Columbus Ave,40.7871616,-73.9716823,intersection,1884
+87th St & Amsterdam Ave,40.7883666,-73.9745459,intersection,1885
+87th St & Broadway,40.7890075,-73.9760484,intersection,1886
+87th St & W End Ave,40.7895649,-73.9773839,intersection,1887
+87th St & Riverside Dr,40.7906192,-73.9798896,intersection,1888
+88th St & E End Ave,40.7762462,-73.9438311,intersection,1889
+88th St & York Ave,40.777233,-73.9461792,intersection,1890
+88th St & Lexington Ave,40.7807996,-73.9546376,intersection,1891
+88th St & Park Ave,40.7814422,-73.9561416,intersection,1892
+88th St & Madison Ave,40.782163,-73.9578617,intersection,1893
+88th St & Central Park W,40.7866043,-73.9683911,intersection,1894
+88th St & Columbus Ave,40.7877948,-73.9712245,intersection,1895
+88th St & Amsterdam Ave,40.7890023,-73.9740865,intersection,1896
+88th St & Broadway,40.7895568,-73.9753998,intersection,1897
+88th St & W End Ave,40.7901944,-73.9769269,intersection,1898
+88th St & Riverside Dr,40.7912441,-73.9794076,intersection,1899
+89th St & E End Ave,40.7769089,-73.9433983,intersection,1900
+89th St & York Ave,40.7778639,-73.945729,intersection,1901
+89th St & Lexington Ave,40.781424,-73.9541736,intersection,1902
+89th St & Park Ave,40.7820641,-73.9556887,intersection,1903
+89th St & Madison Ave,40.7827952,-73.9574148,intersection,1904
+89th St & Central Park W,40.7872215,-73.9679357,intersection,1905
+89th St & Columbus Ave,40.7884258,-73.9707653,intersection,1906
+89th St & Amsterdam Ave,40.7896269,-73.9736228,intersection,1907
+89th St & Broadway,40.7901841,-73.9749546,intersection,1908
+89th St & W End Ave,40.7908156,-73.9764719,intersection,1909
+89th St & Riverside Dr,40.791752,-73.978692,intersection,1910
+8th Ave & Hudson St,40.736899,-74.0055244,intersection,1911
+8th Ave & Jane St,40.7381472,-74.004149,intersection,1912
+8th Ave & Columbus Cir,40.7677183,-73.982104,intersection,1913
+8th St & Ave D,40.7236985,-73.976022,intersection,1914
+8th St & Ave C,40.7247037,-73.9784186,intersection,1915
+8th St & Ave B,40.7256804,-73.9807682,intersection,1916
+8th St & Cooper Sq,40.7298479,-73.9906917,intersection,1388
+8th St & Lafayette St,40.7300573,-73.9911175,intersection,1917
+8th St & Broadway,40.7305773,-73.9924238,intersection,1918
+8th St & Mercer St,40.7309225,-73.9932753,intersection,1919
+8th St & University Pl,40.7316087,-73.9947946,intersection,1920
+8th St & Macdougal St,40.7329524,-73.998005,intersection,1921
+8th St & Greenwich Ave,40.7336446,-73.9995454,intersection,1679
+90th St & E End Ave,40.7775779,-73.9431211,intersection,1922
+90th St & York Ave,40.7784937,-73.9452608,intersection,1923
+90th St & Lexington Ave,40.782063,-73.9537159,intersection,1924
+90th St & Park Ave,40.7827019,-73.9552257,intersection,1925
+90th St & Madison Ave,40.7834182,-73.9569597,intersection,1926
+90th St & Central Park W,40.7878632,-73.9674687,intersection,1927
+90th St & Columbus Ave,40.7890448,-73.9703053,intersection,1928
+90th St & Amsterdam Ave,40.7902516,-73.9731722,intersection,1929
+90th St & Broadway,40.7908061,-73.9744937,intersection,1930
+90th St & W End Ave,40.791441,-73.9760113,intersection,1931
+90th St & Riverside Dr,40.7921713,-73.9777077,intersection,1932
+91st St & York Ave,40.7791348,-73.944753,intersection,1933
+91st St & Lexington Ave,40.7826907,-73.9532552,intersection,1934
+91st St & Park Ave,40.7834235,-73.9549695,intersection,1935
+91st St & Madison Ave,40.784061,-73.9564843,intersection,1936
+91st St & Central Park W,40.7884803,-73.9670177,intersection,1937
+91st St & Columbus Ave,40.789674,-73.96985,intersection,1938
+91st St & Amsterdam Ave,40.7908816,-73.9727347,intersection,1939
+91st St & Broadway,40.7915131,-73.9742299,intersection,1940
+91st St & W End Ave,40.7920727,-73.9755459,intersection,1941
+91st St & Riverside Dr,40.7927426,-73.9770935,intersection,1942
+92nd St & York Ave,40.779727,-73.9442606,intersection,1943
+92nd St & Lexington Ave,40.783309,-73.952801,intersection,1944
+92nd St & Park Ave,40.7840382,-73.9545344,intersection,1945
+92nd St & Madison Ave,40.7846708,-73.9560303,intersection,1946
+92nd St & Central Park W,40.7891117,-73.9665599,intersection,1947
+92nd St & Columbus Ave,40.7903045,-73.9693897,intersection,1948
+92nd St & Amsterdam Ave,40.7915112,-73.972267,intersection,1949
+92nd St & Broadway,40.7921427,-73.9737738,intersection,1950
+92nd St & W End Ave,40.792696,-73.975075,intersection,1951
+92nd St & Riverside Dr,40.7933436,-73.976617,intersection,1952
+93rd St & Lexington Ave,40.7839373,-73.952344,intersection,1953
+93rd St & Park Ave,40.784572,-73.9538572,intersection,1954
+93rd St & Madison Ave,40.7853031,-73.9555696,intersection,1955
+93rd St & Central Park W,40.7897414,-73.9661027,intersection,1956
+93rd St & Columbus Ave,40.7909383,-73.9689426,intersection,1957
+93rd St & Amsterdam Ave,40.7921354,-73.9717984,intersection,1958
+93rd St & Broadway,40.792767,-73.973309,intersection,1959
+93rd St & W End Ave,40.7933356,-73.9746273,intersection,1960
+93rd St & Riverside Dr,40.7940348,-73.9763391,intersection,1961
+94th St & Lexington Ave,40.7845689,-73.9518835,intersection,1962
+94th St & Park Ave,40.7852027,-73.9533979,intersection,1963
+94th St & Madison Ave,40.785931,-73.9551087,intersection,1964
+94th St & Central Park W,40.7903662,-73.9656466,intersection,1965
+94th St & Columbus Ave,40.7915641,-73.9684768,intersection,1966
+94th St & Amsterdam Ave,40.7927713,-73.97133,intersection,1967
+94th St & Broadway,40.7933095,-73.9726319,intersection,1968
+94th St & W End Ave,40.7939578,-73.974151,intersection,1969
+94th St & Riverside Dr,40.7948352,-73.9762554,intersection,1970
+95th St & Lexington Ave,40.7851964,-73.9514342,intersection,1971
+95th St & Park Ave,40.7858341,-73.9529439,intersection,1972
+95th St & Madison Ave,40.7865592,-73.954659,intersection,1973
+95th St & Central Park W,40.7909931,-73.9651818,intersection,1974
+95th St & Columbus Ave,40.792198,-73.9680372,intersection,1975
+95th St & Amsterdam Ave,40.79338,-73.970858,intersection,1976
+95th St & Broadway,40.7939374,-73.9721545,intersection,1977
+95th St & W End Ave,40.7945941,-73.9737085,intersection,1978
+95th St & Riverside Dr,40.7954686,-73.9758011,intersection,1979
+96th St & Lexington Ave,40.7858706,-73.950934,intersection,1980
+96th St & Park Ave,40.7865034,-73.9524274,intersection,1981
+96th St & Madison Ave,40.7872316,-73.9541591,intersection,1982
+96th St & Central Park W,40.791669,-73.9646907,intersection,1983
+96th St & Columbus Ave,40.7928767,-73.9675422,intersection,1984
+96th St & Amsterdam Ave,40.7940591,-73.9703639,intersection,1985
+96th St & Broadway,40.794624,-73.9716694,intersection,1986
+96th St & W End Ave,40.7952701,-73.9732204,intersection,1987
+97th St & Lexington Ave,40.7865433,-73.9504343,intersection,1988
+97th St & Park Ave,40.7872835,-73.9521837,intersection,1989
+97th St & Madison Ave,40.7879037,-73.9536771,intersection,1990
+97th St & Central Park W,40.7923863,-73.9641827,intersection,1991
+97th St & Columbus Ave,40.7935579,-73.9670379,intersection,1992
+97th St & Amsterdam Ave,40.794736,-73.96987,intersection,1993
+97th St & Broadway,40.7953813,-73.9714062,intersection,1994
+97th St & W End Ave,40.7959368,-73.9727143,intersection,1995
+97th St & Riverside Dr,40.7965253,-73.9741203,intersection,1996
+98th St & 3rd Ave,40.7864923,-73.9483842,intersection,1997
+98th St & Lexington Ave,40.7871821,-73.94997,intersection,1998
+98th St & Park Ave,40.7879076,-73.9517321,intersection,1999
+98th St & Madison Ave,40.7885342,-73.9532137,intersection,2000
+98th St & 5th Ave,40.7892085,-73.9548095,intersection,2001
+98th St & Amsterdam Ave,40.795361,-73.969415,intersection,2002
+98th St & Broadway,40.7960116,-73.970947,intersection,2003
+98th St & W End Ave,40.796575,-73.9722692,intersection,2004
+98th St & Riverside Dr,40.7971598,-73.9736477,intersection,2005
+99th St & Lexington Ave,40.7878095,-73.9495241,intersection,2006
+99th St & Park Ave,40.7884393,-73.9509921,intersection,2007
+99th St & Madison Ave,40.7891821,-73.9527316,intersection,2008
+99th St & Amsterdam Ave,40.795988,-73.968956,intersection,2009
+99th St & Broadway,40.7966408,-73.9704913,intersection,2010
+99th St & W End Ave,40.7972062,-73.97181,intersection,2011
+99th St & Riverside Dr,40.7979003,-73.9734739,intersection,2012
+9th Ave & Little W 12th St,40.739631,-74.0063583,intersection,2013
+9th Ave & Gansevoort St,40.7394046,-74.006447,intersection,2014
+9th St & Ave D,40.724291,-73.9755996,intersection,2015
+9th St & Ave C,40.7253003,-73.9779827,intersection,2016
+9th St & Ave B,40.7262882,-73.9803296,intersection,2017
+9th St & Ave A,40.7272618,-73.9826618,intersection,2018
+9th St & Broadway,40.7311726,-73.9919268,intersection,2019
+9th St & University Pl,40.732168,-73.9943121,intersection,2020
+Adam Clayton Powell Jr Blvd & St Nicholas Ave,40.8028626,-73.9526962,intersection,2021
+Allen St & Canal St,40.7151212,-73.9926304,intersection,2022
+Allen St & Hester St,40.7161698,-73.9917991,intersection,2023
+Allen St & Grand St,40.7173476,-73.9911807,intersection,2024
+Allen St & Broome St,40.7182605,-73.9906996,intersection,2025
+Allen St & Delancey St,40.7192517,-73.9902163,intersection,2026
+Allen St & Rivington St,40.7204623,-73.9896034,intersection,2027
+Allen St & Stanton St,40.7216982,-73.9892721,intersection,2028
+Allen St & E Houston St,40.7230429,-73.9887305,intersection,2029
+Amsterdam Ave & Broadway,40.7782439,-73.9818959,intersection,2030
+Amsterdam Ave & La Salle St,40.8126267,-73.9568293,intersection,2031
+Amsterdam Ave & Hamilton Pl,40.8244446,-73.9481936,intersection,2032
+Ann St & Gold St,40.7094092,-74.0051169,intersection,2033
+Ann St & William St,40.709919,-74.0060938,intersection,2034
+Ann St & Nassau St,40.7105929,-74.0073731,intersection,2035
+Ann St & Broadway,40.7113811,-74.0086509,intersection,2036
+Astor Pl & Lafayette St,40.7298544,-73.9913978,intersection,2037
+Astor Pl & Broadway,40.7300768,-73.9928223,intersection,2038
+Ave A & E Houston St,40.7223004,-73.9862643,intersection,2039
+Ave A & St Marks Pl,40.7266662,-73.983095,intersection,2040
+Ave B & E Houston St,40.7215427,-73.9837991,intersection,2041
+Ave C & E Houston St,40.7207784,-73.9812818,intersection,2042
+Ave D & E Houston St,40.7200008,-73.978731,intersection,2043
+Bank St & Greenwich Ave,40.7371583,-74.001484,intersection,2044
+Bank St & Waverly Pl,40.7370644,-74.0021431,intersection,2045
+Bank St & Bleecker St,40.7366101,-74.0053071,intersection,2046
+Bank St & Hudson St,40.7365564,-74.0058348,intersection,2047
+Bank St & Greenwich St,40.7364478,-74.0066137,intersection,2048
+Bank St & Washington St,40.7361892,-74.0083389,intersection,2049
+Bank St & W St,40.7359852,-74.0099149,intersection,2050
+Barclay St & Broadway,40.7119995,-74.008121,intersection,2051
+Barclay St & Church St,40.712735,-74.0096918,intersection,2052
+Barclay St & Broadway,40.7119995,-74.008121,intersection,2051
+Barclay St & Greenwich St,40.7136509,-74.0116672,intersection,2053
+Barclay St & W St,40.7144012,-74.0134011,intersection,2054
+Barrow St & Bleecker St,40.7323239,-74.0036497,intersection,2055
+Barrow St & Bedford St,40.7318564,-74.0051039,intersection,2056
+Barrow St & Commerce St,40.731642,-74.0061982,intersection,2057
+Barrow St & Hudson St,40.7316756,-74.0066099,intersection,2058
+Barrow St & Greenwich St,40.7317894,-74.0078129,intersection,2059
+Barrow St & Washington St,40.7318819,-74.0087999,intersection,2060
+Barrow St & W St,40.7320105,-74.0102661,intersection,2061
+Battery Pl & Broadway,40.7045091,-74.0142757,intersection,2062
+Battery Pl & State St,40.7045091,-74.0142757,intersection,2062
+Battery Pl & Greenwich St,40.7048282,-74.0149707,intersection,2063
+Battery Pl & Washington St,40.7049376,-74.0156503,intersection,2064
+Battery Pl & W St,40.7048866,-74.016434,intersection,2065
+Baxter St & Bayard St,40.7162072,-74.0001391,intersection,2066
+Baxter St & White St,40.7165499,-73.999928,intersection,2067
+Baxter St & Walker St,40.7173236,-73.9994548,intersection,2068
+Baxter St & Canal St,40.7175486,-73.9993157,intersection,2069
+Baxter St & Hester St,40.7184349,-73.9987396,intersection,2070
+Baxter St & Grand St,40.7196069,-73.998075,intersection,2071
+Bayard St & Bowery,40.7150132,-73.9967471,intersection,2072
+Bayard St & Elizabeth St,40.7153562,-73.9977324,intersection,2073
+Bayard St & Mott St,40.7156319,-73.9985027,intersection,2074
+Bayard St & Mulberry St,40.7159175,-73.9993322,intersection,2075
+Beach St & Hudson St,40.7206463,-74.0084714,intersection,2076
+Beach St & Greenwich St,40.7207621,-74.0100284,intersection,2077
+Beaver St & Broadway,40.7050369,-74.0133216,intersection,2078
+Beaver St & New St,40.7050089,-74.0126441,intersection,2079
+Beaver St & Broad St,40.70496,-74.0115787,intersection,2080
+Beaver St & William St,40.7051478,-74.0100017,intersection,2081
+Beaver St & S William St,40.7051478,-74.0100017,intersection,2081
+Beaver St & Pearl St,40.7053446,-74.0080766,intersection,2082
+Bedford St & W Houston St,40.7283709,-74.0028251,intersection,2083
+Bedford St & Downing St,40.7293554,-74.0036769,intersection,2084
+Bedford St & Carmine St,40.7298646,-74.003972,intersection,2085
+Bedford St & Leroy St,40.7304562,-74.00431,intersection,2086
+Bedford St & Morton St,40.731016,-74.0046372,intersection,2087
+Bedford St & Commerce St,40.7315597,-74.0049389,intersection,2088
+Bedford St & Grove St,40.7324601,-74.0054566,intersection,2089
+Bedford St & Christopher St,40.7331356,-74.005884,intersection,2090
+Beekman St & Gold St,40.7096644,-74.0048258,intersection,2091
+Beekman St & William St,40.7104184,-74.005605,intersection,2092
+Beekman St & Nassau St,40.711237,-74.0064842,intersection,2093
+Beekman St & Park Row,40.711677,-74.0069674,intersection,2094
+Bleecker St & Perry St,40.7353013,-74.0049664,intersection,2095
+Bleecker St & Charles St,40.7346503,-74.0047767,intersection,2096
+Bleecker St & Christopher St,40.7333971,-74.0042429,intersection,2097
+Bleecker St & Grove St,40.7329225,-74.00398,intersection,2098
+Bleecker St & Jones St,40.7317477,-74.0032934,intersection,2099
+Bleecker St & Cornelia St,40.7311573,-74.0029514,intersection,2100
+Bleecker St & Morton St,40.7314774,-74.0031378,intersection,2101
+Bleecker St & Leroy St,40.7309377,-74.0028226,intersection,2102
+Bleecker St & Carmine St,40.7303361,-74.0024887,intersection,2103
+Bleecker St & Downing St,40.729781,-74.0021502,establishment,1675
+Bleecker St & Macdougal St,40.729187,-74.0011903,intersection,2104
+Bleecker St & Sullivan St,40.7288134,-74.000431,intersection,2105
+Bleecker St & Thompson St,40.7284387,-73.9996714,intersection,2106
+Bleecker St & LaGuardia Pl,40.7280718,-73.9989723,intersection,2107
+Bleecker St & Wooster St,40.7276785,-73.998173,intersection,2108
+Bleecker St & Mercer St,40.7269325,-73.9966764,intersection,2109
+Bleecker St & Broadway,40.726529,-73.995861,intersection,2110
+Bleecker St & Crosby St,40.7261378,-73.9950697,intersection,2111
+Bleecker St & Lafayette St,40.7259294,-73.9946406,intersection,2112
+Bleecker St & Mulberry St,40.7258491,-73.9944702,intersection,2113
+Bleecker St & Mott St,40.7256601,-73.9937729,intersection,2114
+Bleecker St & Elizabeth St,40.7254639,-73.9930607,intersection,2115
+Bleecker St & Bowery,40.725255,-73.992242,intersection,2116
+Bond St & Lafayette St,40.7266358,-73.9941216,intersection,2117
+Bond St & Broadway,40.7272181,-73.9952762,intersection,2118
+Bowery & Division St,40.7140881,-73.997421,intersection,2119
+Bowery & Pell St,40.7146454,-73.9971746,intersection,2120
+Bowery & Canal St,40.7161208,-73.996089,intersection,2121
+Bowery & Hester St,40.717284,-73.995425,route,2122
+Bowery & Grand St,40.7184706,-73.9948124,intersection,2123
+Bowery & Broome St,40.7194304,-73.9944146,intersection,2124
+Bowery & Kenmare St,40.7202793,-73.9940558,intersection,2125
+Bowery & Spring St,40.7209386,-73.9937175,intersection,2126
+Bowery & Rivington St,40.7216138,-73.9934573,intersection,2127
+Bowery & Prince St,40.7223849,-73.9933308,intersection,2128
+Bowery & Stanton St,40.7227957,-73.9930216,intersection,2129
+Bowery & E Houston St,40.724057,-73.992587,route,2130
+Bowery & Great Jones St,40.7264193,-73.9918604,intersection,2131
+Bridge St & State St,40.7035993,-74.0143924,intersection,2132
+Bridge St & Broad St,40.7035602,-74.0115931,intersection,2133
+Broad St & S St,40.7017856,-74.0111707,intersection,2134
+Broad St & Water St,40.7029531,-74.0115103,intersection,2135
+Broad St & Pearl St,40.703437,-74.0115975,intersection,2136
+Broad St & Stone St,40.704031,-74.0115842,intersection,2137
+Broad St & S William St,40.7042579,-74.0115868,intersection,2138
+Broad St & Wall St,40.707127,-74.010606,establishment,2139
+Broadway & Rector St,40.7074388,-74.0119699,intersection,2140
+Broadway & Wall St,40.7077443,-74.0117202,intersection,2141
+Broadway & Pine St,40.7083111,-74.0112367,intersection,2142
+Broadway & Thames St,40.7085953,-74.0110258,intersection,2143
+Broadway & Cedar St,40.7088103,-74.0108584,intersection,2144
+Broadway & Liberty St,40.7091503,-74.0105511,intersection,2145
+Broadway & Maiden Ln,40.7098132,-74.0099795,intersection,2146
+Broadway & John St,40.7103397,-74.0095331,intersection,2147
+Broadway & Fulton St,40.7109131,-74.0090593,intersection,2148
+Broadway & Park Pl,40.7125552,-74.0076695,intersection,2149
+Broadway & Murray St,40.713041,-74.007233,bus_station,2150
+Broadway & Warren St,40.7136248,-74.0067557,intersection,2151
+Broadway & Chambers St,40.7141829,-74.0063069,intersection,2152
+Broadway & Reade St,40.7146836,-74.0058959,intersection,2153
+Broadway & Duane St,40.7152403,-74.0054243,intersection,2154
+Broadway & Worth St,40.7162848,-74.0045363,intersection,2155
+Broadway & Leonard St,40.7168714,-74.0040358,intersection,2156
+Broadway & Franklin St,40.7174576,-74.0035359,intersection,2157
+Broadway & White St,40.718029,-74.0030479,intersection,2158
+Broadway & Walker St,40.7186342,-74.0025412,intersection,2159
+Broadway & Lispenard St,40.719153,-74.0021049,intersection,2160
+Broadway & Grand St,40.7208716,-74.0006335,intersection,2161
+Broadway & Broome St,40.7217896,-73.9998669,intersection,2162
+Broadway & Spring St,40.7230414,-73.9987861,intersection,2163
+Broadway & Prince St,40.7242289,-73.9977901,intersection,2164
+Broadway & W Houston St,40.7253922,-73.9967989,intersection,2165
+Broadway & E Houston St,40.7253922,-73.9967989,intersection,2165
+Broadway & Great Jones St,40.727835,-73.9947559,intersection,1292
+Broadway & Washington Pl,40.7290028,-73.9937742,intersection,2166
+Broadway & Waverly Pl,40.7295952,-73.99327,intersection,2167
+Broadway & W End Ave,40.802718,-73.9678219,intersection,2168
+Broadway & La Salle St,40.813727,-73.9595814,intersection,2169
+Broome St & Clinton St,40.7168949,-73.9861892,intersection,2170
+Broome St & Suffolk St,40.7171522,-73.9870351,intersection,2171
+Broome St & Norfolk St,40.7174093,-73.9878686,intersection,2172
+Broome St & Essex St,40.7176434,-73.9886729,intersection,2173
+Broome St & Ludlow St,40.7178991,-73.9894838,intersection,2174
+Broome St & Orchard St,40.7181145,-73.9902446,intersection,2175
+Broome St & Eldridge St,40.7185858,-73.9917517,intersection,2176
+Broome St & Forsyth St,40.7188482,-73.9925927,intersection,2177
+Broome St & Chrystie St,40.7190769,-73.9933759,intersection,2178
+Broome St & Elizabeth St,40.719867,-73.9952635,intersection,2179
+Broome St & Mott St,40.7201919,-73.9960409,intersection,2180
+Broome St & Mulberry St,40.7205017,-73.9968278,intersection,2181
+Broome St & Centre St,40.7208259,-73.9976636,intersection,2182
+Broome St & Lafayette St,40.7210649,-73.9981876,intersection,2183
+Broome St & Crosby St,40.7214268,-73.9990327,intersection,2184
+Broome St & Mercer St,40.7221812,-74.0006571,intersection,2185
+Broome St & Wooster St,40.7229299,-74.0021707,intersection,2186
+Broome St & Watts St,40.7232686,-74.0028416,intersection,2187
+Broome St & Thompson St,40.7236854,-74.0036405,intersection,2188
+Broome St & Sullivan St,40.7240593,-74.0043864,intersection,2189
+Broome St & Varick St,40.7244181,-74.005957,intersection,2190
+Broome St & Hudson St,40.7245756,-74.0077673,intersection,2191
+Canal St & Rutgers St,40.7144072,-73.9902307,intersection,2192
+Canal St & Essex St,40.7144072,-73.9902307,intersection,2192
+Canal St & Ludlow St,40.7146756,-73.9911298,intersection,2193
+Canal St & Orchard St,40.7149049,-73.9918814,intersection,2194
+Canal St & Eldridge St,40.7153572,-73.9934021,intersection,2195
+Canal St & Forsyth St,40.7155938,-73.9942733,intersection,2196
+Canal St & Chrystie St,40.7158602,-73.9950496,intersection,2197
+Canal St & Elizabeth St,40.7165419,-73.9969782,intersection,2198
+Canal St & Mott St,40.7168212,-73.9977594,intersection,2199
+Canal St & Mulberry St,40.7171116,-73.9985879,intersection,2200
+Canal St & Walker St,40.7171116,-73.9985879,intersection,2200
+Canal St & Centre St,40.7180233,-73.9999647,intersection,2201
+Canal St & Lafayette St,40.7184327,-74.0005471,intersection,2202
+Canal St & Cortlandt St,40.7189569,-74.0012863,intersection,2203
+Canal St & Mercer St,40.7199063,-74.0026029,intersection,2204
+Canal St & Church St,40.7205355,-74.003453,intersection,2205
+Canal St & Wooster St,40.7208719,-74.0039264,intersection,2206
+Canal St & Sullivan St,40.7223167,-74.0058807,intersection,2207
+Canal St & Varick St,40.7226286,-74.006314,intersection,2208
+Canal St & Hudson St,40.7237668,-74.0079436,intersection,2209
+Canal St & Watts St,40.7239986,-74.008434,intersection,2210
+Canal St & Renwick St,40.7243124,-74.0086859,intersection,2211
+Canal St & Greenwich St,40.7246803,-74.0093324,intersection,2212
+Canal St & Washington St,40.7252308,-74.0099917,intersection,2213
+Canal St & W St,40.7252037,-74.0112863,intersection,2214
+Cedar St & Nassau St,40.7081184,-74.009827,intersection,2215
+Cedar St & Trinity Pl,40.7093106,-74.0119221,intersection,2216
+Cedar St & Greenwich St,40.7097026,-74.0128702,intersection,2217
+Central Park W & Columbus Cir,40.7683599,-73.9815751,intersection,2218
+Central Park W & Frederick Douglass Blvd,40.8003482,-73.9582779,intersection,2219
+Centre St & Park Row,40.7121262,-74.0056991,intersection,2220
+Centre St & Chambers St,40.7131383,-74.0040745,intersection,2221
+Centre St & Reade St,40.713629,-74.003605,intersection,2222
+Centre St & Pearl St,40.7142795,-74.0026489,intersection,2223
+Centre St & Worth St,40.7151705,-74.0021222,intersection,2224
+Centre St & Leonard St,40.7157258,-74.0016955,intersection,2225
+Centre St & White St,40.7169248,-74.000827,intersection,2226
+Centre St & Walker St,40.7176161,-74.0002787,intersection,2227
+Centre St & Hester St,40.7187011,-73.9994086,intersection,2228
+Centre St & Howard St,40.7188858,-73.9992593,intersection,2229
+Centre St & Grand St,40.7197899,-73.9985217,intersection,2230
+Chambers St & River Ter,40.7181721,-74.0150114,intersection,2231
+Chambers St & N End Ave,40.7176168,-74.0138193,intersection,2232
+Chambers St & W St,40.7172486,-74.0130308,intersection,2233
+Chambers St & Greenwich St,40.7162918,-74.0109403,intersection,2234
+Chambers St & Hudson St,40.7155738,-74.0093595,intersection,2235
+Chambers St & Church St,40.7149404,-74.0079636,intersection,2236
+Charles St & W St,40.7338548,-74.0100926,intersection,2237
+Charles St & Washington St,40.7340911,-74.0084927,intersection,2238
+Charles St & Greenwich St,40.7342933,-74.0071707,intersection,2239
+Charles St & Hudson St,40.7344356,-74.0062009,intersection,2240
+Charles St & Waverly Pl,40.7351672,-74.0015852,intersection,2241
+Charles St & Greenwich Ave,40.7353276,-74.0003676,intersection,2242
+Charlton St & Varick St,40.7271635,-74.005549,intersection,2243
+Charlton St & Hudson St,40.7273316,-74.0073345,intersection,2244
+Charlton St & Greenwich St,40.7274661,-74.0088657,intersection,2245
+Chatham Sq & Mott St,40.7134946,-73.9986369,intersection,2246
+Chatham Sq & Doyers St,40.7140586,-73.9975811,intersection,2247
+Cherry St & Market St,40.7105627,-73.9941202,intersection,2248
+Cherry St & Market Slip,40.7105627,-73.9941202,intersection,2248
+Cherry St & Montgomery St,40.7117028,-73.9847946,intersection,2249
+Christopher St & Greenwich Ave,40.7340666,-73.999699,intersection,2250
+Christopher St & Waverly Pl,40.7338431,-74.0012359,intersection,2251
+Christopher St & Grove St,40.7338255,-74.0013856,intersection,2252
+Christopher St & Hudson St,40.7330556,-74.0064248,intersection,2253
+Christopher St & Greenwich St,40.732866,-74.0075286,intersection,2254
+Christopher St & Washington St,40.7326634,-74.0086259,intersection,2255
+Christopher St & W St,40.7324493,-74.0102336,intersection,2256
+Chrystie St & Hester St,40.7169698,-73.9944555,intersection,2257
+Chrystie St & Grand St,40.7181661,-73.9938466,intersection,2258
+Chrystie St & Delancey St,40.7200466,-73.9928596,intersection,2259
+Chrystie St & Rivington St,40.7212588,-73.9922315,intersection,2260
+Chrystie St & Stanton St,40.7224138,-73.9916512,intersection,2261
+Chrystie St & E Houston St,40.7237415,-73.9910319,intersection,1043
+Church St & Liberty St,40.7096644,-74.0116581,intersection,2262
+Church St & Cortlandt St,40.7103778,-74.0112104,intersection,2263
+Church St & Fulton St,40.7115136,-74.0104333,intersection,2264
+Church St & Vesey St,40.7120484,-74.0101132,intersection,2265
+Church St & Park Pl,40.713276,-74.0092614,intersection,2266
+Church St & Murray St,40.7138064,-74.0088415,intersection,2267
+Church St & Warren St,40.7143685,-74.008403,intersection,2268
+Church St & Reade St,40.7154456,-74.0075753,intersection,2269
+Church St & Duane St,40.716003,-74.0071177,intersection,2270
+Church St & Worth St,40.7170781,-74.0062439,intersection,2271
+Church St & Leonard St,40.7176809,-74.0057684,intersection,2272
+Church St & Franklin St,40.7182441,-74.0052526,intersection,2273
+Church St & White St,40.7188563,-74.0048437,intersection,2274
+Church St & Walker St,40.7194723,-74.0043783,intersection,2275
+Church St & Lispenard St,40.7200455,-74.0039116,intersection,2276
+Cleveland Pl & Kenmare St,40.7214665,-73.9974059,intersection,2277
+Cleveland Pl & Spring St,40.7222925,-73.9970929,intersection,2278
+Cliff St & John St,40.7078984,-74.006025,intersection,2279
+Cliff St & Fulton St,40.7083979,-74.0047919,intersection,2280
+Clinton St & S St,40.7104725,-73.9865914,intersection,2281
+Clinton St & Madison St,40.7129088,-73.9869493,intersection,2282
+Clinton St & Henry St,40.7136468,-73.9870848,intersection,2283
+Clinton St & Grand St,40.7159878,-73.9866878,intersection,2284
+Clinton St & Delancey St,40.7179224,-73.9856563,intersection,2285
+Clinton St & Rivington St,40.7190891,-73.9850731,intersection,2286
+Clinton St & Stanton St,40.7202579,-73.9844835,intersection,2287
+Clinton St & E Houston St,40.7215427,-73.9837991,intersection,2041
+Convent Ave & St Nicholas Ter,40.8214863,-73.948544,intersection,720
+Crosby St & E Houston St,40.7252756,-73.9958083,intersection,2288
+Crosby St & Prince St,40.7238919,-73.9969443,intersection,2289
+Crosby St & Spring St,40.7226532,-73.9979869,intersection,2290
+Crosby St & Grand St,40.7204318,-73.9998628,intersection,2291
+Crosby St & Howard St,40.7195334,-74.000645,intersection,2292
+Desbrosses St & W St,40.7236257,-74.0113676,intersection,2293
+Desbrosses St & Washington St,40.7235224,-74.0103436,intersection,2294
+Desbrosses St & Greenwich St,40.7234444,-74.0095199,intersection,2295
+Desbrosses St & Hudson St,40.7232903,-74.0080253,intersection,2296
+Division St & Market St,40.7142289,-73.9948418,intersection,2297
+Division St & Forsyth St,40.7142806,-73.9941285,intersection,2298
+Division St & Eldridge St,40.714295,-73.9939834,intersection,2299
+Division St & Orchard St,40.7144154,-73.9921236,intersection,2300
+Division St & Ludlow St,40.7144824,-73.9913736,intersection,2301
+Downing St & Varick St,40.7288561,-74.0052808,intersection,2302
+Doyers St & Pell St,40.7148199,-73.9980331,intersection,2303
+Duane St & Hudson St,40.7172716,-74.0090695,intersection,2304
+Duane St & Greenwich St,40.7174655,-74.0106373,intersection,2305
+E Houston St & Suffolk St,40.7217938,-73.9846279,intersection,2306
+E Houston St & Norfolk St,40.7220489,-73.9854982,intersection,2307
+E Houston St & Essex St,40.722178,-73.9863351,intersection,2308
+E Houston St & Ludlow St,40.722426,-73.9871572,intersection,2309
+E Houston St & Orchard St,40.7227838,-73.9878586,intersection,2310
+E Houston St & Forsyth St,40.7233731,-73.990302,intersection,2311
+E Houston St & Elizabeth St,40.7245065,-73.9934416,intersection,2312
+E Houston St & Mott St,40.7247667,-73.9941645,intersection,2313
+E Houston St & Mulberry St,40.7248898,-73.9949489,intersection,2314
+E Houston St & Lafayette St,40.7250191,-73.9953688,intersection,2315
+Eldridge St & Forsyth St,40.7137525,-73.993962,intersection,2316
+Eldridge St & Hester St,40.7164849,-73.9928314,intersection,2317
+Eldridge St & Grand St,40.717664,-73.9922279,intersection,2318
+Eldridge St & Rivington St,40.7207713,-73.9906387,intersection,2319
+Eldridge St & Stanton St,40.7219279,-73.9900493,intersection,2320
+Elizabeth St & Prince St,40.7227303,-73.9941604,intersection,2321
+Elizabeth St & Spring St,40.7213161,-73.9947103,intersection,2322
+Elizabeth St & Kenmare St,40.720633,-73.9949718,intersection,2323
+Elizabeth St & Grand St,40.7187848,-73.9956964,intersection,2324
+Elizabeth St & Hester St,40.7176116,-73.9963495,intersection,2325
+Essex St & Hester St,40.7155593,-73.9897433,intersection,2326
+Essex St & Grand St,40.7167197,-73.9891595,intersection,2327
+Essex St & Rivington St,40.7198422,-73.9875426,intersection,2328
+Essex St & Stanton St,40.7209979,-73.9869493,intersection,2329
+Forsyth St & Hester St,40.7167482,-73.993687,intersection,2330
+Forsyth St & Grand St,40.7179232,-73.9930674,intersection,2331
+Forsyth St & Rivington St,40.7210328,-73.991483,intersection,2332
+Forsyth St & Stanton St,40.7221866,-73.9908917,intersection,2333
+Franklin St & Greenwich St,40.7194472,-74.0102398,intersection,2334
+Franklin St & Hudson St,40.7193035,-74.0087007,intersection,2335
+Franklin St & Varick St,40.7191678,-74.0069219,intersection,2336
+Franklin St & Lafayette St,40.7167283,-74.0020781,intersection,2337
+Front St & Peck Slip,40.7077466,-74.0017001,intersection,2338
+Front St & Fulton St,40.7069346,-74.0037236,intersection,2339
+Front St & John St,40.7064006,-74.0045771,intersection,2340
+Front St & Maiden Ln,40.7057821,-74.0055018,intersection,2341
+Front St & Pine St,40.7053118,-74.0062103,intersection,2342
+Front St & Wall St,40.7047997,-74.0069527,intersection,2343
+Fulton St & Water St,40.7074355,-74.0040526,intersection,2344
+Fulton St & Pearl St,40.7074355,-74.0040526,intersection,2344
+Fulton St & Gold St,40.7090773,-74.0054789,intersection,2345
+Fulton St & William St,40.7095765,-74.0064331,intersection,2346
+Fulton St & Nassau St,40.7102288,-74.0077407,intersection,2347
+Fulton St & Greenwich St,40.712066,-74.0119743,intersection,2348
+Fulton St & W St,40.7128924,-74.0139609,intersection,2349
+Gansevoort St & Washington St,40.7393653,-74.0080563,intersection,2350
+Gansevoort St & Greenwich St,40.7394046,-74.006447,intersection,2014
+Gansevoort St & Hudson St,40.7394118,-74.0053906,intersection,2351
+Gold St & Maiden Ln,40.7072104,-74.00742,intersection,2352
+Gold St & Platt St,40.7078748,-74.0068216,intersection,2353
+Gold St & John St,40.7082284,-74.0065358,intersection,2354
+Grand St & Madison St,40.7138267,-73.9794125,intersection,2355
+Grand St & Henry St,40.7142483,-73.9809413,intersection,2356
+Grand St & Suffolk St,40.7161779,-73.9875421,intersection,2357
+Grand St & Norfolk St,40.7164859,-73.9883642,intersection,2358
+Grand St & Ludlow St,40.7169677,-73.9899572,intersection,2359
+Grand St & Orchard St,40.7171976,-73.9907112,intersection,2360
+Grand St & Mott St,40.7190465,-73.9964841,intersection,2361
+Grand St & Mulberry St,40.7193385,-73.9973092,intersection,2362
+Grand St & Lafayette St,40.7200506,-73.9990675,intersection,2363
+Grand St & Mercer St,40.7212605,-74.0014508,intersection,2364
+Grand St & Wooster St,40.7219964,-74.0029816,intersection,2365
+Grand St & Thompson St,40.7227218,-74.0044507,intersection,2366
+Grand St & Sullivan St,40.7230355,-74.0052683,intersection,2367
+Grand St & Varick St,40.7231127,-74.0062288,intersection,2368
+Great Jones St & Lafayette St,40.7272842,-73.993628,intersection,2369
+Greenwich Ave & Perry St,40.7359156,-74.0007427,intersection,2370
+Greenwich Ave & Jane St,40.7381226,-74.002057,intersection,2371
+Greenwich St & Rector,40.7079709,-74.0136021,intersection,2372
+Greenwich St & Thames St,40.7093583,-74.0129958,intersection,2373
+Greenwich St & Liberty St,40.7101636,-74.0126806,intersection,2374
+Greenwich St & Vesey St,40.7128899,-74.0117888,intersection,2375
+Greenwich St & Park Pl,40.7143004,-74.0115385,intersection,2376
+Greenwich St & Murray St,40.7149185,-74.0113655,intersection,2377
+Greenwich St & Reade St,40.7168847,-74.0107864,intersection,2378
+Greenwich St & Harrison St,40.7188044,-74.0103514,intersection,2379
+Greenwich St & N Moore St,40.7201019,-74.0101279,intersection,2380
+Greenwich St & Watts St,40.7240957,-74.0094095,intersection,2381
+Greenwich St & Spring St,40.7259995,-74.0091138,intersection,2382
+Greenwich St & Vandam St,40.7267526,-74.0089823,intersection,2383
+Greenwich St & King St,40.728195,-74.0087518,intersection,2384
+Greenwich St & W Houston St,40.7289204,-74.0085948,intersection,2385
+Greenwich St & Leroy St,40.7303554,-74.0081991,intersection,2386
+Greenwich St & Morton St,40.7310719,-74.0080047,intersection,2387
+Greenwich St & Perry St,40.735025,-74.0069696,intersection,2388
+Grove St & Hudson St,40.7324306,-74.0064839,intersection,2389
+Hanover Sq & Stone St,40.7047649,-74.0097228,intersection,2390
+Hanover Sq & Pearl St,40.7045445,-74.0094731,intersection,2391
+Hanover Sq & Water St,40.704096,-74.0089626,intersection,2392
+Harrison St & Hudson St,40.718639,-74.0088242,intersection,2393
+Harrison St & W St,40.7190287,-74.0123216,intersection,2394
+Henry St & Jefferson St,40.7135157,-73.9886069,intersection,2395
+Hester St & Ludlow St,40.7157995,-73.9905541,intersection,2396
+Hester St & Orchard St,40.7160284,-73.9913088,intersection,2397
+Hester St & Mott St,40.7178721,-73.9971194,intersection,2398
+Hester St & Mulberry St,40.7181644,-73.9979454,intersection,2399
+Howard St & Lafayette St,40.7191684,-73.9998749,intersection,2400
+Howard St & Mercer St,40.7203515,-74.0022121,intersection,2401
+Hudson St & Jane St,40.7381566,-74.0055942,intersection,2402
+Hudson St & Perry St,40.7351297,-74.0060869,intersection,2403
+Hudson St & Morton St,40.730952,-74.0067226,intersection,2404
+Hudson St & Leroy St,40.7302355,-74.0068433,intersection,2405
+Hudson St & W Houston St,40.728767,-74.0070847,intersection,2406
+Hudson St & King St,40.7280518,-74.0072027,intersection,2407
+Hudson St & Vandam St,40.7266087,-74.0074515,intersection,2408
+Hudson St & Spring St,40.7258481,-74.00755,intersection,2409
+Hudson St & N Moore St,40.7199576,-74.008586,intersection,2410
+Hudson St & Leonard St,40.7190221,-74.0087481,intersection,2411
+Hudson St & Worth St,40.7182359,-74.0088877,intersection,2412
+Hudson St & Reade St,40.7161836,-74.0092035,intersection,2413
+Jane St & Washington St,40.738161,-74.0081572,intersection,2414
+Jefferson St & Madison St,40.7127787,-73.9884835,intersection,2415
+Jefferson St & Monroe St,40.7120088,-73.9884682,intersection,2416
+Jefferson St & S St,40.7103442,-73.9881516,intersection,2417
+Jefferson St & Water St,40.7108594,-73.9882368,intersection,2418
+John St & Nassau St,40.7095328,-74.0084222,intersection,2419
+John St & Pearl St,40.7073755,-74.0054733,intersection,2420
+John St & S St,40.7057994,-74.003851,intersection,2421
+John St & Water St,40.7068599,-74.0049978,intersection,2422
+John St & William St,40.7086769,-74.0073041,intersection,2423
+Kenmare St & Lafayette St,40.7215834,-73.9977407,intersection,2424
+Kenmare St & Mott St,40.7209004,-73.995751,intersection,2425
+Kenmare St & Mulberry St,40.7211768,-73.9965798,intersection,2426
+King St & Macdougal St,40.7276126,-74.0024921,intersection,2427
+King St & Varick St,40.727894,-74.0054321,intersection,2428
+LaGuardia Pl & W Houston St,40.7269986,-73.9998762,intersection,2429
+LaGuardia Pl & Washington Sq S,40.729952,-73.997367,intersection,2430
+Lafayette St & Leonard St,40.7161562,-74.0025627,intersection,2431
+Lafayette St & Prince St,40.7236843,-73.9964685,intersection,2432
+Lafayette St & Reade St,40.713629,-74.003605,intersection,2222
+Lafayette St & Spring St,40.7222925,-73.9970929,intersection,2278
+Lafayette St & Walker St,40.717933,-74.0009971,intersection,2433
+Lafayette St & White St,40.7172993,-74.0015728,intersection,2434
+Lafayette St & Worth St,40.7155837,-74.0030377,intersection,2435
+Leonard St & Varick St,40.718295,-74.0071149,intersection,2436
+Leroy St & Washington St,40.7304367,-74.0090883,intersection,2437
+Liberty Pl & Liberty St,40.7087698,-74.0096493,intersection,2438
+Liberty Pl & Maiden Ln,40.7093092,-74.009112,intersection,2439
+Liberty St & Maiden Ln,40.7072544,-74.0074795,intersection,2440
+Liberty St & Nassau St,40.7086187,-74.0093867,intersection,2441
+Liberty St & W St,40.7111332,-74.0146739,intersection,2442
+Liberty St & South End Ave,40.7115924,-74.0158005,intersection,2443
+Liberty St & Trinity Pl,40.7096644,-74.0116581,intersection,2262
+Liberty St & William St,40.7077045,-74.0082829,intersection,2444
+Little W 12th St & Washington St,40.7403051,-74.0079403,intersection,2445
+Ludlow St & Rivington St,40.7200903,-73.9883521,intersection,2446
+Ludlow St & Stanton St,40.7212429,-73.9877741,intersection,2447
+Macdougal St & Prince St,40.7268889,-74.0031294,intersection,2448
+Macdougal St & W Houston St,40.7279885,-74.0021963,intersection,2449
+Macdougal St & Washington Sq S,40.7310465,-73.9996201,intersection,1398
+Macdougal St & Waverly Pl,40.7322213,-73.9986277,intersection,2450
+Madison St & Market St,40.71231,-73.9943508,intersection,2451
+Madison St & Pearl St,40.7117066,-74.0009184,intersection,2452
+Madison St & Rutgers St,40.7126587,-73.9900231,intersection,2453
+Madison St & Saint James Pl,40.7117748,-73.9997,intersection,2454
+Maiden Ln & Nassau St,40.7090281,-74.0088974,intersection,2455
+Maiden Ln & Pearl St,40.7067317,-74.0067678,intersection,2456
+Maiden Ln & S St,40.705224,-74.0047382,intersection,2457
+Maiden Ln & Water St,40.7061578,-74.0060225,intersection,2458
+Maiden Ln & William St,40.7079905,-74.0080131,intersection,2459
+Market St & Monroe St,40.7116012,-73.9942512,intersection,2460
+Mercer St & Prince St,40.7246334,-73.9985916,intersection,2461
+Mercer St & Spring St,40.723421,-73.9996026,intersection,2462
+Mercer St & W Houston St,40.7257515,-73.9976728,intersection,2463
+Mercer St & Washington Pl,40.7294113,-73.9945748,intersection,2464
+Mercer St & Waverly Pl,40.729992,-73.994079,establishment,2465
+Monroe St & Rutgers St,40.7119245,-73.9899088,intersection,2466
+Morton St & Washington St,40.7311613,-74.0089434,intersection,2467
+Mosco St & Mott St,40.7145045,-73.9988036,intersection,2468
+Mosco St & Mulberry St,40.7144612,-73.9995943,intersection,2469
+Mott St & Pell St,40.7149898,-73.99887,intersection,2470
+Mott St & Prince St,40.7230364,-73.9949055,intersection,2471
+Mott St & Spring St,40.7216291,-73.9954707,intersection,2472
+Mott St & Worth St,40.7134946,-73.9986369,intersection,2246
+Mulberry St & Prince St,40.7233561,-73.9957261,intersection,2473
+Mulberry St & Spring St,40.7219625,-73.9962713,intersection,2474
+Mulberry St & Worth St,40.7139304,-73.9995521,intersection,2475
+Murray St & N End Ave,40.7158161,-74.0153834,intersection,2476
+N End Ave & Vesey St,40.7147962,-74.016181,intersection,2477
+N End Ave & Warren St,40.7171153,-74.0145496,intersection,2478
+N Moore St & Varick St,40.7197766,-74.0068138,intersection,2479
+Nassau St & Pine St,40.7077001,-74.0102104,intersection,2480
+Nassau St & Wall St,40.707173,-74.0106834,intersection,2481
+New St & Wall St,40.7074989,-74.011272,intersection,2482
+Norfolk St & Stanton St,40.720757,-73.9861608,intersection,2483
+Norfolk St & Rivington St,40.7196031,-73.986758,intersection,2484
+Old Slip & Water St,40.7042115,-74.0088104,intersection,2485
+Old Slip & Front St,40.703818,-74.0083336,intersection,2486
+Old Slip & S St,40.703316,-74.0077995,intersection,2487
+Orchard St & Rivington St,40.7203139,-73.9891192,intersection,2488
+Orchard St & Stanton St,40.7214675,-73.9885265,intersection,2489
+Pearl St & Peck Slip,40.7088487,-74.0024967,intersection,2490
+Pearl St & Pine St,40.7060317,-74.0074454,intersection,2491
+Pearl St & Platt St,40.7071966,-74.0059348,intersection,2492
+Pearl St & State St,40.7031645,-74.0144406,intersection,2493
+Pearl St & Wall St,40.7055326,-74.0079501,intersection,2494
+Peck Slip & S St,40.707449,-74.0010376,intersection,2495
+Peck Slip & Water St,40.7082714,-74.0018962,intersection,2496
+Perry St & W St,40.7345642,-74.0100339,intersection,2497
+Perry St & Washington St,40.7347912,-74.0084363,intersection,2498
+Perry St & Waverly Pl,40.7357722,-74.0017657,intersection,2499
+Pine St & Water St,40.7055399,-74.0068919,intersection,2500
+Pine St & William St,40.7069205,-74.009014,intersection,2501
+Platt St & William St,40.7083485,-74.0076403,intersection,2502
+Prince St & Sullivan St,40.7265019,-74.0023692,intersection,2503
+Prince St & Thompson St,40.7261224,-74.00161,intersection,2504
+Prince St & Wooster St,40.7253773,-74.0001155,intersection,2505
+Rector St & Trinity Pl,40.7077751,-74.0129481,intersection,2506
+Rector St & Washington St,40.708233,-74.0143865,intersection,2507
+Renwick St & Spring St,40.7259264,-74.0083614,intersection,2508
+River Ter & Warren St,40.7176668,-74.0157813,intersection,2509
+S St & Wall St,40.7042416,-74.0062813,intersection,2510
+Spring St & Sullivan St,40.7252622,-74.0033799,intersection,2511
+Spring St & Thompson St,40.7248988,-74.0026214,intersection,2512
+Spring St & Varick St,40.7256762,-74.0057361,intersection,2513
+Spring St & W St,40.7261751,-74.0108601,intersection,2514
+Spring St & Washington St,40.7260803,-74.009915,intersection,2515
+Spring St & Wooster St,40.7241796,-74.0011327,intersection,2516
+Stone St & William St,40.7047649,-74.0097228,intersection,2390
+Stanton St & Suffolk St,40.720519,-73.9853199,intersection,2517
+Sullivan St & W Houston St,40.7276175,-74.0014373,intersection,2518
+Sullivan St & Washington Sq S,40.7306684,-73.998861,intersection,2519
+Thompson St & W Houston St,40.7273533,-74.0006085,intersection,2520
+Thompson St & Washington Sq S,40.7302955,-73.9980832,intersection,2521
+Thompson St & Watts St,40.7234473,-74.0038181,intersection,2522
+University Pl & Waverly Pl,40.7307203,-73.9955793,intersection,2523
+Vandam St & Varick St,40.7264346,-74.0056224,intersection,2524
+Varick St & W Houston St,40.7286023,-74.0053184,intersection,2525
+Varick St & Watts St,40.7237564,-74.0061674,intersection,2526
+Vesey St & W St,40.7136869,-74.0136959,intersection,2527
+W Houston St & W St,40.7291659,-74.0107792,intersection,2528
+W Houston St & Wooster St,40.7266012,-73.999081,intersection,2529
+W Houston St & Washington St,40.7289908,-74.0093561,intersection,2530
+W St & Warren St,40.7165287,-74.0132285,intersection,2531
+W St & Watts St,40.7242818,-74.0112294,intersection,2532
+Wall St & Water St,40.7051762,-74.0073995,intersection,2533
+Wall St & William St,40.7063848,-74.0095198,intersection,2534
+Jackson St & Grand St,40.7142671,-73.9808684,intersection,2535
+Jackson St & Madison St,40.7135614,-73.9808661,intersection,2536
+Jackson St & Cherry St,40.7122074,-73.980722,intersection,2537
+Jackson St & Water St,40.7115293,-73.9806381,intersection,2538
+Jackson St & S St,40.7110369,-73.9806129,intersection,2539
+Montgomery St & Henry St,40.7137891,-73.9852434,intersection,2540
+Montgomery St & Madison St,40.713079,-73.9850157,intersection,2541
+Montgomery St & Monroe St,40.7123653,-73.9850069,intersection,2542
+Montgomery St & Water St,40.7112402,-73.9848473,intersection,2543
+Montgomery St & S St,40.7107284,-73.9846503,intersection,2544
+Grand St & Montgomery St,40.7152082,-73.9843369,intersection,2545
+Cherry St & Clinton St,40.7115283,-73.9867455,intersection,2546
+Cherry St & Rutgers St,40.7112271,-73.9898119,intersection,2547
+Cherry St & Pike St,40.710898,-73.9922241,intersection,2548
+Monroe St & Pike St,40.7116953,-73.9924578,intersection,2549
+Madison St & Pike St,40.7124778,-73.9922762,intersection,2550
+Henry St & Pike St,40.7131959,-73.9923855,intersection,2551
+E Broadway & Pike St,40.7138471,-73.9927731,intersection,2552
+Division St & Pike St,40.7143762,-73.9925567,intersection,2553
+E Broadway & Grand St,40.7148748,-73.9829877,intersection,2554
+E Broadway & Samuel Dickstein Pl,40.7145065,-73.984779,intersection,2555
+E Broadway & Montgomery St,40.7144612,-73.9853415,intersection,2556
+E Broadway & Clinton St,40.7143117,-73.9871555,intersection,2557
+E Broadway & Jefferson St,40.7141828,-73.9887009,intersection,2558
+E Broadway & Rutgers St,40.7140538,-73.9901963,intersection,2559
+E Broadway & Eldridge St,40.7137525,-73.993962,intersection,2316
+E Broadway & Market St,40.7136942,-73.9945667,intersection,2560
+E Broadway & Chatham Sq,40.7137723,-73.9980712,intersection,2561
+E Broadway & Catherine St,40.7134612,-73.9973,intersection,2562
+Catherine St & Bowery,40.7140151,-73.997479,intersection,2563
+Catherine St & Chatham Sq,40.7140151,-73.997479,intersection,2563
+Catherine St & Henry St,40.712799,-73.9971136,intersection,2564
+Catherine St & Madison St,40.7120833,-73.9969397,intersection,2565
+Catherine St & Monroe St,40.7113649,-73.9967919,intersection,2566
+Catherine St & Cherry St,40.7101997,-73.9965114,intersection,2567
+Market Slip & Water St,40.7101041,-73.9941068,intersection,2568
+Market Slip & S St,40.7095089,-73.9940261,intersection,2569
+Samuel Dickstein Pl & Henry St,40.713797,-73.9851279,intersection,2570
+Beekman St & Pearl St,40.7080746,-74.0034142,intersection,2571
+Beekman St & Water St,40.7076612,-74.0031032,intersection,2572
+Beekman St & Front St,40.70722,-74.0027482,intersection,2573
+Beekman St & S St,40.7067072,-74.0023351,intersection,2574
+Dover St & S St,40.7078904,-74.0001205,intersection,2575
+Dover St & Front St,40.7083464,-74.0004878,intersection,2576
+Dover St & Water St,40.7088079,-74.0008619,intersection,2577
+Dover St & Pearl St,40.709456,-74.0017139,intersection,2578
+Bradhurst Ave & Edgecombe Ave,40.8214679,-73.944604,intersection,740
+Tito Puente Way & Duke Ellington Circle,40.7967744,-73.9488257,intersection,2579
+Tito Puente Way & Madison Ave,40.7961639,-73.9476426,intersection,2580
+Tito Puente Way & Park Ave,40.7955395,-73.946168,intersection,2581
+Tito Puente Way & Lexington Ave,40.79482,-73.9444122,intersection,2582
+Tito Puente Way & 3rd Ave,40.7941401,-73.942804,intersection,2583
+Tito Puente Way & 2nd Ave,40.7931846,-73.9405644,intersection,2584
+Tito Puente Way & 1st Ave,40.7921896,-73.9382043,intersection,2585
+Morris St & Broadway,40.7058927,-74.0132865,intersection,2586
+Morris St & Trinity Pl,40.7062713,-74.0143192,intersection,2587
+Morris St & Greenwich St,40.7062713,-74.0143192,intersection,2587
+E Houston St & Pitt St,40.7206696,-73.9813529,intersection,2588
+Delancey St & Pitt St,40.7166546,-73.9832613,intersection,2589
+Broome St & Pitt St,40.716123,-73.9836542,intersection,2590
+Grand St & Pitt St,40.7152082,-73.9843369,intersection,2545
+Pitt St & Stanton St,40.7194759,-73.9819467,intersection,2591
+Pitt St & Rivington St,40.7183105,-73.9825049,intersection,2592
+E Houston St & Columbia St,40.7200008,-73.978731,intersection,2043
+Columbia St & Rivington St,40.7175292,-73.9799994,intersection,2593
+Delancey St & Columbia St,40.7164554,-73.9805563,intersection,2594
+Broome St & Columbia St,40.7153643,-73.9811755,intersection,2595
+Grand St & Columbia St,40.7144473,-73.9816562,intersection,2596
+Delancey St & Suffolk St,40.7181224,-73.9865443,intersection,2597
+Delancey St & Norfolk St,40.7182466,-73.9874427,intersection,2598
+Delancey St & Essex St,40.7184695,-73.9884527,bus_station,2599
+Delancey St & Ludlow St,40.7188614,-73.9889838,intersection,2600
+Delancey St & Orchard St,40.718962,-73.9898099,intersection,2601
+Delancey St & Allen St,40.7192517,-73.9902163,intersection,2026
+Delancey St & Eldridge St,40.7195709,-73.9912449,intersection,2602
+Delancey St & Forsyth St,40.7198209,-73.9921059,intersection,2603
+Suffolk St & Rivington St,40.7193479,-73.9859157,intersection,2604
+Stuyvesant St & 3rd Ave,40.7298618,-73.9896797,intersection,2605
+Stuyvesant St & 9th St,40.7299182,-73.9889397,intersection,2606
+Stuyvesant St & 10th St,40.7300711,-73.9875443,intersection,2607
+Stuyvesant St & 2nd Ave,40.7301174,-73.9865564,intersection,2608
+Oliver St & Saint James Pl,40.7132532,-73.9982603,intersection,2609
+Oliver St & Madison St,40.7119667,-73.9977751,intersection,2610
+Oliver St & Henry St,40.7127228,-73.997996,intersection,2611
+Oliver St & Mott St,40.7134946,-73.9986369,intersection,2246
+Oliver St & Chatham Sq,40.7134946,-73.9986369,intersection,2246
+Thames St & Trinity Pl,40.7089986,-74.0121457,intersection,2612
