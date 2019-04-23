@@ -7,11 +7,17 @@ def file_to_graph(filename):
 	data = open(filename, "r")
 	G = nx.read_edgelist(data, delimiter=',', nodetype=str, data=[('start_latitude',float),('start_longitude',float),('end_latitude',float),('end_longitude',float),('weight',float),('type',str)])
 
+
         with open("res_mapping_road_based.csv") as res_csv:
                 reader = csv.reader(res_csv,delimiter=",")
+
                 for row in reader:
                         #format: [name,lat,long,maplat,maplong,rating,startnode,endnode]
                         #find edge with matching nodes, and append this node
+                        rowData = G.get_edge_data(row[6],row[7])
+                        print rowData
+                        print row
+
 
         #for e in G.edges():
         #        print e
