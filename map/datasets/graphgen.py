@@ -1,12 +1,20 @@
+import csv
 import networkx as nx
 import matplotlib.pyplot as plt
 
 
 def file_to_graph(filename):
 	data = open(filename, "r")
-	G = nx.read_edgelist(data, delimiter=',', nodetype=str, data=[('start_latitude',float),('start_longitude',float),('end_latitude',float),('end_longitude',float),('weight',float)])
+	G = nx.read_edgelist(data, delimiter=',', nodetype=str, data=[('start_latitude',float),('start_longitude',float),('end_latitude',float),('end_longitude',float),('weight',float),('type',str)])
 
-        
+        with open("res_mapping_road_based.csv") as res_csv:
+                reader = csv.reader(res_csv,delimiter=",")
+                for row in reader:
+                        #format: [name,lat,long,maplat,maplong,rating,startnode,endnode]
+                        #find edge with matching nodes, and append this node
+
+        #for e in G.edges():
+        #        print e
 
         nx.write_gpickle(G, 'graph_pickle')
 
@@ -14,8 +22,6 @@ def file_to_graph(filename):
         #############################
         ### Old code for displaying image of the graph (needs some work with spacing, sizing, etc.)
         #############################
-        #for e in G.edges():
-        #        print e
 
         #pos = nx.spring_layout(G,scale=1)
 
@@ -31,8 +37,6 @@ def file_to_graph(filename):
 
 #road segment file (start node, end node, start_lat, start_long, end_lat, end long, weight/distance)
 filein = "road_segment.csv"
-
-resmap = "res_mapping_road_based.csv"
 
 if(filein == ""):
 	print("Please specify a file to read in (modify this file or call file_to_graph(filename) )")
