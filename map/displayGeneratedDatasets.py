@@ -4,23 +4,16 @@ Same code as Yidan's, just adapted in some small ways
 import matplotlib.pyplot as plt
 import numpy as np
 
-intersectionInput = "./generated_map_data/intersectionsNewark.csv"
-roadSegmentInput = "./generated_map_data/roadSegmentsNewark.csv"
-poiInput = "./generated_map_data/poiNewark.csv"
+with open('boundingBoxes.txt', "r") as bBoxFile:
+    lines = bBoxFile.readlines()
+name = lines[1].rstrip('\n')
+intersectionInput = "./generated_map_data/intersections{}.csv".format(name)
+roadSegmentInput = "./generated_map_data/roadSegments{}.csv".format(name)
+poiInput = "./generated_map_data/poi{}.csv".format(name)
 
 ###-----location of crosspoint----###
-'''
-N values for generated intersectionsX.csv is equal to number of rows.
-For some reason using a function to calculate the rows doesn't
-work (even though it returns the correct number), so here's some values:
-Manhattan = 11105
-Paris = 17331
-LA = 126994
-Newark = 979
-...
-The rest you'd just have to get the number from excel or something
-'''
-N=979
+# N values for generated intersectionsX.csv is equal to number of rows.
+N=11116
 file = open(intersectionInput, "r")
 k=0
 print(N)
@@ -44,7 +37,7 @@ for line in f_rs:
 ###-----plot location of restaurants after mapping----###
 
 # Same as above N.
-N=10000
+N=4797
 res_f=open(poiInput, "r")
 k=0
 lat_res=np.tile(0.0,N)

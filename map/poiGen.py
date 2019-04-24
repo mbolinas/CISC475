@@ -46,6 +46,8 @@ with open(ouputFile,'wb') as file:
         if all(key in node.tags for key in ['addr:housenumber', 'addr:street']):
             name = node.tags['addr:housenumber'].encode('utf-8') +\
             ' ' + node.tags['addr:street'].encode('utf-8')
-        file.write(name + ',') # name
+        # need to remove commas since some street names with
+        # commas end up split into different columns
+        file.write(name.replace(',', '') + ',') # name
         file.write(str(node.lat) + ',') # lat
         file.write(str(node.lon) + '\n') # long
