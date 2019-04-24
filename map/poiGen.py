@@ -1,5 +1,6 @@
 """
-
+Many amenity nodes in openmaps don't specify proper addresses so
+Muhan's yelp code is probably better for generating poi's
 """
 
 import overpy
@@ -12,7 +13,7 @@ bBoxFile = open('boundingBoxes.txt', "r")
 lines = bBoxFile.readlines()
 boundBox = lines[0]
 # Output filename
-ouputFile = './generated/poi{}.csv'.format(lines[1].rstrip('\n'))
+ouputFile = './generated_map_data/poi{}.csv'.format(lines[1].rstrip('\n'))
 bBoxFile.close()
 
 # queryKey/queryValues: which map features will be part of our result.
@@ -35,10 +36,15 @@ for node in result.nodes:
 
 '''
 Write to CSV in form:
-    lat, long
+    street, lat, long
 '''
 with open(ouputFile,'wb') as file:
     for node in poiNodes:
-        file.write(str(node.lat)+ ',') # lat
-        file.write(str(node.lon)) # long
-        file.write('\n') # long
+        name = 'N/A'
+        # some nodes in openmaps don't have data on street number and name
+        # so we have to check. Else we write N/A
+        if all(key in node.tags for key in ['addr:housenumber', 'addr:street']):
+            name = node.tags['addr:housenumber'] + ' ' + node.tags['addr:street']
+        file.write(name + ',') # name
+        file.write(str(node.lat) + ',') # lat
+        file.write(str(node.lon) + '\n') # long
