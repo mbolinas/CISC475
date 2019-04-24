@@ -1,3 +1,4 @@
 # CISC475
 
-It's a proof of concept
+Implementation for improved skyline querying.
+Information withheld as the research paper this is based on is not yet published.
