@@ -19,7 +19,7 @@ bBoxFile = open('boundingBoxes.txt', "r")
 lines = bBoxFile.readlines()
 boundBox = lines[0]
 # Output filename
-ouputFile = './generated/roadSegments{}.csv'.format(lines[1].rstrip('\n'))
+ouputFile = './generated_map_data/roadSegments{}.csv'.format(lines[1].rstrip('\n'))
 bBoxFile.close()
 
 # queryKey/queryValues: which map features will be part of our result.

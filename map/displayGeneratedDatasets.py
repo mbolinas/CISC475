@@ -13,7 +13,7 @@ poiInput = "./generated_map_data/poi{}.csv".format(name)
 
 ###-----location of crosspoint----###
 # N values for generated intersectionsX.csv is equal to number of rows.
-N=11116
+N=sum(1 for line in open(intersectionInput))
 file = open(intersectionInput, "r")
 k=0
 print(N)
@@ -37,7 +37,7 @@ for line in f_rs:
 ###-----plot location of restaurants after mapping----###
 
 # Same as above N.
-N=4797
+N=sum(1 for line in open(poiInput))
 res_f=open(poiInput, "r")
 k=0
 lat_res=np.tile(0.0,N)

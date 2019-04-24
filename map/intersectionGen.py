@@ -15,7 +15,7 @@ bBoxFile = open('boundingBoxes.txt', "r")
 lines = bBoxFile.readlines()
 boundBox = lines[0]
 # Output filename
-ouputFile = './generated/intersections{}.csv'.format(lines[1].rstrip('\n'))
+ouputFile = './generated_map_data/intersections{}.csv'.format(lines[1].rstrip('\n'))
 bBoxFile.close()
 
 # queryKey/queryValues: which map features will be part of our result.
@@ -65,7 +65,7 @@ Write to CSV in form:
 with open(ouputFile,'wb') as file:
     # each id left in duplicateIDs will be an intersection
     for id in duplicateIDs:
-        file.write(nodeInfo[id][0].encode('utf-8') + ',')
+        file.write(nodeInfo[id][0].encode('utf-8').replace(',', '') + ',')
         file.write(str(nodeInfo[id][2]) + ',')
         file.write(str(nodeInfo[id][3]) + ',')
         file.write(nodeInfo[id][1].encode('utf-8') + ',')
