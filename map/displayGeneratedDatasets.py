@@ -4,9 +4,9 @@ Same code as Yidan's, just adapted in some small ways
 import matplotlib.pyplot as plt
 import numpy as np
 
-intersectionInput = "./generated/intersectionsNewark.csv"
-roadSegmentInput = "./generated/roadSegmentsNewark.csv"
-poiInput = "./generated/poiNewark.csv"
+intersectionInput = "./generated_map_data/intersectionsNewark.csv"
+roadSegmentInput = "./generated_map_data/roadSegmentsNewark.csv"
+poiInput = "./generated_map_data/poiNewark.csv"
 
 ###-----location of crosspoint----###
 '''
@@ -42,13 +42,9 @@ for line in f_rs:
 
 
 ###-----plot location of restaurants after mapping----###
-'''
-Same as above N.
-Manhattan = 4754
-LA = 3230
-Newark = 64
-'''
-N=64
+
+# Same as above N.
+N=10000
 res_f=open(poiInput, "r")
 k=0
 lat_res=np.tile(0.0,N)
@@ -56,8 +52,8 @@ lng_res=np.tile(0.0,N)
 #id=[]
 for s in res_f:
     items=s.rstrip().split(',')
-    lat_res[k]=float(items[0])
-    lng_res[k]=float(items[1])
+    lat_res[k]=float(items[1])
+    lng_res[k]=float(items[2])
     k=k+1
 
 
