@@ -1,6 +1,6 @@
-(40.700943, -74.008633, 40.879111, -73.910761)
-Manhattan
-Manhattan, NY
+(48.816066, 2.227627, 48.903228, 2.467784)
+Paris
+Paris, France
 /////////////////////////////////////////////////////////////////////////
 The first line in this file will be the bounding box used for
 computation. Second line is the name of the area (mostly used for naming generated

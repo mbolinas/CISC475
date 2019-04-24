@@ -44,7 +44,8 @@ with open(ouputFile,'wb') as file:
         # some nodes in openmaps don't have data on street number and name
         # so we have to check. Else we write N/A
         if all(key in node.tags for key in ['addr:housenumber', 'addr:street']):
-            name = node.tags['addr:housenumber'] + ' ' + node.tags['addr:street']
+            name = node.tags['addr:housenumber'].encode('utf-8') +\
+            ' ' + node.tags['addr:street'].encode('utf-8')
         file.write(name + ',') # name
         file.write(str(node.lat) + ',') # lat
         file.write(str(node.lon) + '\n') # long
