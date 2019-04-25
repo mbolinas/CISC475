@@ -4,12 +4,13 @@ Same code as Yidan's, just adapted in some small ways
 import matplotlib.pyplot as plt
 import numpy as np
 
+useYelpPOI = 'Yelp' # 'Yelp' if using poiYelp*.csv's; else ''
 with open('boundingBoxes.txt', "r") as bBoxFile:
     lines = bBoxFile.readlines()
 name = lines[1].rstrip('\n')
 intersectionInput = "./generated_map_data/intersections{}.csv".format(name)
 roadSegmentInput = "./generated_map_data/roadSegments{}.csv".format(name)
-poiInput = "./generated_map_data/poi{}.csv".format(name)
+poiInput = "./generated_map_data/poi{}{}.csv".format(useYelpPOI, name)
 
 ###-----location of crosspoint----###
 # N values for generated intersectionsX.csv is equal to number of rows.
@@ -38,6 +39,7 @@ for line in f_rs:
 
 # Same as above N.
 N=sum(1 for line in open(poiInput))
+print(N)
 res_f=open(poiInput, "r")
 k=0
 lat_res=np.tile(0.0,N)
@@ -51,5 +53,5 @@ for s in res_f:
 
 
 plt.plot(lng, lat,'bo',linewidth=0.1,markersize=0.2)
-plt.plot(lng_res, lat_res,'r.',linewidth=0.1,markersize=.4)
+plt.plot(lng_res, lat_res,'r.',linewidth=0.1,markersize=1)
 plt.show()
