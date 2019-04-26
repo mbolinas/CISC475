@@ -37,10 +37,9 @@ Getting information from result
 wayNodes: array of arrays
     [[wayNode_1, ... , wayNode_n], [wayNode_1, ... , wayNode_n], ... , n]
 '''
-wayNodes = []
+allWays = []
 for way in result.ways:
-    name = way.tags.get("name", "n/a")
-    wayNodes.append(way.nodes)
+    allWays.append(way)
 
 '''
 Get distance between 2 lat/long coordinates
@@ -75,15 +74,16 @@ Write to CSV in form:
     startid, endid, start lat, start long, end lat, end long, distance
 '''
 with open(ouputFile,'wb') as file:
-    for nodeArray in wayNodes:
+    for way in allWays:
         # the 2 nodes of maximum distance
         # should accurately represent most road's
         # start and end points.
-        tup = maxBetweenNodes(nodeArray)
+        tup = maxBetweenNodes(way.nodes)
         file.write(str(tup[0].id)+ ',') # start id
         file.write(str(tup[1].id)+ ',') # end id
         file.write(str(tup[0].lat)+ ',') # start lat
         file.write(str(tup[0].lon) + ',') # start long
         file.write(str(tup[1].lat) + ',') # end lat
         file.write(str(tup[1].lon) + ',') #  end long
-        file.write(str(tup[2]) + '\n') # distance
+        file.write(str(tup[2]) + ',') # distance
+        file.write(way.tags.get("name", "n/a") + '\n')

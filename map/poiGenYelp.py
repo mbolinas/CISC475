@@ -1,10 +1,18 @@
 """
 Adapted from Muhan's auto_csv.py code
 
-This python file write the data into a csv file using a automatic way
-The file will have 50*(1+RANGE) samples.
-The file generate 10000 samples.
-If we want to query 500 samples, set RANGE=9, for example.
+Generate poi's in a given area (set in boundingBoxes.txt), along with
+the startid's and endid's of the road segment a poi lies on.
+
+This file will depend on a roadSegmentXXX.csv corresponding
+to the area you want to generate poi's for. Please generate that using
+roadSegmentGen.py before attempting to use this file.
+
+Expect long runtimes
+
+# TODO modify getClosestSegment(latIn, longIn) so that it takes into account
+  street names, resulting in poi's more accurately mapped to a road segment.
+  This will require normalizing street names between openstreetmaps and yelp
 """
 import csv
 import argparse
@@ -16,8 +24,18 @@ import urllib
 import geopy.distance
 import time
 
-RANGE = 50 # the max pages we try to get
-LIMIT = 50 # number of results from a single call; max 50,min 20
+with open('boundingBoxes.txt', "r") as bBoxFile:
+    lines = bBoxFile.readlines()
+name = lines[1].rstrip('\n')
+roadSegmentInput = "./generated_map_data/roadSegments{}.csv".format(name)
+roadSegments = []
+with open(roadSegmentInput, "r") as f:
+    for line in f:
+        items = line.rstrip().split(',')
+        roadSegments.append(items)
+
+RANGE = 1 # the max pages we try to get
+LIMIT = 20 # number of results from a single call; max 50,min 20
 # Categories to query. Full list here:
     # https://www.yelp.com/developers/documentation/v3/all_category_list
 CATEGORIES =\
@@ -27,6 +45,8 @@ CATEGORIES =\
     'vegan, All', 'vegetarian, All', 'sushi, All' , 'soup, All',\
     'sandwiches, All', 'spanish, All', 'mexican, All', 'korean, All',\
     'kebab, All', 'indpak, All', 'hotdog, All', 'filipino']
+CATEGORIES_LESS =\
+    ['chinese, All', 'italian, All']
 SLEEP = 20 # how long to sleep between categories
 
 #Define the API Key, define the endpoint and define the header
@@ -68,6 +88,8 @@ def writeResponse(business_data, file):
         latitude = biz['coordinates']['latitude']
         longitude = biz['coordinates']['longitude']
         rating = biz['rating']
+
+        segment = getClosestSegment(latitude, longitude)
         # sometimes businesses are missing specific info we need, so
         # we check that it has all the necessary information
         if all (k is not None for k in (latitude, longitude, address, rating)):
@@ -75,37 +97,67 @@ def writeResponse(business_data, file):
                 address.replace(',', '') + "," +\
                 str(latitude) + "," +\
                 str(longitude) + "," +\
-                str(rating)+"\n"
+                str(rating) + "," +\
+                str(segment[0]) + "," +\
+                str(segment[1]) + "\n"
             # yelp's api is sometimes innacurate, returning values outside the specified location
             # for this reason we double check if a location is within our bounding box
             if withinBoundBox(latitude, longitude):
                 file.write(row)
 
 '''
+returns the closes road segment to a given lat/long coordinate.
+ return value is of of the same form as a line in roadSegmentsXXX.csv
+    [startid, endid, lat1, lon1, lat2, lon2, distance]
+'''
+def getClosestSegment(latIn, longIn):
+    # first find all the road segments immediate to the coordinates
+    immediateSegments = []
+    minDistanceAll = sys.float_info.max
+    for segment in roadSegments:
+        distance = geopy.distance.distance((latIn, longIn), (segment[2], segment[3])).km
+        if distance < minDistanceAll:
+            minDistanceAll = distance
+            immediateSegments = []
+            immediateSegments.append(segment)
+        elif distance == minDistanceAll:
+            immediateSegments.append(segment)
+    # then, find the closest segment out of all immediate segments
+    closestSegment = None
+    minDistanceImmediate = sys.float_info.max
+    for segment in immediateSegments:
+        distance = geopy.distance.distance((latIn, longIn), (segment[3], segment[4])).km
+        if distance < minDistanceImmediate:
+            minDistanceImmediate = distance
+            closestSegment = segment
+
+    return closestSegment
+'''
 Per the yelp FAQ, 'The API can only return up to 1,000 results at this time'
 To get around this, we query a category until it reaches the max results, sleep
 a bit, then move on to the next category
 '''
-with open(ouputFile, 'w') as writeFile:
-    for category in CATEGORIES:
-        OFFSET=0
-        for i in range(RANGE):
-            # Define the parameter API call
-            PARAMETER  = {'categories' : category,
-                         'limit' : LIMIT,
-                         'offset' : OFFSET,
-                         'location' : location}
-            # API Call
-            response = requests.get(url=ENDPOINT, params = PARAMETER, headers = HEADERS)
-            # if response is ok proceed writing to file
-            if response.status_code == 200:
-                business_data = response.json()
-                writeResponse(business_data, writeFile)
-                # set offset for next API call
-                OFFSET += LIMIT+1
-            # if response is bad, we've probably reached the last page of results and should break
-            elif response.status_code == 400:
-                print('End of category {}'.format(category))
-                print('Sleeping for {} seconds'.format(SLEEP))
-                time.sleep(SLEEP)
-                break
+writeFile = open(ouputFile, 'w')
+for category in CATEGORIES_LESS:
+    OFFSET=0
+    for i in range(RANGE):
+        # Define the parameter API call
+        PARAMETER  = {'categories' : category,
+                     'limit' : LIMIT,
+                     'offset' : OFFSET,
+                     'location' : location}
+        # API Call
+        response = requests.get(url=ENDPOINT, params = PARAMETER, headers = HEADERS)
+        # if response is ok proceed writing to file
+        if response.status_code == 200:
+            business_data = response.json()
+            writeResponse(business_data, writeFile)
+            # set offset for next API call
+            OFFSET += LIMIT+1
+        # if response is bad, we've probably reached the last page of results and should break
+        elif response.status_code == 400:
+            print('End of category {}'.format(category))
+            print('Sleeping for {} seconds'.format(SLEEP))
+            time.sleep(SLEEP)
+            break
+writeFile.close()
