@@ -1,6 +1,6 @@
-(37.426447, 126.763472, 37.700554, 127.184860)
-Seoul
-Seoul, South Korea
+(40.700943, -74.008633, 40.879111, -73.910761)
+Manhattan
+Manhattan, NY
 /////////////////////////////////////////////////////////////////////////
 The first line in this file will be the bounding box used for
 computation.

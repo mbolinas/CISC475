@@ -1,9 +1,6 @@
 """
 Many amenity nodes in openmaps don't specify proper addresses or ratings so
 Muhan's yelp code is probably better for generating poi's
-
-4-25-19
-Yeah this code sucks. Use poiGenYelp.py instead.
 """
 
 import overpy
@@ -43,14 +40,15 @@ Write to CSV in form:
 '''
 with open(ouputFile,'wb') as file:
     for node in poiNodes:
-        name = 'N/A'
+        address = 'N/A'
         # some nodes in openmaps don't have data on street number and name
         # so we have to check. Else we write N/A
         if all(key in node.tags for key in ['addr:housenumber', 'addr:street']):
-            name = node.tags['addr:housenumber'].encode('utf-8') +\
+            address = node.tags['addr:housenumber'].encode('utf-8') +\
             ' ' + node.tags['addr:street'].encode('utf-8')
         # need to remove commas since some street names with
         # commas end up split into different columns
-        file.write(name.replace(',', '') + ',') # name
+        file.write(address.replace(',', '') + ',') # name
         file.write(str(node.lat) + ',') # lat
-        file.write(str(node.lon) + '\n') # long
+        file.write(str(node.lon) + ',') # long
+        file.write(node.tags['name'] + '\n') # name

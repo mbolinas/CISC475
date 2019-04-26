@@ -53,5 +53,5 @@ for s in res_f:
 
 
 plt.plot(lng, lat,'bo',linewidth=0.1,markersize=0.2)
-plt.plot(lng_res, lat_res,'r.',linewidth=0.1,markersize=1)
+plt.plot(lng_res, lat_res,'r.',linewidth=0.1,markersize=.5)
 plt.show()
