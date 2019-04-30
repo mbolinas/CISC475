@@ -4,86 +4,128 @@ within a given bounding box (min lat, min long, max lat, max long) and write the
 to a CSV.
 
 Code works well for block areas, with most road segments accurately
-represent by the generated coordinates. Much more innacurate outside of
+represent by the generated coordinates. More innacurate outside of
 city blocks.
-"""
 
+Bounding box and output filename can be modifed in bBoxConfig.txt
+"""
 import overpy
 import csv
 import geopy.distance
 
 api = overpy.Overpass()
-bBoxFile = open('boundingBoxes.txt', "r")
 
-# Bounding box used for computation. Set in boundingBoxes.txt
-lines = bBoxFile.readlines()
-boundBox = lines[0]
-# Output filename
-ouputFile = './generated_map_data/roadSegments{}.csv'.format(lines[1].rstrip('\n'))
-bBoxFile.close()
-
+#-------------------------------constants----------------------------------
 # queryKey/queryValues: which map features will be part of our result.
 # List if all map features:
 #   https://wiki.openstreetmap.org/wiki/Map_Features
-queryKey = 'highway'
-queryValues = "primary|secondary|residential|tertiary"
+QUERY_KEY = 'highway'
+QUERY_VALUES = "primary|secondary|residential|tertiary"
+# --------------------------------------------------------------------------
 
-#API Call
-#Fetch all ways and nodes within a bounding box and store in 'result'.
-result = api.query("way{} ['{}'~'{}'];(._;>;);out body;".format(boundBox, queryKey, queryValues))
+#--------------------------parse config file--------------------------------
+bBoxFile = open('bBoxConfig.txt', "r")
 
-'''
-Getting information from result
-wayNodes: array of arrays
-    [[wayNode_1, ... , wayNode_n], [wayNode_1, ... , wayNode_n], ... , n]
-'''
-allWays = []
-for way in result.ways:
-    allWays.append(way)
+# Bounding box used for computation
+lines = bBoxFile.readlines()
+BOUND_BOX = lines[0]
 
-'''
-Get distance between 2 lat/long coordinates
-'''
-def latLongDistance(lat1, lon1, lat2, lon2):
-    return geopy.distance.distance((lat1, lon1), (lat2, lon2)).km
+OUTPUT_FILENAME = './generated_map_data/roadSegments{}.csv'.format(lines[1].rstrip('\n'))
+
+bBoxFile.close()
+# --------------------------------------------------------------------------
 
 '''
-Input: an array of way nodes
-Returns a tuple of the two nodes who have the maximum distance
-between each other and the distance.
+Parse an api result into a workable data structure
+Input
+    result : an API call result.
+Output
+    returns a 2d array of ways and waynodes in form:
+        [[wayNode_0, ... , wayNode_n], [wayNode_0, ... , wayNode_n], ... , n]
 '''
-def maxBetweenNodes(wayNodeArray):
+def parse_result(result):
+    arr = []
+    for way in result.ways:
+        arr.append(way)
+    return arr
+
+'''
+Input
+    way_node_array : an array of way nodes
+Output
+    Returns a tuple of the two nodes who have the maximum distance
+    between each other, as well as the distance between them.
+        Form: (node_X, node_Y, distance)
+'''
+def max_between_nodes(way_node_array):
     max = 0
-    nodeX = None
-    nodeY = None
-    for i in range(len(wayNodeArray)-1):
-        lat1 = wayNodeArray[i].lat
-        lon1 = wayNodeArray[i].lon
-        for j in range(i+1, len(wayNodeArray)):
-            lat2 = wayNodeArray[j].lat
-            lon2 = wayNodeArray[j].lon
-            distance = latLongDistance(lat1, lon1, lat2, lon2)
+    node_X = None
+    node_Y = None
+    for i in range(len(way_node_array)-1):
+        lat1 = way_node_array[i].lat
+        lon1 = way_node_array[i].lon
+        for j in range(i+1, len(way_node_array)):
+            lat2 = way_node_array[j].lat
+            lon2 = way_node_array[j].lon
+            distance = geopy.distance.distance((lat1, lon1), (lat2, lon2)).km
             if distance > max:
                 max = distance
-                nodeX = wayNodeArray[i]
-                nodeY = wayNodeArray[j]
-    return (nodeX, nodeY, max)
+                node_X = way_node_array[i]
+                node_Y = way_node_array[j]
+    return (node_X, node_Y, max)
 
 '''
-Write to CSV in form:
-    startid, endid, start lat, start long, end lat, end long, distance
+Input
+    array of ways
+Output
+    returns an array of road segments
+        [(startNode0, endNode0, distance), (startNode1, endNode1, distance), ... , n]
 '''
-with open(ouputFile,'wb') as file:
-    for way in allWays:
+def get_segments(way_array):
+    segments = []
+    for way in way_array:
         # the 2 nodes of maximum distance
         # should accurately represent most road's
         # start and end points.
-        tup = maxBetweenNodes(way.nodes)
-        file.write(str(tup[0].id)+ ',') # start id
-        file.write(str(tup[1].id)+ ',') # end id
-        file.write(str(tup[0].lat)+ ',') # start lat
-        file.write(str(tup[0].lon) + ',') # start long
-        file.write(str(tup[1].lat) + ',') # end lat
-        file.write(str(tup[1].lon) + ',') #  end long
-        file.write(str(tup[2]) + ',') # distance
-        file.write(way.tags.get("name", "n/a") + '\n')
+        tup = max_between_nodes(way.nodes)
+        segments.append(tup)
+    return segments
+
+'''
+Input
+    filename : name of file to write
+    segment_array : array of road segments
+Output
+    No return value, write to CSV in form:
+        name, latitude, longitude, type, id
+'''
+def write_road_segments(filename, segment_array):
+    with open(filename,'wb') as f:
+        for seg in segment_array:
+            f.write(str(seg[0].id)+ ',') # start id
+            f.write(str(seg[1].id)+ ',') # end id
+            f.write(str(seg[0].lat)+ ',') # start lat
+            f.write(str(seg[0].lon) + ',') # start long
+            f.write(str(seg[1].lat) + ',') # end lat
+            f.write(str(seg[1].lon) + ',') #  end long
+            f.write(str(seg[2]) + '\n') # distance
+
+def main():
+    # API Call
+    print('Querying API...')
+    result = api.query(\
+        "way{} ['{}'~'{}'];(._;>;);out body;"\
+        .format(BOUND_BOX, QUERY_KEY, QUERY_VALUES))
+
+    # parse result into all_ways
+    print('Parsing result...')
+    all_ways = parse_result(result)
+
+    print('Getting segments...')
+    segments = get_segments(all_ways)
+
+    print('Writing to {}'.format(OUTPUT_FILENAME))
+    write_road_segments(OUTPUT_FILENAME, segments)
+
+if __name__ == '__main__':
+    main()
