@@ -53,9 +53,9 @@ def parse_result(result):
 Input
     way_node_array : an array of way nodes
 Output
-    Returns a tuple of the two nodes who have the maximum distance
+    Returns an array of the two nodes who have the maximum distance
     between each other, as well as the distance between them.
-        Form: (node_X, node_Y, distance)
+        Form: [node_X, node_Y, distance]
 '''
 def max_between_nodes(way_node_array):
     max = 0
@@ -72,7 +72,7 @@ def max_between_nodes(way_node_array):
                 max = distance
                 node_X = way_node_array[i]
                 node_Y = way_node_array[j]
-    return (node_X, node_Y, max)
+    return [node_X, node_Y, max]
 
 '''
 Input
@@ -87,8 +87,9 @@ def get_segments(way_array):
         # the 2 nodes of maximum distance
         # should accurately represent most road's
         # start and end points.
-        tup = max_between_nodes(way.nodes)
-        segments.append(tup)
+        seg = max_between_nodes(way.nodes)
+        seg.append(way.tags.get("name", "n/a"))
+        segments.append(seg)
     return segments
 
 '''
@@ -108,7 +109,8 @@ def write_road_segments(filename, segment_array):
             f.write(str(seg[0].lon) + ',') # start long
             f.write(str(seg[1].lat) + ',') # end lat
             f.write(str(seg[1].lon) + ',') #  end long
-            f.write(str(seg[2]) + '\n') # distance
+            f.write(str(seg[2]) + ',') # distance
+            f.write(str(seg[3]) + '\n') # name
 
 def main():
     # API Call

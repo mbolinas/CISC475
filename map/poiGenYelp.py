@@ -48,29 +48,28 @@ SLEEP = 20 # how long to sleep between categories
 MATCH_RATIO = .70 # minimum match ratio
 # --------------------------------------------------------------------------
 
-
 #--------------------------parse config file--------------------------------
 # all fields can be modified in boundingBoxes.txt
-bBoxFile = open('boundingBoxes.txt', "r")
+bBoxFile = open('bBoxConfig.txt', "r")
 lines = bBoxFile.readlines()
+name = lines[1].rstrip('\n')
 
 # Bounding box used for computation
-boundBox = lines[0].replace('(','').replace(')','').rstrip('\n').split(',') # lol i'll fix later
+BOUND_BOX = lines[0].replace('(','').replace(')','').rstrip('\n').split(',') # lol i'll fix later
 
 # getting road segments for start/end id computation
-name = lines[1].rstrip('\n')
 roadSegmentInput = "./generated_map_data/roadSegments{}.csv".format(name)
-roadSegments = []
+ROAD_SEGMENTS = []
 with open(roadSegmentInput, "r") as f:
     for line in f:
         items = line.rstrip().split(',')
-        roadSegments.append(items)
+        ROAD_SEGMENTS.append(items)
 
 # Location used for computation.
-location = lines[2].rstrip('\n')
+LOCATION = lines[2].rstrip('\n')
 
 # Output filename
-ouputFile = './generated_map_data/poiYelp{}.csv'.format(name)
+OUTPUT_FILENAME = './generated_map_data/poiYelp{}.csv'.format(name)
 bBoxFile.close()
 # --------------------------------------------------------------------------
 
@@ -79,10 +78,10 @@ Check if given coordinates are within the bounding box
 Input : float latitude, float longitude
 '''
 def withinBoundBox(lat, lon):
-    a = lat > float(boundBox[0])
-    b = lat < float(boundBox[2])
-    c = lon > float(boundBox[1])
-    d = lon < float(boundBox[3])
+    a = lat > float(BOUND_BOX[0])
+    b = lat < float(BOUND_BOX[2])
+    c = lon > float(BOUND_BOX[1])
+    d = lon < float(BOUND_BOX[3])
     return a and b and c and d
 
 '''
@@ -90,49 +89,49 @@ Expand any abbreviations present in an address
 Input : an array of strings
 No return value, modifies given array
 '''
-def expandAbbrv(addressArr):
-    for i in range(len(addressArr)):
-        if addressArr[i] in ABBRV.keys():
-            addressArr[i] = ABBRV[addressArr[i]]
-
-'''
-Get the segments closest to a set of coordinates
-Input: float latitude, float longitude, array of road segments
-Returns array of road segments
-'''
-def getImmediateSegments(latIn, longIn, roadSegmentArray):
-    immediateSegments = []
-    minDistance = sys.float_info.max
-    for segment in roadSegmentArray:
-        distance1 = geopy.distance.distance((latIn, longIn), (segment[2], segment[3])).km
-        if distance1 < minDistance:
-            minDistance = distance1
-            immediateSegments = []
-            immediateSegments.append(segment)
-        elif distance1 == minDistance:
-            immediateSegments.append(segment)
-    return immediateSegments
+def expand_abbrv(address):
+    x = address.split() # split address string into workable array
+    y = x[1:len(x)] # ignore address housenumber
+    # expand any present abbreviations
+    for i in range(len(y)):
+        if y[i] in ABBRV.keys():
+            y[i] = ABBRV[y[i]]
+    # transform split address back into string
+    expanded = " ".join(str(z) for z in y)
+    return expanded
 
 '''
 Return an array of road segments with names matching a given address
 Input : address string, array of road segments
 Returns an array of road segments
 '''
-def filterNames(address,roadSegmentArray):
-    # split address string into workable array
-    x = address.split()
-    # ignore address housenumber
-    y = x[1:len(x)]
-    expandAbbrv(y)
-    # transform split address back into string
-    poiStreet = " ".join(str(z) for z in y)
-    filteredArr = []
-    for segment in roadSegmentArray:
-        s = SequenceMatcher(None, segment[7], poiStreet)
+def filter_names(address,segment_array):
+    poi_street_name = expand_abbrv(address)
+    arr = []
+    for segment in segment_array:
+        s = SequenceMatcher(None, segment[7], poi_street_name)
         if s.ratio() > MATCH_RATIO:
-            filteredArr.append(segment)
-    return filteredArr
+            arr.append(segment)
+    return arr
 
+'''
+Get the segments closest to a set of coordinates
+Input: float latitude, float longitude, array of road segments
+Returns array of road segments
+'''
+def get_immediate_segments(lat, long, segment_array):
+    immediate_segments = []
+    min_distance = sys.float_info.max
+    for segment in segment_array:
+        distance =\
+            geopy.distance.distance((lat, long), (segment[2], segment[3])).km
+        if distance < min_distance:
+            min_distance = distance
+            immediate_segments = []
+            immediate_segments.append(segment)
+        elif distance == min_distance:
+            immediate_segments.append(segment)
+    return immediate_segments
 
 '''
 Input : float latitude, float longitude, string address
@@ -140,20 +139,22 @@ returns the closest road segment to a given lat/long coordinate.
  return value is of of the same form as a line in roadSegmentsXXX.csv
     [startid, endid, lat1, lon1, lat2, lon2, distance, name]
 '''
-def getClosestSegment(latIn, longIn, address):
+def get_closest_segment(lat, long, address, road_segment_arr):
     # filter using name matching and then getting immediateSegments
-    filteredArr = filterNames(address, roadSegments)
-    arr = getImmediateSegments(latIn, longIn, filteredArr)
-    # if name matching fails, only used immediateSegments
-    if len(arr) == 0:
-        arr = getImmediateSegments(latIn, longIn, roadSegments)
-    # find closest segment out of filtered segments
-    closestSegment = None
-    for segment in arr:
-        distance = geopy.distance.distance((latIn, longIn), (segment[3], segment[4])).km
+    name_filtered_segments = filter_names(address, ROAD_SEGMENTS)
+    if len(name_filtered_segments) != 0:
+        immediate_segments = get_immediate_segments(lat, long, name_filtered_segments)
+    else:
+        # if name matching fails, only used immediateSegments
+        immediate_segments = get_immediate_segments(lat, long, ROAD_SEGMENTS)
+
+    # find closest segment out of immediate segments
+    for segment in immediate_segments:
+        distance =\
+            geopy.distance.distance((lat, long), (segment[3], segment[4])).km
         if distance < segment[5]:
             return segment
-    return arr[0]
+    return immediate_segments[0]
 
 '''
 Write a response to file
@@ -162,18 +163,16 @@ No return value, writes output to file
 '''
 def writeResponse(response, file):
     business_data = response.json()
-    # write in form address, lat, long, rating
     for biz in business_data['businesses']:
-        print(biz)
+        #print(biz)
         address = biz['location']['address1']
         latitude = biz['coordinates']['latitude']
         longitude = biz['coordinates']['longitude']
         rating = biz['rating']
         # sometimes businesses are missing specific info we need, so
         # we check that it has all the necessary information
-        if all (k is not None for k in (latitude, longitude, address, rating)):
-            # what road segment is the poi on
-            segment = getClosestSegment(latitude, longitude, address)
+        if all(k is not None for k in (latitude, longitude, address, rating)):
+            segment = get_closest_segment(latitude, longitude, address, ROAD_SEGMENTS)
             row =\
                 address.replace(',', '') + "," +\
                 str(latitude) + "," +\
@@ -187,31 +186,37 @@ def writeResponse(response, file):
                 file.write(row)
 
 
-'''
-Per the yelp FAQ, 'The API can only return up to 1,000 results at this time'
-To get around this, we query a category until it reaches the max results, sleep
-a bit, then move on to the next category
-'''
-writeFile = open(ouputFile, 'w')
-for category in CATEGORIES_LESS:
-    OFFSET=0
-    for i in range(RANGE):
-        # Define the parameter API call
-        PARAMETER  = {'categories' : category,
-                     'limit' : LIMIT,
-                     'offset' : OFFSET,
-                     'location' : location}
-        # API Call
-        response = requests.get(url=ENDPOINT, params = PARAMETER, headers = HEADERS)
-        # if response is ok proceed writing to file
-        if response.status_code == 200:
-            writeResponse(response, writeFile)
-            # set offset for next API call
-            OFFSET += LIMIT+1
-        # if response is bad, we've probably reached the last page of results and should break
-        elif response.status_code == 400:
-            print('Reached max for category {}'.format(category))
-            print('Sleeping for {} seconds'.format(SLEEP))
-            time.sleep(SLEEP)
-            break
-writeFile.close()
+def main():
+    # Per the yelp FAQ, 'The API can only return up to 1,000 results at this time'
+    # To get around this, we query a category until it reaches the max results, sleep
+    # a bit, then move on to the next category
+    f = open(OUTPUT_FILENAME, 'w')
+    for category in CATEGORIES_LESS:
+        offset = 1
+        for i in range(RANGE):
+            PARAMETER  = {'categories' : category,
+                         'limit' : LIMIT,
+                         'offset' : offset,
+                         'location' : LOCATION}
+            # API Call
+            print('Querying category "{}" from {} to {}...'.format(category, offset, offset+RANGE))
+            response =\
+                requests.get(url=ENDPOINT, params=PARAMETER, headers=HEADERS)
+            # if response is ok proceed writing to file
+            if response.status_code == 200:
+                print('Writing category...')
+                writeResponse(response, f)
+                # set offset for next API call
+                print('Done. Moving to next offset.')
+                offset += LIMIT
+            # if response is bad, we've probably reached the
+            # last page of results and should break
+            elif response.status_code == 400:
+                print('Reached max for category {}'.format(category))
+                print('Sleeping for {} seconds'.format(SLEEP))
+                time.sleep(SLEEP)
+                break
+    f.close()
+
+if __name__ == '__main__':
+    main()
