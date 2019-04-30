@@ -74,8 +74,10 @@ bBoxFile.close()
 # --------------------------------------------------------------------------
 
 '''
-Check if given coordinates are within the bounding box
-Input : float latitude, float longitude
+Input
+    lat/lon : float lat/lon coordinates
+Output
+    returns true if coordinates within bounding box, else false
 '''
 def withinBoundBox(lat, lon):
     a = lat > float(BOUND_BOX[0])
@@ -85,9 +87,11 @@ def withinBoundBox(lat, lon):
     return a and b and c and d
 
 '''
-Expand any abbreviations present in an address
-Input : an array of strings
-No return value, modifies given array
+Input
+    address : a string
+Output
+    Returns a string with all abbreviations expanded.
+    Abbreviations can be defined in ABBRV
 '''
 def expand_abbrv(address):
     x = address.split() # split address string into workable array
@@ -101,9 +105,10 @@ def expand_abbrv(address):
     return expanded
 
 '''
-Return an array of road segments with names matching a given address
-Input : address string, array of road segments
-Returns an array of road segments
+Input
+    segment_array : array of road segments
+Output
+    Returns an array of road segments who's names match the given address
 '''
 def filter_names(address,segment_array):
     poi_street_name = expand_abbrv(address)
@@ -115,9 +120,12 @@ def filter_names(address,segment_array):
     return arr
 
 '''
-Get the segments closest to a set of coordinates
-Input: float latitude, float longitude, array of road segments
-Returns array of road segments
+Input
+    lat/lon : float lat/lon coordinates
+    segment_array : array of road segments
+Output
+    Returns array of road segments who share the closest intersection to
+    the given coordinates
 '''
 def get_immediate_segments(lat, long, segment_array):
     immediate_segments = []
@@ -134,10 +142,13 @@ def get_immediate_segments(lat, long, segment_array):
     return immediate_segments
 
 '''
-Input : float latitude, float longitude, string address
-returns the closest road segment to a given lat/long coordinate.
- return value is of of the same form as a line in roadSegmentsXXX.csv
-    [startid, endid, lat1, lon1, lat2, lon2, distance, name]
+Input
+    lat/lon : float lat/lon coordinates
+    address : a string
+Output
+    returns the closest road segment to a given lat/long coordinate.
+    return value is of of the same form as a line in roadSegmentsXXX.csv
+        [startid, endid, lat1, lon1, lat2, lon2, distance, name]
 '''
 def get_closest_segment(lat, long, address, road_segment_arr):
     # filter using name matching and then getting immediateSegments
@@ -150,16 +161,20 @@ def get_closest_segment(lat, long, address, road_segment_arr):
 
     # find closest segment out of immediate segments
     for segment in immediate_segments:
-        distance =\
-            geopy.distance.distance((lat, long), (segment[3], segment[4])).km
-        if distance < segment[5]:
+        distance1 =\
+            geopy.distance.distance((lat, long), (segment[4], segment[5])).km
+        distance2 =\
+            geopy.distance.distance((lat, long), (segment[2], segment[3])).km
+        if distance1 < segment[5] and distance2 < segment[5]:
             return segment
     return immediate_segments[0]
 
 '''
-Write a response to file
-Input : yelpfusion response, string file
-No return value, writes output to file
+Input
+    response : yelpfusion response
+    file : the file to write to
+Output
+    No return value, writes output to file
 '''
 def writeResponse(response, file):
     business_data = response.json()
@@ -191,7 +206,7 @@ def main():
     # To get around this, we query a category until it reaches the max results, sleep
     # a bit, then move on to the next category
     f = open(OUTPUT_FILENAME, 'w')
-    for category in CATEGORIES_LESS:
+    for category in CATEGORIES:
         offset = 1
         for i in range(RANGE):
             PARAMETER  = {'categories' : category,
@@ -202,13 +217,15 @@ def main():
             print('Querying category "{}" from {} to {}...'.format(category, offset, offset+RANGE))
             response =\
                 requests.get(url=ENDPOINT, params=PARAMETER, headers=HEADERS)
+
             # if response is ok proceed writing to file
             if response.status_code == 200:
-                print('Writing category...')
+                print('Writing response...')
                 writeResponse(response, f)
                 # set offset for next API call
                 print('Done. Moving to next offset.')
                 offset += LIMIT
+
             # if response is bad, we've probably reached the
             # last page of results and should break
             elif response.status_code == 400:
