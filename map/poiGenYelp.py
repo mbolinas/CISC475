@@ -25,27 +25,39 @@ ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization' : 'Bearer %s' % API_KEY}
 
 #--------------------------constants--------------------------------
-RANGE = 50 # the max pages we try to get
+RANGE = 2 # the max pages we try to get
 LIMIT = 50 # number of results from a single call; max 50,min 20
 # Categories to query. Full list here:
     # https://www.yelp.com/developers/documentation/v3/all_category_list
-CATEGORIES =\
+categories_large =\
     ['breakfast_brunch, All', 'chinese, All', 'buffets, All',\
     'bars, All', 'nightlife, All', 'italian, All', 'japanese, All',\
     'latin, All', 'steak, All', 'turkish, All', 'vietnamese, All',\
     'vegan, All', 'vegetarian, All', 'sushi, All' , 'soup, All',\
     'sandwiches, All', 'spanish, All', 'mexican, All', 'korean, All',\
     'kebab, All', 'indpak, All', 'hotdog, All', 'filipino']
-CATEGORIES_LESS =\
-    ['chinese, All', 'italian, All']
+categories_less =\
+    ['chinese, All']
+CATEGORIES = categories_less
+
 ABBRV = {\
     'W' : 'West',\
     'S' : 'South',\
     'E' : 'East',\
-    'N' : 'North'\
+    'N' : 'North',\
+    'St' : 'Street',\
+    'Ave' : 'Avenue',\
+    'Pl' : 'Place',\
+    'Plz' : 'Plaza',\
+    'Sq' : 'Square',\
+    'Pkw' : 'Parkway',\
+    'Ln' : 'Lane',\
+    'Ct' : 'Court',\
+    'Blvd' : 'Boulevard'\
     }
+
 SLEEP = 20 # how long to sleep between categories
-MATCH_RATIO = .70 # minimum match ratio
+MATCH_RATIO = .97 # minimum match ratio
 # --------------------------------------------------------------------------
 
 #--------------------------parse config file--------------------------------
@@ -101,7 +113,7 @@ def expand_abbrv(address):
         if y[i] in ABBRV.keys():
             y[i] = ABBRV[y[i]]
     # transform split address back into string
-    expanded = " ".join(str(z) for z in y)
+    expanded = " ".join(z.encode("utf-8") for z in y)
     return expanded
 
 '''
@@ -151,22 +163,21 @@ Output
         [startid, endid, lat1, lon1, lat2, lon2, distance, name]
 '''
 def get_closest_segment(lat, long, address, road_segment_arr):
-    # filter using name matching and then getting immediateSegments
-    name_filtered_segments = filter_names(address, ROAD_SEGMENTS)
-    if len(name_filtered_segments) != 0:
-        immediate_segments = get_immediate_segments(lat, long, name_filtered_segments)
-    else:
-        # if name matching fails, only used immediateSegments
-        immediate_segments = get_immediate_segments(lat, long, ROAD_SEGMENTS)
+    name_filtered_segments = filter_names(address, road_segment_arr)
 
+    if len(name_filtered_segments) == 0:
+        immediate_segments = get_immediate_segments(lat, long, ROAD_SEGMENTS)
+    else:
+        immediate_segments = get_immediate_segments(lat, long, name_filtered_segments)
+
+    #print(immediate_segments)
     # find closest segment out of immediate segments
     for segment in immediate_segments:
-        distance1 =\
-            geopy.distance.distance((lat, long), (segment[4], segment[5])).km
-        distance2 =\
+        distance =\
             geopy.distance.distance((lat, long), (segment[2], segment[3])).km
-        if distance1 < segment[5] and distance2 < segment[5]:
+        if distance < segment[6]:
             return segment
+
     return immediate_segments[0]
 
 '''
@@ -189,7 +200,7 @@ def writeResponse(response, file):
         if all(k is not None for k in (latitude, longitude, address, rating)):
             segment = get_closest_segment(latitude, longitude, address, ROAD_SEGMENTS)
             row =\
-                address.replace(',', '') + "," +\
+                address.encode("utf-8").replace(',', '') + "," +\
                 str(latitude) + "," +\
                 str(longitude) + "," +\
                 str(rating) + "," +\

@@ -110,7 +110,7 @@ def write_road_segments(filename, segment_array):
             f.write(str(seg[1].lat) + ',') # end lat
             f.write(str(seg[1].lon) + ',') #  end long
             f.write(str(seg[2]) + ',') # distance
-            f.write(str(seg[3]) + '\n') # name
+            f.write(seg[3].encode('utf-8').replace(',', '') + '\n') # name
 
 def main():
     # API Call
