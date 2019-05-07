@@ -26,7 +26,7 @@ def get_weight_of_path(graph, list_of_edges):
 #    where the cumulative weight is minimized
 # src and dest are vertices in the graph
 def shortest_path(graph, src, dest):
-    path = {}
+    path = []
     if src not in graph or dest not in graph:
         raise TypeError('Invalid input')
     if src == dest:
@@ -41,7 +41,7 @@ def shortest_path(graph, src, dest):
     while (current != dest):
         neighbors = graph.neighbors(current)
         current = get_lowest_weight(graph, neighbors)
-        path.add(current)
+        path.append(current)
     return path
 
 # Uses the NetworkX built-in function
