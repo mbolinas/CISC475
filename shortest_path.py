@@ -16,11 +16,17 @@ def get_lowest_weight(graph, list_of_edges):
     min_weight = min(set)
     return dict.get(min_weight)
 
+def get_weight_of_path(graph, list_of_edges):
+    weight = 0
+    for edge in list_of_edges:
+        weight += graph.get_edge_data(edge)['weight']
+    return weight
+
 # Returns a sequence of edges that connect src to dest,
 #    where the cumulative weight is minimized
 # src and dest are vertices in the graph
 def shortest_path(graph, src, dest):
-    path = {}
+    path = []
     if src not in graph or dest not in graph:
         raise TypeError('Invalid input')
     if src == dest:
@@ -35,7 +41,7 @@ def shortest_path(graph, src, dest):
     while (current != dest):
         neighbors = graph.neighbors(current)
         current = get_lowest_weight(graph, neighbors)
-        path.add(current)
+        path.append(current)
     return path
 
 # Uses the NetworkX built-in function
@@ -50,6 +56,6 @@ def create_matrix(graph):
     for i in range(n):
         for j in range(n):
             path = shortest_path(graph, i, j)
-            matrix[i][j] = path
+            matrix[i][j] = get_weight_of_path(path)
     return matrix
 
