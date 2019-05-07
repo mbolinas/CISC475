@@ -1,4 +1,7 @@
 import networkx as nx
+#TODO: make sure to add correct edges into the subgraphs
+#TODO: figure out how to find distance from each node to root
+
 
 G = nx.Graph()
 G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8])
@@ -114,8 +117,8 @@ def subgraph_generation():
                 max_distance = matrix[i][j][0]
                 start_points = [i+1, j+1]
 
-    print(max_distance)            
-    print(start_points)
+    #print(max_distance)            
+    #print(start_points)
 
     n1 = start_points[0]
     n2 = start_points[1]
@@ -125,14 +128,14 @@ def subgraph_generation():
     G2.add_node(n2)
     
 
-    while len(G)>1:
-        G1.add_node(next_node(G1, list(G1.nodes)))
-        G2.add_node(next_node(G2, list(G2.nodes)))
+    while len(G)>=1:
+        next_node(G1, list(G1.nodes))
+        next_node(G2, list(G2.nodes))
         print("G1 nodes:")
         print(list(G1.nodes))
-        print("\n")
         print("G2 nodes:")
         print(list(G2.nodes))
+        print("\n")
 
     
 
@@ -147,9 +150,15 @@ def next_node(graph, node_list):
             if (dist > matrix[j-1][i][0] or dist==None) and j-1 != i and graph.has_node(i+1)==False and G.has_node(i+1)==True:
                 new = i+1
                 dist = matrix[j-1][i][0]
-                
+                connecting = j
+
+    if new == None:
+        return None
+    
+    graph.add_node(new)
+    graph.add_edge(j, new)
     G.remove_node(new)
-    return new
+    
 
     
 #print(nx.shortest_path_length(G,source=4, target=9))
