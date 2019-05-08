@@ -8,6 +8,7 @@ Bounding box and output filename can be modifed in bBoxConfig.txt
 import overpy
 import collections
 import csv
+import time
 
 api = overpy.Overpass()
 
@@ -89,6 +90,7 @@ def write_intersections(filename, id_array, info_dict):
             f.write(str(id) + '\n') # id
 
 def main():
+    start_time = time.time()
     # API call
     print('Querying API...')
     result =\
@@ -110,6 +112,8 @@ def main():
 
     print('Writing to {}'.format(OUTPUT_FILENAME))
     write_intersections(OUTPUT_FILENAME, duplicate_IDs, node_info)
+
+    print("Runtime: {} minutes.".format((time.time() - start_time) / 60))
 
 if __name__ == '__main__':
     main()

@@ -12,6 +12,7 @@ Bounding box and output filename can be modifed in bBoxConfig.txt
 import overpy
 import csv
 import geopy.distance
+import time
 
 api = overpy.Overpass()
 
@@ -113,6 +114,7 @@ def write_road_segments(filename, segment_array):
             f.write(seg[3].encode('utf-8').replace(',', '') + '\n') # name
 
 def main():
+    start_time = time.time()
     # API Call
     print('Querying API...')
     result = api.query(\
@@ -128,6 +130,8 @@ def main():
 
     print('Writing to {}'.format(OUTPUT_FILENAME))
     write_road_segments(OUTPUT_FILENAME, segments)
+    
+    print("Runtime: {} minutes.".format((time.time() - start_time) / 60))
 
 if __name__ == '__main__':
     main()
