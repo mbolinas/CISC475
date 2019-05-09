@@ -1,3 +1,7 @@
+# This file is used to generate a graph and serializes it to graph_pickle from
+# two hardcoded filenames. See the documentation for
+# more details on how this file works
+
 import csv
 from math import radians, cos, sin, asin, sqrt
 import networkx as nx
