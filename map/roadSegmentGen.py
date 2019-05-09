@@ -104,15 +104,17 @@ Output
 def write_road_segments(filename, segment_array):
     with open(filename,'wb') as f:
         for seg in segment_array:
-            f.write(str(seg[0].id)+ ',') # start id
-            f.write(str(seg[1].id)+ ',') # end id
-            f.write(str(seg[0].lat)+ ',') # start lat
-            f.write(str(seg[0].lon) + ',') # start long
-            f.write(str(seg[1].lat) + ',') # end lat
-            f.write(str(seg[1].lon) + ',') #  end long
-            f.write(str(seg[2]) + ',') # distance
-            f.write(seg[3].encode('utf-8').replace(',', '') + '\n') # name
-
+            try:
+                f.write(str(seg[0].id)+ ',') # start id
+                f.write(str(seg[1].id)+ ',') # end id
+                f.write(str(seg[0].lat)+ ',') # start lat
+                f.write(str(seg[0].lon) + ',') # start long
+                f.write(str(seg[1].lat) + ',') # end lat
+                f.write(str(seg[1].lon) + ',') #  end long
+                f.write(str(seg[2]) + ',') # distance
+                f.write(seg[3].encode('utf-8').replace(',', '') + '\n') # name
+            except Exception as e:
+                print(e)
 def main():
     start_time = time.time()
     # API Call
@@ -130,7 +132,7 @@ def main():
 
     print('Writing to {}'.format(OUTPUT_FILENAME))
     write_road_segments(OUTPUT_FILENAME, segments)
-    
+
     print("Runtime: {} minutes.".format((time.time() - start_time) / 60))
 
 if __name__ == '__main__':
