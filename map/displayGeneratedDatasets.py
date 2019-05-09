@@ -3,7 +3,6 @@ Same code as Yidan's, just adapted in some small ways
 '''
 import matplotlib.pyplot as plt
 import numpy as np
-import pickle as pl
 
 # True if you want to plot poi's, else False
 PLOT_POI = False;
@@ -67,8 +66,6 @@ plt.plot(lng, lat,'bo',linewidth=0.1,markersize=0.2)
 # save to file. sometimes these autosaved images might not look very nice. in that case
 # its better to resize the plot and save manually
 plt.savefig('./map_data_images/autosaved{}.png'.format(name), bbox_inches='tight')
-# pickle plot for future use
-pl.dump(plt.figure(), open('./map_data_images/{}.pickle'.format(name), 'w'))
 
 if SHOW_PLOT:
     plt.show()
