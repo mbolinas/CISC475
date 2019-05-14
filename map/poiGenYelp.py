@@ -17,7 +17,7 @@ import requests
 import sys
 import geopy.distance
 import time
-from difflib import SequenceMatcher
+#from difflib import SequenceMatcher
 
 #Define the API Key, define the endpoint and define the header
 API_KEY = 'pdXJAlG5dNPgd3oqnypNJr1T7jihvqBzsrRMWPheuxR8IdN1CllWkLXaf0I6Y43igep_58Np2VFBQRwWEDCLYY_KnGZNfpKS8TeIYgV6wFX25xZVcx-LTbth9HyIXHYx'
@@ -37,15 +37,29 @@ CATEGORIES =\
     'sandwiches, All', 'spanish, All', 'mexican, All', 'korean, All',\
     'kebab, All', 'indpak, All', 'hotdog, All', 'filipino']
 CATEGORIES_LESS =\
-    ['chinese, All', 'italian, All']
-ABBRV = {\
+    ['chinese, All']
+
+ABBRV_POSTAL = {\
+    'St' : 'Street',\
+    'Ave' : 'Avenue',\
+    'Pl' : 'Place',\
+    'Plz' : 'Plaza',\
+    'Sq' : 'Square',\
+    'Pkw' : 'Parkway',\
+    'Ln' : 'Lane',\
+    'Ct' : 'Court',\
+    'Blvd' : 'Boulevard'\
+    }
+ABBRV_OTHER = {\
     'W' : 'West',\
     'S' : 'South',\
     'E' : 'East',\
-    'N' : 'North'\
+    'N' : 'North',\
+    'St' : 'Saint'
     }
+
 SLEEP = 20 # how long to sleep between categories
-MATCH_RATIO = .70 # minimum match ratio
+MATCH_RATIO = .97 # minimum match ratio
 # --------------------------------------------------------------------------
 
 #--------------------------parse config file--------------------------------
@@ -59,11 +73,6 @@ BOUND_BOX = lines[0].replace('(','').replace(')','').rstrip('\n').split(',') # l
 
 # getting road segments for start/end id computation
 roadSegmentInput = "./generated_map_data/roadSegments{}.csv".format(name)
-ROAD_SEGMENTS = []
-with open(roadSegmentInput, "r") as f:
-    for line in f:
-        items = line.rstrip().split(',')
-        ROAD_SEGMENTS.append(items)
 
 # Location used for computation.
 LOCATION = lines[2].rstrip('\n')
@@ -72,6 +81,21 @@ LOCATION = lines[2].rstrip('\n')
 OUTPUT_FILENAME = './generated_map_data/poiYelp{}.csv'.format(name)
 bBoxFile.close()
 # --------------------------------------------------------------------------
+
+'''
+Parse a road segment file into a dictionary
+'''
+def get_road_segments(road_segment_input):
+    dict = {}
+    with open(road_segment_input, "r") as f:
+        for line in f:
+            items = line.rstrip().split(',')
+            name = items[7].replace("'", "")
+            if name not in dict:
+                dict[name] = [items]
+            else:
+                dict[name].append(items)
+    return dict
 
 '''
 Input
@@ -96,15 +120,22 @@ Output
 def expand_abbrv(address):
     x = address.split() # split address string into workable array
     y = x[1:len(x)] # ignore address housenumber
-    # expand any present abbreviations
-    for i in range(len(y)):
-        if y[i] in ABBRV.keys():
-            y[i] = ABBRV[y[i]]
+
+    # expand last token, which is generally a postal abbreviation
+    if y[len(y)-1] in ABBRV_POSTAL:
+        y[len(y)-1] = ABBRV_POSTAL[y[len(y)-1]]
+
+    # expand any other abbreviations
+    for i in range(len(y)-1):
+        if y[i] in ABBRV_OTHER:
+            y[i] = ABBRV_OTHER[y[i]]
+
     # transform split address back into string
-    expanded = " ".join(str(z) for z in y)
+    expanded = " ".join(z.encode("utf-8") for z in y)
     return expanded
 
 '''
+FUNCTION NOT CURRENTLY BEING USED
 Input
     segment_array : array of road segments
 Output
@@ -127,18 +158,19 @@ Output
     Returns array of road segments who share the closest intersection to
     the given coordinates
 '''
-def get_immediate_segments(lat, long, segment_array):
+def get_immediate_segments(lat, long, segment_dict):
     immediate_segments = []
     min_distance = sys.float_info.max
-    for segment in segment_array:
-        distance =\
-            geopy.distance.distance((lat, long), (segment[2], segment[3])).km
-        if distance < min_distance:
-            min_distance = distance
-            immediate_segments = []
-            immediate_segments.append(segment)
-        elif distance == min_distance:
-            immediate_segments.append(segment)
+    for key in segment_dict.keys():
+        for segment in segment_dict[key]:
+            distance =\
+                geopy.distance.distance((lat, long), (segment[2], segment[3])).km
+            if distance < min_distance:
+                min_distance = distance
+                immediate_segments = []
+                immediate_segments.append(segment)
+            elif distance == min_distance:
+                immediate_segments.append(segment)
     return immediate_segments
 
 '''
@@ -150,23 +182,24 @@ Output
     return value is of of the same form as a line in roadSegmentsXXX.csv
         [startid, endid, lat1, lon1, lat2, lon2, distance, name]
 '''
-def get_closest_segment(lat, long, address, road_segment_arr):
-    # filter using name matching and then getting immediateSegments
-    name_filtered_segments = filter_names(address, ROAD_SEGMENTS)
-    if len(name_filtered_segments) != 0:
-        immediate_segments = get_immediate_segments(lat, long, name_filtered_segments)
-    else:
-        # if name matching fails, only used immediateSegments
-        immediate_segments = get_immediate_segments(lat, long, ROAD_SEGMENTS)
+def get_closest_segment(lat, long, address, segment_dict):
+    address_expanded = expand_abbrv(address)
+    immediate_segments = []
 
+    if address_expanded in segment_dict:
+        immediate_segments = segment_dict[address_expanded]
+
+    if len(immediate_segments) == 0:
+        immediate_segments = get_immediate_segments(lat, long, segment_dict)
+
+    #print(immediate_segments)
     # find closest segment out of immediate segments
     for segment in immediate_segments:
-        distance1 =\
-            geopy.distance.distance((lat, long), (segment[4], segment[5])).km
-        distance2 =\
+        distance =\
             geopy.distance.distance((lat, long), (segment[2], segment[3])).km
-        if distance1 < segment[5] and distance2 < segment[5]:
+        if distance < segment[6]:
             return segment
+
     return immediate_segments[0]
 
 '''
@@ -176,20 +209,20 @@ Input
 Output
     No return value, writes output to file
 '''
-def writeResponse(response, file):
+def writeResponse(response, file, segment_dict):
     business_data = response.json()
     for biz in business_data['businesses']:
-        #print(biz)
         address = biz['location']['address1']
         latitude = biz['coordinates']['latitude']
         longitude = biz['coordinates']['longitude']
         rating = biz['rating']
+        print(address)
         # sometimes businesses are missing specific info we need, so
         # we check that it has all the necessary information
-        if all(k is not None for k in (latitude, longitude, address, rating)):
-            segment = get_closest_segment(latitude, longitude, address, ROAD_SEGMENTS)
+        if all (k is not None for k in (address, latitude, longitude, rating)) and len(address.split()) > 2:
+            segment = get_closest_segment(latitude, longitude, address, segment_dict)
             row =\
-                address.replace(',', '') + "," +\
+                address.encode("utf-8").replace(',', '') + "," +\
                 str(latitude) + "," +\
                 str(longitude) + "," +\
                 str(rating) + "," +\
@@ -200,8 +233,11 @@ def writeResponse(response, file):
             if withinBoundBox(latitude, longitude):
                 file.write(row)
 
-
 def main():
+    start_time = time.time()
+    road_segment_dict = get_road_segments(roadSegmentInput)
+    #print(road_segment_dict)
+
     # Per the yelp FAQ, 'The API can only return up to 1,000 results at this time'
     # To get around this, we query a category until it reaches the max results, sleep
     # a bit, then move on to the next category
@@ -221,7 +257,7 @@ def main():
             # if response is ok proceed writing to file
             if response.status_code == 200:
                 print('Writing response...')
-                writeResponse(response, f)
+                writeResponse(response, f, road_segment_dict)
                 # set offset for next API call
                 print('Done. Moving to next offset.')
                 offset += LIMIT
@@ -234,6 +270,8 @@ def main():
                 time.sleep(SLEEP)
                 break
     f.close()
+    print("Runtime: {} minutes.".format((time.time() - start_time) / 60))
+
 
 if __name__ == '__main__':
     main()

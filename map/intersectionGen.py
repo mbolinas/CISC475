@@ -8,6 +8,7 @@ Bounding box and output filename can be modifed in bBoxConfig.txt
 import overpy
 import collections
 import csv
+import time
 
 api = overpy.Overpass()
 
@@ -82,13 +83,17 @@ Output
 def write_intersections(filename, id_array, info_dict):
     with open(filename,'wb') as f:
         for id in id_array:
-            f.write(info_dict[id][0].encode('utf-8').replace(',', '') + ',') # name
-            f.write(str(info_dict[id][2]) + ',') # lat
-            f.write(str(info_dict[id][3]) + ',') # long
-            f.write(info_dict[id][1].encode('utf-8') + ',') # type
-            f.write(str(id) + '\n') # id
+            try:
+                f.write(info_dict[id][0].encode('utf-8').replace(',', '') + ',') # name
+                f.write(str(info_dict[id][2]) + ',') # lat
+                f.write(str(info_dict[id][3]) + ',') # long
+                f.write(info_dict[id][1].encode('utf-8') + ',') # type
+                f.write(str(id) + '\n') # id
+            except Exception as e:
+                print(e)
 
 def main():
+    start_time = time.time()
     # API call
     print('Querying API...')
     result =\
@@ -110,6 +115,8 @@ def main():
 
     print('Writing to {}'.format(OUTPUT_FILENAME))
     write_intersections(OUTPUT_FILENAME, duplicate_IDs, node_info)
+
+    print("Runtime: {} minutes.".format((time.time() - start_time) / 60))
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,5 @@
 """
-Many amenity nodes in openmaps don't specify proper addresses or ratings so
-Muhan's yelp code is probably better for generating poi's
+DEPRECATED - USE poiGenYelp.py
 """
 
 import overpy
