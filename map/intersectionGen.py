@@ -83,11 +83,14 @@ Output
 def write_intersections(filename, id_array, info_dict):
     with open(filename,'wb') as f:
         for id in id_array:
-            f.write(info_dict[id][0].encode('utf-8').replace(',', '') + ',') # name
-            f.write(str(info_dict[id][2]) + ',') # lat
-            f.write(str(info_dict[id][3]) + ',') # long
-            f.write(info_dict[id][1].encode('utf-8') + ',') # type
-            f.write(str(id) + '\n') # id
+            try:
+                f.write(info_dict[id][0].encode('utf-8').replace(',', '') + ',') # name
+                f.write(str(info_dict[id][2]) + ',') # lat
+                f.write(str(info_dict[id][3]) + ',') # long
+                f.write(info_dict[id][1].encode('utf-8') + ',') # type
+                f.write(str(id) + '\n') # id
+            except Exception as e:
+                print(e)
 
 def main():
     start_time = time.time()
