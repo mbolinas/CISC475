@@ -7,6 +7,7 @@ G = nx.Graph()
 G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8])
 G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4), (2, 6), (3, 5), (3, 6), (3, 7), (4, 6), (5, 7), (5, 9), (6, 8), (7, 9)])
 
+shared = []
 matrix = []
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for x in range(1, 10):
@@ -129,12 +130,12 @@ def subgraph_generation():
     
 
     while len(G)>=1:
-        next_node(G1, list(G1.nodes))
-        next_node(G2, list(G2.nodes))
+        next_node(G1, G2, list(G1.nodes), list(G2.nodes))
         print("G1 nodes:")
         print(list(G1.nodes))
         print("G2 nodes:")
         print(list(G2.nodes))
+        print(shared)
         print("\n")
 
     
@@ -142,24 +143,44 @@ def subgraph_generation():
     
     
 #finds the closest node to node n
-def next_node(graph, node_list):
-    new = None
-    dist = None
+def next_node(g1, g2, node_list1, node_list2):
+    new1 = None
+    dist1 = None
     for i in range(0, 9):
-        for j in node_list:
-            if (dist > matrix[j-1][i][0] or dist==None) and j-1 != i and graph.has_node(i+1)==False and G.has_node(i+1)==True:
-                new = i+1
-                dist = matrix[j-1][i][0]
+        for j in node_list1:
+            if (dist1 > matrix[j-1][i][0] or dist1==None) and j-1 != i and g1.has_node(i+1)==False and G.has_node(i+1)==True:
+                new1 = i+1
+                dist1 = matrix[j-1][i][0]
                 connecting = j
 
-    if new == None:
-        return None
-    
-    graph.add_node(new)
-    graph.add_edge(j, new)
-    G.remove_node(new)
-    
+    if new1 != None:
+        g1.add_node(new1)
+        g1.add_edge(j, new1)
 
+    new2 = None
+    dist2 = None
+    for i in range(0, 9):
+        for j in node_list2:
+            if (dist2 > matrix[j-1][i][0] or dist2==None) and j-1 != i and g2.has_node(i+1)==False and G.has_node(i+1)==True:
+                new2 = i+1
+                dist2 = matrix[j-1][i][0]
+                connecting = j
+    if new2 != None:
+        g2.add_node(new2)
+        g2.add_edge(j, new2)
+        
+
+    if new1 == new2:
+        shared.append(new1)
+        G.remove_node(new1)
+        return None
+
+    if new1 != None:
+        G.remove_node(new1)
+
+    if new2 != None:
+        G.remove_node(new2)
+    
     
 #print(nx.shortest_path_length(G,source=4, target=9))
 subgraph_generation()
