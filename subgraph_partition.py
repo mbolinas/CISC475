@@ -1,5 +1,10 @@
 import networkx as nx
 
+#Separates input graph into two subgraphs, starting with the two nodes with the greatest shortest path between them, and collects the nodes they share
+
+#Requires a 3-d shortest path matrix (matrix[start][end][distance]) and the original graph G
+
+
 G = nx.Graph()
 G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8])
 G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4), (2, 6), (3, 5), (3, 6), (3, 7), (4, 6), (5, 7), (5, 9), (6, 8), (7, 9)])
@@ -10,99 +15,8 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for x in range(1, 10):
     matrix.append([[], [], [], [], [], [], [], [], []])
 
-matrix[0][0].append(0)
-matrix[0][1].append(1)
-matrix[0][2].append(1)
-matrix[0][3].append(2)
-matrix[0][4].append(2)
-matrix[0][5].append(2)
-matrix[0][6].append(2)
-matrix[0][7].append(3)
-matrix[0][8].append(3)
 
-matrix[1][0].append(1)
-matrix[1][1].append(0)
-matrix[1][2].append(1)
-matrix[1][3].append(1)
-matrix[1][4].append(2)
-matrix[1][5].append(1)
-matrix[1][6].append(3)
-matrix[1][7].append(2)
-matrix[1][8].append(3)
-
-matrix[2][0].append(1)
-matrix[2][1].append(1)
-matrix[2][2].append(0)
-matrix[2][3].append(2)
-matrix[2][4].append(1)
-matrix[2][5].append(1)
-matrix[2][6].append(1)
-matrix[2][7].append(2)
-matrix[2][8].append(2)
-
-matrix[3][0].append(2)
-matrix[3][1].append(1)
-matrix[3][2].append(2)
-matrix[3][3].append(0)
-matrix[3][4].append(3)
-matrix[3][5].append(1)
-matrix[3][6].append(3)
-matrix[3][7].append(2)
-matrix[3][8].append(4)
-
-matrix[4][0].append(2)
-matrix[4][1].append(2)
-matrix[4][2].append(1)
-matrix[4][3].append(3)
-matrix[4][4].append(0)
-matrix[4][5].append(2)
-matrix[4][6].append(1)
-matrix[4][7].append(3)
-matrix[4][8].append(1)
-
-matrix[5][0].append(2)
-matrix[5][1].append(1)
-matrix[5][2].append(1)
-matrix[5][3].append(1)
-matrix[5][4].append(2)
-matrix[5][5].append(0)
-matrix[5][6].append(3)
-matrix[5][7].append(1)
-matrix[5][8].append(3)
-
-matrix[6][0].append(2)
-matrix[6][1].append(3)
-matrix[6][2].append(1)
-matrix[6][3].append(4)
-matrix[6][4].append(1)
-matrix[6][5].append(3)
-matrix[6][6].append(0)
-matrix[6][7].append(4)
-matrix[6][8].append(1)
-
-matrix[7][0].append(3)
-matrix[7][1].append(2)
-matrix[7][2].append(2)
-matrix[7][3].append(2)
-matrix[7][4].append(3)
-matrix[7][5].append(1)
-matrix[7][6].append(4)
-matrix[7][7].append(0)
-matrix[7][8].append(4)
-
-matrix[8][0].append(3)
-matrix[8][1].append(3)
-matrix[8][2].append(2)
-matrix[8][3].append(4)
-matrix[8][4].append(1)
-matrix[8][5].append(3)
-matrix[8][6].append(1)
-matrix[8][7].append(4)
-matrix[8][8].append(0)
-
-
-
-
+#Creates two graphs starting with the nodes farthest from each other in the inital graph. Populates them using the next_node() function 
 def subgraph_generation():
     G1 = nx.Graph()
     G2 = nx.Graph()
@@ -126,12 +40,14 @@ def subgraph_generation():
     while len(G)>=1:
         next_node(G1, G2, list(G1.nodes), list(G2.nodes))
 
+
     print("G1 nodes: " + str(list(G1.nodes)))
     print("G2 nodes: " + str(list(G2.nodes)))
     print("Shared nodes: " + str(shared))
+
     
     
-#finds the closest node to node n
+#finds and adds the next nodes to G1 and G2, and if they are the same node, adds it to the shared list
 def next_node(g1, g2, node_list1, node_list2):
     new1 = None
     dist1 = None
