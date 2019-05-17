@@ -2,23 +2,19 @@
 
 #calculates the 1D LBSQ for a single road segment
 
-#road: 
-#poi_set: 
-#road_pos: double, the position on the road the query originated from 
-#road_pos_proj: tuple, optional, the location the query originated if not on the road
-def sky1d(road, poi_set, road_pos, road_pos_proj = None):
-	if road_pos_proj is not None:
-		print("not implemented yet")
-		#project road_pos onto the road
-		#optimization problem, road is a line, derive road formula, etc
+#road: an edge of the graph from graph_pickle, representing a single road
+#poi_set: a set of elements, where each element is a POI on the given road segment
+	#each element should have attributes distance and price
+		#distance is relative, expressed as a fraction, representing how far along the road segment
+		#it is placed
+#road_pos: double, the position on the road the query originated from
+def sky1d(road, poi_set, road_pos):
 
 	result_set = []
 	left_set = []
 	right_set = []
-	error_set = []
+	#error_set = []
 
-	#add verification POIs
-	#distance infinity, price 0
 
 	for p in poi_set:
 		if p.distance - road_pos < 0:
@@ -26,35 +22,32 @@ def sky1d(road, poi_set, road_pos, road_pos_proj = None):
 		elif p.distance - road_pos > 0:
 			right_set.add(p)
 		else:
-			print("user's road pos is the same as a poi\nunsure whether to add to left or right set")
-			error_set.add(p)
+			#print("user's road pos is the same as a poi\nunsure whether to add to left or right set")
+			#error_set.add(p)
 
 	for p in left_set:
-		add = False
-		for r in result_set:
-			if(abs(p.distance - road_pos) < abs(r.distance - road_pos) & p.price < r.price):
-				result_set.remove(r)
-				add = True
+		for r in left_set:
+			#if p is farther away and more expensive than any other POI in the same set,
+			#it is dominated, so remove it
+			if(abs(p.distance - road_pos) > abs(r.distance - road_pos) & p.price > r.price):
+				left_set.remove(p)
+				continue
 
-		for r in result_set:
-			if(abs(p.distance - road_pos) < abs(r.distance - road_pos) | p.price < r.price):
-				add = True
+	for p in right_set:
+		for r in right_set:
+			if(abs(p.distance - road_pos) > abs(r.distance - road_pos) & p.price > r.price):
+				right_set.remove(p)
+				continue
 
-		if add is True:
-			result_set.add(p)
+	for p in left_set:
+		result_set.add(p)
+	for p in right_set:
+		result_set.add(p)
 
-	for p in result_set:
-		for r in result_set:
-			if(abs(p.distance - road_pos) < abs(r.distance - road_pos) & p.price < r.price):
-				result_set.remove(r)
-
-
-	#todo: add verification POIs in preprocessing
-	#todo: query result verification
 
 	return result_set
 
-#do we even need this idk
-def result_set_to_neighbors(result_set, road_pos):
-	print("no")
+#def result_set_to_neighbors(result_set, road_pos):
+	#result_set.add()
+	#result_set.add()
 
