@@ -136,7 +136,9 @@ def subgraph_generation():
         next_node(G1, G2, list(G1.nodes), list(G2.nodes))
 
     print("G1 nodes: " + str(list(G1.nodes)))
+    print("G1 edges: " + str(list(G1.edges)))
     print("G2 nodes: " + str(list(G2.nodes)))
+    print("G2 edges: " + str(list(G2.edges)))
     print("Shared nodes: " + str(shared))
     
     
