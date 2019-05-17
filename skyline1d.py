@@ -10,21 +10,30 @@
 #road_pos: double, the position on the road the query originated from
 def sky1d(road, poi_set, road_pos):
 
+	if(road_pos > 1 | road_pos < 0):
+		print("WARNING: road_pos is supposed to be a fraction s.t. 0 <= road_pos <= 1\n(continuing algorithm with incorrect road_pos...)")
+
 	result_set = []
 	left_set = []
 	right_set = []
 	#error_set = []
 
-
+	#we divide the poi_set into a set of elements left of road_pos and right of road_pos
 	for p in poi_set:
 		if p.distance - road_pos < 0:
 			left_set.add(p)
 		elif p.distance - road_pos > 0:
 			right_set.add(p)
 		else:
-			#print("user's road pos is the same as a poi\nunsure whether to add to left or right set")
-			#error_set.add(p)
+			#what happens if a POI is placed exactly where the user is located?
+			#presumably it automatically gets added into the result set - it's distance is 0, so
+			#it cannot be dominated by definition
 
+			#uncomment the following line if the above implementation is wanted:
+			#result_set.add(p)
+			print("a POI is placed exactly at road_pos, ignoring...\nsee skyline1d.py to change implementation")
+
+	#remove dominated POIs
 	for p in left_set:
 		for r in left_set:
 			#if p is farther away and more expensive than any other POI in the same set,
@@ -33,6 +42,7 @@ def sky1d(road, poi_set, road_pos):
 				left_set.remove(p)
 				continue
 
+	#remove dominated POIs
 	for p in right_set:
 		for r in right_set:
 			if(abs(p.distance - road_pos) > abs(r.distance - road_pos) & p.price > r.price):
