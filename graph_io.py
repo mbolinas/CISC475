@@ -6,21 +6,22 @@ import networkx as nx
 #so this file will write to file the POIs that were relevant for a specific location
 
 
-#takes in a set of POIs, usually given from the algorithms, 
-#and intersects that set with the set
-#of all POIs (./map/res_mapping_road_based.csv)
+#takes in a set of POIs and intersects that set with the set
+#of all POIs (./map/res_mapping_road_based.csv by default, change this as you change the area)
 
 
-
-#this functions is going to have to take in a set of 'correct' POIs and 
-#the location that the algorithm was run on
+#this function runs an intersection on the set of all POIs in the graph
+#with the set of non-dominated POIs, and writes the result in
+#a .csv file named after the road the algorithm was run on.
+#currently, the set of all POIs is hard-coded in res_f, but it can be overwritten
+#and parameterized fairly easily
 def export_poi_set(road_name, poi_set):
 	result = open("./map/road_" + road_name + ".csv", "w")
 	res_f = open("./map/res_mapping_road_based.csv", "r")
 	count = 0
 	for s in res_f:
 		items = s.rstrip().split(',')
-		#there's gotta be a way to perform an intersection that isn't O(n^2)
+		#this intersect algorithm runs in O(n^2), there may be a better alternative
 		for name in poi_set:	
 			if (items[0] == name):
 				if(count != 0):
@@ -28,6 +29,7 @@ def export_poi_set(road_name, poi_set):
 				result.write(s)
 				count = count + 1
 
+#returns a graph from a pickle file
 def reconstruct_graph(filein):
 	src = "./map/graph.csv"
 	#src = "./map/res_mapping_road_based.csv"
