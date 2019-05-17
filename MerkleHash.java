@@ -1,153 +1,132 @@
 import java.awt.List;
-
+import java.security.MessageDigest;
+import java.util.ArrayList;
 //This class provides a few static create operators, equality tests, and 
-//computes the hash from a byte array, string, or two other MerkleHash instances.
+//computes the hash from a byte array, Object, or two other MerkleHash instances.
 public class MerkleHash {
-	//subject to change
-	private int[] Value;
 
-    protected MerkleHash()
-    {
-    }
+		ArrayList<Object> input;
+		
+		// Merkle Root
+		Object root;
 
-    public static MerkleHash Create(byte[] buffer)
-    {
-      MerkleHash hash = new MerkleHash();
-      hash.ComputeHash(buffer);
+		//Constructor: given a set of items (e.g., POI), construct a hash tree
+		public MerkleHash(ArrayList<Object> in) {
+			this.input=in;
+			merkle_tree(in);
+		}
+		
+        /*constructs the merkle tree*/
+		public void merkle_tree(ArrayList<Object> in) {
+			List<Object> tempinput = new ArrayList<Object>();
 
-      return hash;
-    }
+			for (int i = 0; i < in.size(); i++) {
+				tempinput.add(in.get(i));
+			}
 
-    public static MerkleHash Create(String buffer)
-    {
-      return Create(Encoding.UTF8.GetBytes(buffer));
-    }
+			List<Object> newinput = getNewNode(tempinput);
+			while (newinput.size() != 1) {
+				newinput = getNewNode(newinput);
+			}
 
-    public static MerkleHash Create(MerkleHash left, MerkleHash right)
-    {
-      return Create(left.Value.Concat(right.Value).ToArray());
-    }
+			this.root = newinput.get(0);
+		}
+        /*builds the new node based on the two children nodes*/
+		private List<Object> getNewNode(List<Object> tempinput) {
 
-    public static boolean equals(MerkleHash h1, MerkleHash h2)
-    {
-      return h1.equals(h2);
-    }
+			List<Object> newinput = new ArrayList<Object>();
+			int index = 0;
+			while (index < tempinput.size()) {
+				// left
+				Object left = tempinput.get(index);
+				index++;
 
-    public static boolean notEqual(MerkleHash h1, MerkleHash h2)
-    {
-      return !h1.equals(h2);
-    }
+				// right
+				Object right = "";
+				if (index != tempinput.size()) {
+					right = tempinput.get(index);
+				}
 
-    public int GetHashCode()
-    {
-      return super.hashCode();
-    }
+				// combine the left and right child and apply sha2 hex to the results
+				//currently giving me an error b/c add(obj) is undefined for Object
+				Object sha2HexValue = getSHA2HexValue(left.add(right));
+				newinput.add(sha2HexValue);
+				index++;
 
-    public boolean equals(Object obj)
-    {
-  //implement the contract method
-    	MerkleTree.Contract(() => obj is MerkleHash, "rvalue is not a MerkleHash");
-      return Equals((MerkleHash)obj);
-    }
+			}
 
-//how to get rid of the error?? add package
-    public void ComputeHash(byte[] buffer)
-    {
-      SHA256 sha256 = SHA256.Create();
-      SetHash(sha256.ComputeHash(buffer));
-    }
+			return newinput;
+		}
 
-    public void SetHash(byte[] hash)
-    {
-      MerkleTree.Contract(() => hash.Length == Constants.HASH_LENGTH, "Unexpected hash length.");
-      Value = hash;
-    }
-//other equals methods
- /*   public bool Equals(byte[] hash)
-    {
-      return Value.SequenceEqual(hash);
-    }
+		/**
+		 * Return hexed object; not really sure how to apply it to generic object;
+		 * but this one deals with String inputs.
+		 * @param str
+		 * @return
+		 */
+		public Object getSHA2HexValue(Object str) {
+			byte[] cipher_byte;
+			try {
+				MessageDigest md = MessageDigest.getInstance("SHA-256");
+				md.update(((String) str).getBytes());
+				cipher_byte = md.digest();
+				StringBuilder sb = new StringBuilder(2 * cipher_byte.length);
+				for (byte b : cipher_byte) {
+					sb.append(String.format("%02x", b & 0xff));
+				}
+				return (Object)sb;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
-    public bool Equals(MerkleHash hash)
-    {
-      bool ret = false;
+			return "";
+		}
 
-      if (((object)hash) != null)
-      {
-        ret = Value.SequenceEqual(hash.Value);
-      }
+		/**
+		 * Get Root
+		 * 
+		 * @return
+		 */
+		public Object getRoot() {
+			return this.root;
+		}
+		
+	    /*FindAuthentication4Item: takes one item as input and returns the set of internal nodes that are needed to compute the root of the Merkle hash tree. 
+	     * Every item or internal node needs to contain the information about its position in the tree to allow computing the root when needed. 
+	     */
+		private  ArrayList<Object> FindAuthentication4Item(Object o){
+			List<Object> internalnodes = new ArrayList<Object>();
+			int index = this.input.indexOf(o);
+			/*compute the locations of the internal nodes; locate them in the list and append them to the results*/
+			return internalnodes;
+		}
+		
+		/*VerifyItem: takes one item and the set of internal nodes as input and returns true if they can compute the correct Merkle Hash tree root.*/
+		public boolean verifyItem(ArrayList<Object> innodes, Object o) {
+			/*placeholder*/
+			return false;
+		}
+		
+		/*FindAuthentication4Set: takes a subset of items as input and returns the set of internal nodes that are needed to compute the root of the Merkle hash tree for every input item.
+		 *  This is a generalization of the FindAuthentication4Item method.
+		 */
+		private  ArrayList<ArrayList<Object>> FindAuthentication4Set(ArrayList<Object> o){
+			List<ArrayList<Object>> internalnodes = new ArrayList<ArrayList<Object>>();
+			int index = this.input.indexOf(o);
+			/*compute the locations of the internal nodes; locate them in the list and append them to the results*/
+			return internalnodes;
+		}
+		
+		/*VerifySet: takes a subset of items and the set of internal nodes as input and returns true if we can compute the correct Merkle Hash tree root for EVERY input item.
+		 *  This is a generalization of the VerifyItem method. 
+		 */
+		public boolean verifySet(ArrayList<ArrayList<Object>> innodes, Object o) {
+			/*placeholder*/
+			return false;
+		}
+		
 
-      return ret;
-    }
+
+ 
   }
-}*/
-    
- //build tree from its leaves:
-    public MerkleHash BuildTree()
-    {
-      // We do not call FixOddNumberLeaves because we want the ability to append 
-      // leaves and add additional trees without creating unecessary wasted space in the tree.
-      Contract(() => leaves.Count > 0, "Cannot build a tree with no leaves.");
-      BuildTree(leaves);
 
-      return RootNode.Hash;
-    }
-
-    /// <summary>
-    /// Recursively reduce the current list of n nodes to n/2 parents.
-    /// </summary>
-    /// <param name="nodes"></param>
-    protected void BuildTree(List<MerkleNode> nodes)
-    {
-      Contract(() => nodes.Count > 0, "node list not expected to be empty.");
-
-      if (nodes.Count == 1)
-      {
-        RootNode = nodes[0];
-      }
-      else
-      {
-        List<MerkleNode> parents = new List<MerkleNode>();
-
-        for (int i = 0; i < nodes.Count; i += 2)
-        {
-          MerkleNode right = (i + 1 < nodes.Count) ? nodes[i + 1] : null;
-          MerkleNode parent = CreateNode(nodes[i], right);
-          parents.Add(parent);
-        }
-
-        BuildTree(parents);
-      }
-    }
-    
-    //appending leaves
-/*    public MerkleNode AppendLeaf(MerkleNode node)
-    {
-      nodes.Add(node);
-      leaves.Add(node);
-
-      return node;
-    }
-
-    public void AppendLeaves(MerkleNode[] nodes)
-    {
-      nodes.ForEach(n => AppendLeaf(n));
-    }
-
-    public MerkleNode AppendLeaf(MerkleHash hash)
-    {
-      MerkleNode node = CreateNode(hash);
-      nodes.Add(node);
-      leaves.Add(node);
-
-      return node;
-    }
-
-    public List<MerkleNode> AppendLeaves(MerkleHash[] hashes)
-    {
-      List<MerkleNode> nodes = new ArrayList<MerkleNode>();
-      hashes.ForEach(h => nodes.Add(AppendLeaf(h)));
-
-      return nodes;
-    }*/
-}
